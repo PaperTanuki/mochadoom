@@ -448,7 +448,7 @@ public abstract class Map<T, V>
      */
     protected int overlay = 0;
 
-    protected int cheating = 0;
+    protected int cheating = 2;
 
     protected boolean grid = false;
 

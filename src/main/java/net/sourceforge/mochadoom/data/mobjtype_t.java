@@ -1,5 +1,6 @@
 package net.sourceforge.mochadoom.data;
 
+//TODO:AQUI AGREGAR LOS NUEVOS TIPOS DE OBJETOS
 public enum mobjtype_t {
     MT_PLAYER,
     MT_POSSESSED,

@@ -2165,6 +2165,9 @@ public class Actions extends UnifiedGameMap {
         // Drop stuff.
         // This determines the kind of object spawned
         // during the death frame of a thing.
+
+
+        //TODO: Aqui spawn de las cosas al morir-> GHOUL
         switch (target.type) {
             case MT_WOLFSS:
             case MT_POSSESSED:
@@ -2181,9 +2184,10 @@ public class Actions extends UnifiedGameMap {
 
             default:
                 return;
+
         }
 
-        mo = SpawnMobj(target.x, target.y, ONFLOORZ, item);
+        mo = SpawnMobj(target.x, target.y, target.z, item);
         mo.flags |= MF_DROPPED;    // special versions of items
     }
 
