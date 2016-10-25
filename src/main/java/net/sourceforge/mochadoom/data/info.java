@@ -96,7 +96,7 @@ import static net.sourceforge.mochadoom.gamelogic.mobj_t.MF_SPECIAL;
 //-----------------------------------------------------------------------------
 
 public class info {
-
+//TODO ING: Info de todas las clase. Aqui sale los atributos de los elementos del juego
 //public static state_t[]  states=new state_t[NUMSTATES];
 //public static String[] sprnames=new String[NUMSPRITES];
 

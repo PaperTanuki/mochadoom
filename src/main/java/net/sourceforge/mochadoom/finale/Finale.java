@@ -751,6 +751,7 @@ public class Finale<T> implements DoomStatusAware, IVideoScaleAware {
 
     @SuppressWarnings("unchecked")
     public Finale(DoomStatus DC) {
+        //TODO ING: Nombre de los monsters
         this.updateStatus(DC);
         hu_font = HU.getHUFonts();
 

@@ -2167,7 +2167,7 @@ public class Actions extends UnifiedGameMap {
         // during the death frame of a thing.
 
 
-        //TODO: Aqui spawn de las cosas al morir-> GHOUL
+        //TODO ING: Aqui spawn de las cosas al morir-> GHOUL
         switch (target.type) {
             case MT_WOLFSS:
             case MT_POSSESSED:
