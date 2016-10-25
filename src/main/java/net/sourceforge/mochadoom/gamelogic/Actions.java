@@ -1960,6 +1960,7 @@ public class Actions extends UnifiedGameMap {
     // Source can be NULL for slime, barrel explosions
     // and other environmental stuff.
     //
+    //TODO ING: Aqui cambiar el daño de las armas especiales
     public void
     DamageMobj
     (mobj_t target,
