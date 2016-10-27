@@ -30,6 +30,19 @@ public class mobjinfo_t {
     public StateNum raisestate;
 
 
+    /////Ingenieria de software
+    static public int RESISTANCE_TO_NORMAL_WP = 50;
+
+
+    private boolean vampire;
+    private boolean werewolf;
+    private boolean ghoul;
+    private int contaminated; // 0 = None, 1= Vampire, 2 = Werewolf, 3 =
+    private int timeAlive;
+
+
+
+
     public mobjinfo_t(int doomednum, StateNum spawnstate, int spawnhealth,
                       StateNum seestate, sfxenum_t seesound, int reactiontime,
                       sfxenum_t attacksound, StateNum painstate,
@@ -63,6 +76,43 @@ public class mobjinfo_t {
         this.activesound = activesound;
         this.flags = flags;
         this.raisestate = raisestate;
+    }
+    public boolean isVampire(){
+        return vampire && !isWerewolf();
+    }
+    public boolean isWerewolf(){
+        return werewolf && !isVampire();
+    }
+    public boolean isHybrid(){
+        return isVampire() && isWerewolf();
+    }
+    public boolean isResistant(){
+        return isVampire() || isWerewolf();
+    }
+    public boolean isGhoul(){
+        return ghoul;
+    }
+    public void setVampireStatus(boolean vampireStatus){
+        if(!isGhoul()) vampire = vampireStatus;
+    }
+    public void setWerewolfStatus(boolean werewolfStatus){
+        if(!isGhoul()) werewolf = werewolfStatus;
+    }
+    public int getContaminatedType(){
+        return contaminated;
+
+    }
+    public boolean isContaminated(){
+        return contaminated> 0;
+    }
+    public void setContaminated(int value){
+        if(value < 3 && value >= 0)contaminated = value;
+    }
+    public int getTimeAlive(){
+        return timeAlive;
+    }
+    public void setSpeed(int value){
+        if(value >=0) speed = value;
     }
 
 }
