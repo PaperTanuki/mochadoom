@@ -30,18 +30,28 @@ public class mobjinfo_t {
     public StateNum raisestate;
 
 
-    /////Ingenieria de software
+    // Ingenieria de software
+    
     static public int RESISTANCE_TO_NORMAL_WP = 50;
 
 
     private boolean vampire;
     private boolean werewolf;
     private boolean ghoul;
-    private int contaminated; // 0 = None, 1= Vampire, 2 = Werewolf, 3 =
+    
+    private int contaminatedFlags;
+    
+    /**
+     * A monster can be contaminated by using the logic OR operation with any new flag.
+     * A monster can be cleaned by using the logic AND with the CLEAN status.
+     */    
+    public static final int CLEAN = 0b00;
+    public static final int VAMPIRE = 0b01;
+    public static final int WEREWOLF = 0b10;
+    public static final int HYBRID = 0b11;
+
+
     private int timeAlive;
-
-
-
 
     public mobjinfo_t(int doomednum, StateNum spawnstate, int spawnhealth,
                       StateNum seestate, sfxenum_t seesound, int reactiontime,
@@ -77,40 +87,51 @@ public class mobjinfo_t {
         this.flags = flags;
         this.raisestate = raisestate;
     }
+    
     public boolean isVampire(){
         return vampire && !isWerewolf();
     }
+    
     public boolean isWerewolf(){
         return werewolf && !isVampire();
     }
+    
     public boolean isHybrid(){
         return isVampire() && isWerewolf();
     }
+    
     public boolean isResistant(){
         return isVampire() || isWerewolf();
     }
+    
     public boolean isGhoul(){
         return ghoul;
     }
+    
     public void setVampireStatus(boolean vampireStatus){
         if(!isGhoul()) vampire = vampireStatus;
     }
+    
     public void setWerewolfStatus(boolean werewolfStatus){
         if(!isGhoul()) werewolf = werewolfStatus;
     }
+    
     public int getContaminatedType(){
-        return contaminated;
+        return contaminatedFlags;
 
     }
     public boolean isContaminated(){
-        return contaminated> 0;
+        return contaminatedFlags != CLEAN;
     }
-    public void setContaminated(int value){
-        if(value < 3 && value >= 0)contaminated = value;
+    
+    public void contaminate(int newContamination){
+        contaminatedFlags |= newContamination;
     }
+    
     public int getTimeAlive(){
         return timeAlive;
     }
+    
     public void setSpeed(int value){
         if(value >=0) speed = value;
     }
