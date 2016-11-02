@@ -2023,7 +2023,13 @@ public class Actions extends UnifiedGameMap {
             target.momx += FixedMul(thrust, finecosine(ang));
             target.momy += FixedMul(thrust, finesine(ang));
         }
+        //ING:
+        if((source != null) && (source == inflictor)){
+           if(target instanceof monster_t){
+               ((monster_t) target).contaminate(monster_t.VAMPIRE);
+           }
 
+        }
         // player specific
         if (player != null) {
             // end of game hell hack
@@ -2120,7 +2126,7 @@ public class Actions extends UnifiedGameMap {
         if (target.type != mobjtype_t.MT_SKULL)
             target.flags &= ~MF_NOGRAVITY;
 
-        target.flags |= MF_CORPSE | MF_DROPOFF;
+
         target.height >>= 2;
 
         if (source != null && source.player != null) {
@@ -2177,8 +2183,19 @@ public class Actions extends UnifiedGameMap {
 
         //TODO ING: Aqui spawn de las cosas al morir->
         if(target instanceof monster_t){
-            mo = SpawnMobj(target.x, target.y, target.z, target.type);
 
+            if(RND.P_Random() < 95&& ((monster_t) target).isContaminated()) {
+
+                monster_t monster = (monster_t) SpawnMobj(target.x, target.y, target.z, mobjtype_t.MT_TROOP);
+                monster.setStatusFlag(monster_t.VAMPIRE);
+
+                RemoveMobj(target);
+            }
+
+
+        }
+        else{
+            target.flags |= MF_CORPSE | MF_DROPOFF;
         }
         switch (target.type) {
             case MT_WOLFSS:

@@ -11,12 +11,10 @@ public class monster_t extends mobj_t{
 
     static public int RESISTANCE_TO_NORMAL_WP = 50;
 
-
-    private boolean vampire;
-    private boolean werewolf;
     private boolean ghoul;
 
     private int contaminatedFlags;
+    private int statusFlag = CLEAN;
 
     /**
      * A monster can be contaminated by using the logic OR operation with any new flag.
@@ -38,40 +36,37 @@ public class monster_t extends mobj_t{
         super(A);
     }
     public boolean isVampire(){
-        return contaminatedFlags == VAMPIRE;
+        return (statusFlag & VAMPIRE) == VAMPIRE;
     }
 
     public boolean isWerewolf(){
-        return contaminatedFlags == WEREWOLF;
+        return (statusFlag & WEREWOLF) == WEREWOLF;
     }
 
     public boolean isHybrid(){
-        return contaminatedFlags == HYBRID;
+        return (statusFlag & HYBRID) == HYBRID;
     }
 
     public boolean isResistant(){
-        return CLEAN != contaminatedFlags;
+        return CLEAN != statusFlag;
     }
 
     public boolean isGhoul(){
         return ghoul;
     }
 
-    public void setVampireStatus(boolean vampireStatus){
-        if(!isGhoul()) vampire = vampireStatus;
-    }
-
-    public void setWerewolfStatus(boolean werewolfStatus){
-        if(!isGhoul()) werewolf = werewolfStatus;
-    }
-
-    public int getContaminatedType(){
+    public int getContaminatedFlags(){
         return contaminatedFlags;
 
+    }
+    public boolean isContaminated(){
+        return contaminatedFlags >0;
     }
     public void contaminate(int newContamination){
         contaminatedFlags |= newContamination;
     }
+
+    public void setStatusFlag(int status){statusFlag=status;}
 
     public int getTimeAlive(){
         return timeAlive;
