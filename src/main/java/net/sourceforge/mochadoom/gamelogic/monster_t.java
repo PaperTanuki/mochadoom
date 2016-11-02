@@ -34,6 +34,9 @@ public class monster_t extends mobj_t{
     public monster_t() {
         super();
     }
+    public monster_t(Actions A) {
+        super(A);
+    }
     public boolean isVampire(){
         return contaminatedFlags == VAMPIRE;
     }

@@ -1516,8 +1516,15 @@ public class Actions extends UnifiedGameMap {
 // and that was without using locking. Just let the GC do its
 // job.
 // mobj = mobjpool.checkOut();
-        mobj = new mobj_t(this);
         info = mobjinfo[type.ordinal()];
+        if((info.flags & MF_COUNTKILL) == MF_COUNTKILL){
+            mobj = new monster_t(this);
+        }
+        else{
+            mobj = new mobj_t(this);
+        }
+
+
 
         mobj.type = type;
         mobj.info = info;
@@ -2168,7 +2175,11 @@ public class Actions extends UnifiedGameMap {
         // during the death frame of a thing.
 
 
-        //TODO ING: Aqui spawn de las cosas al morir-> GHOUL
+        //TODO ING: Aqui spawn de las cosas al morir->
+        if(target instanceof monster_t){
+            mo = SpawnMobj(target.x, target.y, target.z, target.type);
+
+        }
         switch (target.type) {
             case MT_WOLFSS:
             case MT_POSSESSED:
