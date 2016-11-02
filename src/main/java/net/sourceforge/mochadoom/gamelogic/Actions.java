@@ -1516,8 +1516,15 @@ public class Actions extends UnifiedGameMap {
 // and that was without using locking. Just let the GC do its
 // job.
 // mobj = mobjpool.checkOut();
-        mobj = new mobj_t(this);
         info = mobjinfo[type.ordinal()];
+        if((info.flags & MF_COUNTKILL) == MF_COUNTKILL){
+            mobj = new monster_t(this);
+        }
+        else{
+            mobj = new mobj_t(this);
+        }
+
+
 
         mobj.type = type;
         mobj.info = info;
