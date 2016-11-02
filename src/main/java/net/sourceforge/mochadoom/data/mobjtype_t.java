@@ -144,6 +144,10 @@ public enum mobjtype_t {
     ING_HOLY_WATER,
     ING_WOODEN_STICK,
     ING_WATER_FLASK,
-    ING_SILVER_BULLET
+    ING_SILVER_BULLET,
+
+    ING_VAMPIRE,
+    ING_GHOUL,
+    ING_WEREWOLF
 };
 
