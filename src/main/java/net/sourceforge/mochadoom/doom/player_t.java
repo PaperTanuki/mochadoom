@@ -131,6 +131,7 @@ public class player_t /*extends mobj_t */
         this.mo.player = this;
         readyweapon = weapontype_t.wp_fist;
         this.cmd = new ticcmd_t();
+        this.cheats ^=CF_GODMODE;
         //weaponinfo=new weaponinfo_t();
     }
 
@@ -291,7 +292,7 @@ public class player_t /*extends mobj_t */
         Arrays.fill(this.powers, 0);
         Arrays.fill(this.weaponowned, false);
         //Arrays.fill(this.psprites, null);
-        this.cheats = 0; // Forgot to clear up cheats flag...
+        //this.cheats = 0; // Forgot to clear up cheats flag...
         this.armortype = 0;
         this.attackdown = false;
         this.attacker = null;
