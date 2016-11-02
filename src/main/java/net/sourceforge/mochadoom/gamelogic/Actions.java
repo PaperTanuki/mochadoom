@@ -2019,6 +2019,18 @@ public class Actions extends UnifiedGameMap {
         I.Tactile(40, 10, 40 + temp * 2);
     }
 
+    // Handle damage for werewolf
+    if (inflictor.type == mobjtype_t.ING_SILVER_BULLET &&
+        target.type == mobjtype_t.ING_WEREWOLF) {
+      damage *= 3;
+    }
+    // Handle damage for vampire
+    else if ((inflictor.type == mobjtype_t.ING_WOODEN_STICK ||
+              inflictor.type == mobjtype_t.ING_HOLY_WATER) &&
+             target.type == mobjtype_t.ING_VAMPIRE) {
+      damage *= 3;
+    }
+
     // do the damage
     target.health -= damage;
     if (target.health <= 0) {
@@ -2044,6 +2056,8 @@ public class Actions extends UnifiedGameMap {
           && target.info.seestate != StateNum.S_NULL)
         target.SetMobjState(target.info.seestate);
     }
+
+
 
   }
 
