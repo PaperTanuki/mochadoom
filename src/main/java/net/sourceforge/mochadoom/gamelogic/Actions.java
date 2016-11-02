@@ -2021,14 +2021,14 @@ public class Actions extends UnifiedGameMap {
 
     // Handle damage for werewolf
     if (inflictor != null && (inflictor.type == mobjtype_t.ING_SILVER_BULLET &&
-        (target.type == mobjtype_t.ING_WEREWOLF ||
-         target.type == mobjtype_t.ING_GHOUL))) {
+        target.type == mobjtype_t.ING_WEREWOLF)) {
       damage *= 3;
     }
-    // Handle damage for vampire
+    // Handle damage for vampire or ghoul
     else if (inflictor != null && (inflictor.type == mobjtype_t.ING_WOODEN_STICK ||
               inflictor.type == mobjtype_t.ING_HOLY_WATER) &&
-             target.type == mobjtype_t.ING_VAMPIRE) {
+        (target.type == mobjtype_t.ING_VAMPIRE ||
+         target.type == mobjtype_t.ING_GHOUL)) {
       damage *= 3;
     }
 
