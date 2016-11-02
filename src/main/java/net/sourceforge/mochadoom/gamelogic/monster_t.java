@@ -34,6 +34,10 @@ public class monster_t extends mobj_t{
     }
     public monster_t(Actions A) {
         super(A);
+        // A mobj_t is ALSO a thinker, as it always contains the struct.
+        // Don't fall for C's trickery ;-)
+        // this.thinker=new thinker_t();
+
     }
     public boolean isVampire(){
         return (statusFlag & VAMPIRE) == VAMPIRE;
