@@ -1568,7 +1568,7 @@ public class info {
                     50,        // mass
                     3,        // damage
                     sfxenum_t.sfx_dmact,        // activesound
-                    MF_SOLID | MF_SHOOTABLE | MF_FLOAT | MF_NOGRAVITY,        // flags
+                    MF_SOLID | MF_SHOOTABLE | MF_FLOAT | MF_NOGRAVITY |MF_COUNTKILL,        // flags
                     StateNum.S_NULL        // raisestate
             ),
 

@@ -42,19 +42,9 @@ import static net.sourceforge.mochadoom.data.Defines.PT_EARLYOUT;
 import static net.sourceforge.mochadoom.data.Defines.USERANGE;
 import static net.sourceforge.mochadoom.data.Defines.VIEWHEIGHT;
 import static net.sourceforge.mochadoom.data.Defines.pw_invulnerability;
-import static net.sourceforge.mochadoom.data.Limits.CEILSPEED;
-import static net.sourceforge.mochadoom.data.Limits.MAXCEILINGS;
-import static net.sourceforge.mochadoom.data.Limits.MAXINT;
-import static net.sourceforge.mochadoom.data.Limits.MAXMOVE;
-import static net.sourceforge.mochadoom.data.Limits.MAXPLAYERS;
-import static net.sourceforge.mochadoom.data.Limits.MAXRADIUS;
-import static net.sourceforge.mochadoom.data.Limits.MAXSPECIALCROSS;
-import static net.sourceforge.mochadoom.data.Limits.NUMMOBJTYPES;
-import static net.sourceforge.mochadoom.data.Tables.ANG180;
-import static net.sourceforge.mochadoom.data.Tables.ANG45;
-import static net.sourceforge.mochadoom.data.Tables.BITS32;
-import static net.sourceforge.mochadoom.data.Tables.finecosine;
-import static net.sourceforge.mochadoom.data.Tables.finesine;
+import static net.sourceforge.mochadoom.data.Limits.*;
+import static net.sourceforge.mochadoom.data.Tables.*;
+import static net.sourceforge.mochadoom.data.Tables.ANG270;
 import static net.sourceforge.mochadoom.data.info.mobjinfo;
 import static net.sourceforge.mochadoom.data.info.states;
 import static net.sourceforge.mochadoom.doom.English.PD_BLUEK;
@@ -2034,7 +2024,7 @@ public class Actions extends UnifiedGameMap {
         if(source instanceof monster_t){
             if(((monster_t) source).isVampire()){
                 if(target instanceof monster_t){
-                    ((monster_t) target).contaminate(monster_t.VAMPIRE);
+                    if(target.type != mobjtype_t.MT_SKULL)  ((monster_t) target).contaminate(monster_t.VAMPIRE);
                 }
 
             }
@@ -2088,10 +2078,31 @@ public class Actions extends UnifiedGameMap {
 
         // do the damage    
         target.health -= damage;
-        if (target.health <= 0) {
-            KillMobj(source, target);
-            return;
+        if(target.health <= 0){
+            if(target instanceof monster_t){
+                if(((monster_t) target).isVampire()){
+                    SpawnMobj(target.x, target.y, target.z, mobjtype_t.MT_TFOG);
+                    SpawnSkull(target, target.angle + ANG90);
+                    SpawnSkull(target, target.angle + ANG180);
+                    monster_t mo= (monster_t) SpawnSkull(target, target.angle + ANG270);
+                    mo.setStatusFlag(monster_t.VAMPIRE);
+                    RemoveMobj(target);
+                    return;
+
+                }
+                else{
+                    KillMobj(source, target);
+                    return;
+                }
+            }
+            else{
+                KillMobj(source, target);
+                return;
+            }
+
+
         }
+
 
         if ((RND.P_Random() < target.info.painchance)
                 && !eval(target.flags & MF_SKULLFLY)) {
@@ -2113,6 +2124,50 @@ public class Actions extends UnifiedGameMap {
                     && target.info.seestate != StateNum.S_NULL)
                 target.SetMobjState(target.info.seestate);
         }
+
+    }
+    //ING: Crea lost souls para spawnear cuando un vampiro "escapa"
+    private mobj_t SpawnSkull
+            (mobj_t actor,
+             long angle) {
+        int x, y, z; // fixed
+
+        mobj_t newmobj;
+        int an; // angle
+        int prestep;
+        int count;
+        thinker_t currentthinker;
+
+        // count total number of skull currently on the level
+        count = 0;
+
+        currentthinker = A.thinkercap.next;
+        while (currentthinker != A.thinkercap) {
+            if ((currentthinker.function == think_t.P_MobjThinker)
+                    && ((mobj_t) currentthinker).type == mobjtype_t.MT_SKULL)
+                count++;
+            currentthinker = currentthinker.next;
+        }
+
+        // if there are allready 20 skulls on the level,
+        // don't spit another one
+        if (count > MAXSKULLS)
+            return null;
+
+
+        // okay, there's playe for another one
+        an = Tables.toBAMIndex(angle);
+
+        prestep =
+                4 * FRACUNIT
+                        + 3 * (actor.info.radius + mobjinfo[mobjtype_t.MT_SKULL.ordinal()].radius) / 2;
+
+        x = actor.x + FixedMul(prestep, finecosine[an]);
+        y = actor.y + FixedMul(prestep, finesine[an]);
+        z = actor.z + 8 * FRACUNIT;
+
+        newmobj = SpawnMobj(x, y, z, mobjtype_t.MT_SKULL);
+        return newmobj;
 
     }
 
@@ -2193,10 +2248,11 @@ public class Actions extends UnifiedGameMap {
         //TODO ING: Aqui spawn de las cosas al morir->
         if(target instanceof monster_t){
 
-            if(RND.P_Random() < 95&& ((monster_t) target).isContaminated()) {
+            if(RND.P_Random() < 95&& ((monster_t) target).isContaminated() && ! ((monster_t) target).isVampire()) {
 
                 monster_t monster = (monster_t) SpawnMobj(target.x, target.y, target.z, mobjtype_t.MT_TROOP);
                 monster.setStatusFlag(monster_t.VAMPIRE);
+                monster.flags |= MF_NOGRAVITY |MF_FLOAT;
 
                 RemoveMobj(target);
             }
