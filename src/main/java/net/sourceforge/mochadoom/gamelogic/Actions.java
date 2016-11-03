@@ -2023,12 +2023,21 @@ public class Actions extends UnifiedGameMap {
             target.momx += FixedMul(thrust, finecosine(ang));
             target.momy += FixedMul(thrust, finesine(ang));
         }
-        //ING:
-        if((source != null) && (source == inflictor)){
+        //ING: Si el que hizo el daño es jugador. Borrar, solo test
+        if((source != null) &&  (source.player!= null)){
            if(target instanceof monster_t){
-               ((monster_t) target).contaminate(monster_t.VAMPIRE);
+               if(source.player.readyweapon == weapontype_t.wp_fist) ((monster_t) target).contaminate(monster_t.VAMPIRE);
            }
 
+        }
+        //ING: Si el monstruo es vampiro, contaminar al otro monstruo
+        if(source instanceof monster_t){
+            if(((monster_t) source).isVampire()){
+                if(target instanceof monster_t){
+                    ((monster_t) target).contaminate(monster_t.VAMPIRE);
+                }
+
+            }
         }
         // player specific
         if (player != null) {
