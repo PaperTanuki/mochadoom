@@ -1248,9 +1248,16 @@ public class Actions extends UnifiedGameMap {
 
         if (actor.movedir >= 8)
             I.Error("Weird actor.movedir!");
+        //ING : Speed mult
+        if(actor instanceof monster_t){
+            tryx = actor.x + actor.info.speed*((monster_t) actor).getSpeedMult() * xspeed[actor.movedir];
+            tryy = actor.y + actor.info.speed*((monster_t) actor).getSpeedMult()* yspeed[actor.movedir];
+        }
+        else{
+            tryx = actor.x + actor.info.speed * xspeed[actor.movedir];
+            tryy = actor.y + actor.info.speed * yspeed[actor.movedir];
+        }
 
-        tryx = actor.x + actor.info.speed * xspeed[actor.movedir];
-        tryy = actor.y + actor.info.speed * yspeed[actor.movedir];
 
         try_ok = TryMove(actor, tryx, tryy);
 
@@ -2080,7 +2087,7 @@ public class Actions extends UnifiedGameMap {
         target.health -= damage;
         if(target.health <= 0){
             if(target instanceof monster_t){
-                if(((monster_t) target).isVampire()){
+                if(((monster_t) target).isVampire() && target.type != mobjtype_t.MT_SKULL){
                     SpawnMobj(target.x, target.y, target.z, mobjtype_t.MT_TFOG);
                     SpawnSkull(target, target.angle + ANG90);
                     SpawnSkull(target, target.angle + ANG180);
@@ -2250,8 +2257,11 @@ public class Actions extends UnifiedGameMap {
 
             if(RND.P_Random() < 95&& ((monster_t) target).isContaminated() && ! ((monster_t) target).isVampire()) {
 
-                monster_t monster = (monster_t) SpawnMobj(target.x, target.y, target.z, mobjtype_t.MT_TROOP);
+                monster_t monster = (monster_t) SpawnMobj(target.x, target.y, target.z, mobjtype_t.MT_SERGEANT);
+                monster.setSpeedMult(2);
                 monster.setStatusFlag(monster_t.VAMPIRE);
+
+
                 monster.flags |= MF_NOGRAVITY |MF_FLOAT;
 
                 RemoveMobj(target);
