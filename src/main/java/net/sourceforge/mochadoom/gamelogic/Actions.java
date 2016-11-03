@@ -6,6 +6,7 @@ import net.sourceforge.mochadoom.data.mobjinfo_t;
 import net.sourceforge.mochadoom.data.mobjtype_t;
 import net.sourceforge.mochadoom.data.sounds.sfxenum_t;
 import net.sourceforge.mochadoom.data.state_t;
+import net.sourceforge.mochadoom.daycycle.Kronos;
 import net.sourceforge.mochadoom.defines.Card;
 import net.sourceforge.mochadoom.defines.Skill;
 import net.sourceforge.mochadoom.defines.SlopeType;
@@ -1960,7 +1961,6 @@ public class Actions extends UnifiedGameMap {
     // Source can be NULL for slime, barrel explosions
     // and other environmental stuff.
     //
-    //TODO ING: Aqui cambiar el daño de las armas especiales
     public void
     DamageMobj
     (mobj_t target,
@@ -2166,9 +2166,6 @@ public class Actions extends UnifiedGameMap {
         // Drop stuff.
         // This determines the kind of object spawned
         // during the death frame of a thing.
-
-
-        //TODO ING: Aqui spawn de las cosas al morir-> GHOUL
         switch (target.type) {
             case MT_WOLFSS:
             case MT_POSSESSED:
@@ -2185,10 +2182,9 @@ public class Actions extends UnifiedGameMap {
 
             default:
                 return;
-
         }
 
-        mo = SpawnMobj(target.x, target.y, target.z, item);
+        mo = SpawnMobj(target.x, target.y, ONFLOORZ, item);
         mo.flags |= MF_DROPPED;    // special versions of items
     }
 
@@ -4266,6 +4262,7 @@ public class Actions extends UnifiedGameMap {
     //
     boolean crushchange;
     boolean nofit;
+	private Kronos kronos;
 
 
     //
@@ -4676,6 +4673,12 @@ public class Actions extends UnifiedGameMap {
 
         // for par times
         DM.leveltime++;
+        
+        // TODO Is there a better way? Will it always work?
+        if (DM.leveltime == 1){
+        	this.kronos = new Kronos();
+        }
+        this.kronos.Ticker(this.DM);
     }
 
     /**
