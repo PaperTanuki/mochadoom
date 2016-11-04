@@ -2714,6 +2714,9 @@ public abstract class DoomMain<T, V> extends DoomStatus<T, V> implements IDoomGa
         gameepisode = episode;
         gamemap = map;
         gameskill = skill;
+        
+        // Kronos controls day/night cycles 
+        kronos = new Kronos(this);
 
         viewactive = true;
 
@@ -3858,10 +3861,6 @@ public abstract class DoomMain<T, V> extends DoomStatus<T, V> implements IDoomGa
      */
     @SuppressWarnings("unchecked")
     public void Init() {
-    	
-    	// Kronos controlls day cycles
-    	this.kronos = new Kronos(this);
-    	
 
         // The various objects that need to "sense" the global status
         // end up here. This allows one-call updates.
@@ -3933,7 +3932,6 @@ public abstract class DoomMain<T, V> extends DoomStatus<T, V> implements IDoomGa
         status_holders.add((DoomStatusAware) (this.DD = new DiskDrawer(this, DiskDrawer.STDISK)));
 
         updateStatusHolders(this);
-
 
     }
 
