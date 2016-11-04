@@ -1,5 +1,6 @@
 package net.sourceforge.mochadoom.daycycle;
 
+import net.sourceforge.mochadoom.daycycle.DaycycleConfig;
 import net.sourceforge.mochadoom.doom.DoomMain;
 
 /**
@@ -28,18 +29,15 @@ public class Night extends ADayPart {
 	}
 
 	@Override
-	public String startMessage() {
-		return "Dusk has fallen...";
-	}
-
-	@Override
-	public String halfMessage() {
-		return "It's midnight.";
-	}
-
-	@Override
-	public int getMyLength() {
-		return this.kronos.getNightLength();
+	public int getMyDuration() {
+		switch (DM.gameskill){
+		case sk_baby: return DaycycleConfig.baby_nightDuration;
+		case sk_easy: return DaycycleConfig.easy_nightDuration;
+		case sk_medium: return DaycycleConfig.medium_nightDuration;
+		case sk_hard: return DaycycleConfig.hard_nightDuration;
+		case sk_nightmare: return DaycycleConfig.nightmare_nightDuration;
+		default: return -1;
+		}
 	}
 
 	@Override
@@ -48,7 +46,17 @@ public class Night extends ADayPart {
 	}
 
 	@Override
+	public String startMessage() {
+		return DaycycleConfig.night_startMessage;
+	}
+	
+	@Override
+	public String halfMessage() {
+		return DaycycleConfig.night_halfMessage;
+	}
+	
+	@Override
 	public String almostOverMessage() {
-		return "Keep it up. Nighttime is almost over.";
+		return DaycycleConfig.night_almostOverMessage;
 	}
 }

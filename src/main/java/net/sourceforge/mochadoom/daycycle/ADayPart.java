@@ -15,7 +15,7 @@ public abstract class ADayPart implements IDayPart {
 	protected int myDuration;	// duration in ticks for this cycle
 	
 	/**
-	 * Constructor, needs a Kronos to change its state, needs a DoomMain to in order to print.
+	 * Constructor. Needs a Kronos to change its state, needs a DoomMain to in order to print.
 	 * 
 	 * @param DM - Current DoomMain
 	 * @param aKronos - Kronos controlling
@@ -24,21 +24,14 @@ public abstract class ADayPart implements IDayPart {
 		//TODO May not need the DoomMain
 		this.DM = DM;
 		this.kronos = aKronos;
-		this.myDuration = this.getMyLength();
+		this.myDuration = this.getMyDuration();
 	}
 	
-	/**
-	 * Method called every time Kronos receives a tick.
-	 * Increases time in this period and checks what to do.
-	 */
 	@Override
 	public void Ticker(){
 		checkTime();
 	}
 	
-	/**
-	 * Checks if has to display a message or change state.
-	 */
 	@Override
 	public void checkTime(){
 		if ((this.DM.leveltime % this.myDuration) == 1){
@@ -47,7 +40,7 @@ public abstract class ADayPart implements IDayPart {
 		if ((this.DM.leveltime % this.myDuration) == ( this.myDuration / 2 ) ){
 			this.display(this.halfMessage());
 		}
-		if ((this.DM.leveltime % this.myDuration) == ( this.myDuration* 4 / 5 )){
+		if ((this.DM.leveltime % this.myDuration) == ( this.myDuration * 4 / 5 )){
 			this.display(this.almostOverMessage());
 		}
 		if ((this.DM.leveltime % this.myDuration) == 0 && this.DM.leveltime > 0){
@@ -55,28 +48,24 @@ public abstract class ADayPart implements IDayPart {
 		}
 	}
 	
-	/**
-	 * Displays given message via console player message.
-	 */
 	@Override
 	public void display(String message) {
-		// TODO Decide if necessary. It could have less information using a printer. 
+		// TODO Decide if necessary. Also could be different. 
 		this.DM.players[this.DM.consoleplayer].message = message;
 	}
 
-	/**
-	 * Returns time spent on current state.
-	 */
 	@Override
 	public int getTimeInPart(){
 		return this.DM.leveltime % this.myDuration;
 	}
 	
-	/**
-	 * Returns time spent on current state.
-	 */
 	@Override
 	public int getLevelTime(){
 		return this.DM.leveltime;
+	}
+	
+	@Override
+	public int getDuration(){
+		return this.myDuration;
 	}
 }

@@ -28,18 +28,15 @@ public class Day extends ADayPart {
 	}
 
 	@Override
-	public String startMessage(){
-		return "Smile my boy. It's sunrise!";
-	}
-	
-	@Override
-	public String halfMessage(){
-		return "It's noon.";
-	}
-
-	@Override
-	public int getMyLength() {
-		return this.kronos.getDayLength();
+	public int getMyDuration() {
+		switch (DM.gameskill){
+		case sk_baby: return DaycycleConfig.baby_dayDuration;
+		case sk_easy: return DaycycleConfig.easy_dayDuration;
+		case sk_medium: return DaycycleConfig.medium_dayDuration;
+		case sk_hard: return DaycycleConfig.hard_dayDuration;
+		case sk_nightmare: return DaycycleConfig.nightmare_dayDuration;
+		default: return -1;
+		}
 	}
 
 	@Override
@@ -48,7 +45,18 @@ public class Day extends ADayPart {
 	}
 
 	@Override
-	public String almostOverMessage() {
-		return "Brace yourself. Daytime is almost over.";
+	public String startMessage(){
+		return DaycycleConfig.day_startMessage;
 	}
+	
+	@Override
+	public String halfMessage(){
+		return DaycycleConfig.day_halfMessage;
+	}
+	
+	@Override
+	public String almostOverMessage() {
+		return DaycycleConfig.day_almostOverMessage;
+	}
+	
 }
