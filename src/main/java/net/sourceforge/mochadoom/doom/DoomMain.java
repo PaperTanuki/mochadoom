@@ -22,6 +22,7 @@ import net.sourceforge.mochadoom.data.mapthing_t;
 import net.sourceforge.mochadoom.data.mobjtype_t;
 import net.sourceforge.mochadoom.data.sounds.musicenum_t;
 import net.sourceforge.mochadoom.data.sounds.sfxenum_t;
+import net.sourceforge.mochadoom.daycycle.Kronos;
 import net.sourceforge.mochadoom.defines.*;
 import net.sourceforge.mochadoom.defines.GameMode;
 import net.sourceforge.mochadoom.demo.IDemoTicCmd;
@@ -3857,6 +3858,10 @@ public abstract class DoomMain<T, V> extends DoomStatus<T, V> implements IDoomGa
      */
     @SuppressWarnings("unchecked")
     public void Init() {
+    	
+    	// Kronos controlls day cycles
+    	this.kronos = new Kronos(this);
+    	
 
         // The various objects that need to "sense" the global status
         // end up here. This allows one-call updates.

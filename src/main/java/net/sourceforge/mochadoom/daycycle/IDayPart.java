@@ -11,6 +11,7 @@ package net.sourceforge.mochadoom.daycycle;
 public interface IDayPart {
 	void Ticker();
 	int getTimeInPart();
+	int getLevelTime();
 	/**
 	 * Returns message to show when period starts.
 	 */
@@ -23,7 +24,7 @@ public interface IDayPart {
 	 * Returns message to show when the period is a fifth left.
 	 */
 	String almostOverMessage();
-	int myLength();
+	int getMyLength();
 	void changePart();
 	void checkTime();
 	void display(String message);

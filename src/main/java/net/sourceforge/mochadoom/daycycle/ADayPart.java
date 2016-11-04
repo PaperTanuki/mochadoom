@@ -10,12 +10,12 @@ import net.sourceforge.mochadoom.doom.DoomMain;
  */
 public abstract class ADayPart implements IDayPart {
 
-	protected int timeInPart;	// length control
-	protected Kronos kronos;	// state changes
 	protected DoomMain<?,?> DM;	// printing messages
+	protected Kronos kronos;	// state changes
+	protected int myDuration;	// duration in ticks for this cycle
 	
 	/**
-	 * Constructor, needs a Kronos to change its state, needs a DoomMain in order to print.
+	 * Constructor, needs a Kronos to change its state, needs a DoomMain to in order to print.
 	 * 
 	 * @param DM - Current DoomMain
 	 * @param aKronos - Kronos controlling
@@ -23,17 +23,16 @@ public abstract class ADayPart implements IDayPart {
 	public ADayPart(DoomMain<?,?> DM, Kronos aKronos){
 		//TODO May not need the DoomMain
 		this.DM = DM;
-		this.timeInPart = 0;
 		this.kronos = aKronos;
-		this.display(this.startMessage());
+		this.myDuration = this.getMyLength();
 	}
+	
 	/**
 	 * Method called every time Kronos receives a tick.
 	 * Increases time in this period and checks what to do.
 	 */
 	@Override
 	public void Ticker(){
-		this.timeInPart++;
 		checkTime();
 	}
 	
@@ -42,13 +41,16 @@ public abstract class ADayPart implements IDayPart {
 	 */
 	@Override
 	public void checkTime(){
-		if (this.timeInPart == ( this.myLength() * 4 / 5 )){
-			this.display(this.almostOverMessage());
+		if ((this.DM.leveltime % this.myDuration) == 1){
+			this.display(this.startMessage());
 		}
-		if (this.timeInPart == ( this.myLength() / 2 ) ){
+		if ((this.DM.leveltime % this.myDuration) == ( this.myDuration / 2 ) ){
 			this.display(this.halfMessage());
 		}
-		if (this.timeInPart == this.myLength()){
+		if ((this.DM.leveltime % this.myDuration) == ( this.myDuration* 4 / 5 )){
+			this.display(this.almostOverMessage());
+		}
+		if ((this.DM.leveltime % this.myDuration) == 0 && this.DM.leveltime > 0){
 			this.changePart();
 		}
 	}
@@ -67,6 +69,14 @@ public abstract class ADayPart implements IDayPart {
 	 */
 	@Override
 	public int getTimeInPart(){
-		return this.timeInPart;
+		return this.DM.leveltime % this.myDuration;
+	}
+	
+	/**
+	 * Returns time spent on current state.
+	 */
+	@Override
+	public int getLevelTime(){
+		return this.DM.leveltime;
 	}
 }

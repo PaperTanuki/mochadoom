@@ -4670,15 +4670,15 @@ public class Actions extends UnifiedGameMap {
         RunThinkers();
         SPECS.UpdateSpecials(); // In specials. Merge?
         RespawnSpecials();
-
-        // for par times
-        DM.leveltime++;
         
-        // TODO Is there a better way? Will it always work?
-        if (DM.leveltime == 1){
-        	this.kronos = new Kronos();
-        }
-        this.kronos.Ticker(this.DM);
+        /* Functionality refactored to kronos:
+         * 
+         * // for par times
+         * DM.leveltime++;
+         * 
+        */
+        
+        DM.kronos.Ticker(); // DM.leveltime increases in kronos
     }
 
     /**

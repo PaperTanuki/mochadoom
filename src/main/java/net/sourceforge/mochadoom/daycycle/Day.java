@@ -38,7 +38,7 @@ public class Day extends ADayPart {
 	}
 
 	@Override
-	public int myLength() {
+	public int getMyLength() {
 		return this.kronos.getDayLength();
 	}
 
@@ -49,6 +49,6 @@ public class Day extends ADayPart {
 
 	@Override
 	public String almostOverMessage() {
-		return "Brace yourself. Daytime is almost over";
+		return "Brace yourself. Daytime is almost over.";
 	}
 }
