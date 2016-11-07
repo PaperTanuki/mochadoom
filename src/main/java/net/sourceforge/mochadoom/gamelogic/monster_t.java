@@ -72,7 +72,7 @@ public class monster_t extends mobj_t{
         contaminatedFlags |= newContamination;
     }
 
-    public void setStatusFlag(int status){statusFlag=status;}
+    public void setStatusFlag(int status){statusFlag=status & 1;}
 
     public int getTimeAlive(){
         return timeAlive;
