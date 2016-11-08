@@ -1,5 +1,11 @@
 package net.sourceforge.mochadoom.gamelogic;
 
+import net.sourceforge.mochadoom.data.spritenum_t;
+import net.sourceforge.mochadoom.data.state_t;
+import net.sourceforge.mochadoom.defines.StateNum;
+
+import static net.sourceforge.mochadoom.data.info.states;
+
 /**
  * Created by Nicolas on 02-11-2016.
  */
@@ -83,6 +89,38 @@ public class monster_t extends mobj_t{
     }
     public int getSpeedMult(){
         return speedMult;
+    }
+
+    //Mirar aqui si se puede cambiar la sprite del monstro
+    @Override
+    public boolean SetMobjState(StateNum state) {
+        state_t st;
+
+        do {
+            if (state == StateNum.S_NULL) {
+                state = null;
+                // MAES/_D_: uncommented this as it should work by now (?).
+                A.RemoveMobj(this);
+                return false;
+            }
+
+            st = states[state.ordinal()];
+            this.state = st;
+            tics = st.tics;
+            sprite = st.sprite;
+            frame = (int) st.frame;
+
+            // Modified handling.
+            // Call action functions when the state is set
+
+            if (st.acp1 != null) {
+                st.acp1.invoke(this);
+            }
+
+            state = st.nextstate;
+        } while (tics == 0);
+
+        return true;
     }
 
 }
