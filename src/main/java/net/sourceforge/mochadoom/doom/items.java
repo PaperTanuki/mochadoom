@@ -46,40 +46,51 @@ import net.sourceforge.mochadoom.defines.StateNum;
 
 public class items {
 
-  public static weaponinfo_t[] weaponinfo = {new weaponinfo_t(
-      // fist
-      AmmoType.am_noammo, StateNum.S_PUNCHUP, StateNum.S_PUNCHDOWN, StateNum.S_PUNCH,
-      StateNum.S_PUNCH1, StateNum.S_NULL), new weaponinfo_t(
-      // pistol
-      AmmoType.am_clip, StateNum.S_PISTOLUP, StateNum.S_PISTOLDOWN, StateNum.S_PISTOL,
-      StateNum.S_PISTOL1, StateNum.S_PISTOLFLASH), new weaponinfo_t(
-      // shotgun
-      AmmoType.am_shell, StateNum.S_SGUNUP, StateNum.S_SGUNDOWN, StateNum.S_SGUN, StateNum.S_SGUN1,
-      StateNum.S_SGUNFLASH1), new weaponinfo_t(
-      // chaingun
-      AmmoType.am_clip, StateNum.S_CHAINUP, StateNum.S_CHAINDOWN, StateNum.S_CHAIN,
-      StateNum.S_CHAIN1, StateNum.S_CHAINFLASH1), new weaponinfo_t(
-      // missile launcher
-      AmmoType.am_misl, StateNum.S_MISSILEUP, StateNum.S_MISSILEDOWN, StateNum.S_MISSILE,
-      StateNum.S_MISSILE1, StateNum.S_MISSILEFLASH1), new weaponinfo_t(
-      // plasma rifle
-      AmmoType.am_cell, StateNum.S_PLASMAUP, StateNum.S_PLASMADOWN, StateNum.S_PLASMA,
-      StateNum.S_PLASMA1, StateNum.S_PLASMAFLASH1), new weaponinfo_t(
-      // bfg 9000
-      AmmoType.am_cell, StateNum.S_BFGUP, StateNum.S_BFGDOWN, StateNum.S_BFG, StateNum.S_BFG1,
-      StateNum.S_BFGFLASH1), new weaponinfo_t(
-      // chainsaw
-      AmmoType.am_noammo, StateNum.S_SAWUP, StateNum.S_SAWDOWN, StateNum.S_SAW, StateNum.S_SAW1,
-      StateNum.S_NULL), new weaponinfo_t(
-      // super shotgun
-      AmmoType.am_shell, StateNum.S_DSGUNUP, StateNum.S_DSGUNDOWN, StateNum.S_DSGUN,
-      StateNum.S_DSGUN1, StateNum.S_DSGUNFLASH1), new weaponinfo_t(
-      // holy water
-      AmmoType.ing_holywater, StateNum.S_PLASMAUP, StateNum.S_PLASMADOWN, StateNum.S_PLASMA,
-      StateNum.S_PLASMA1, StateNum.S_PLASMAFLASH1), new weaponinfo_t(
-      // wooden stick
-      AmmoType.am_noammo, StateNum.S_SAWUP, StateNum.S_SAWDOWN, StateNum.S_SAW, StateNum.S_SAW1,
-      StateNum.S_NULL),};
+  public static weaponinfo_t[] weaponinfo = {
+      new weaponinfo_t(
+        // fist
+        AmmoType.am_noammo, StateNum.S_PUNCHUP, StateNum.S_PUNCHDOWN, StateNum.S_PUNCH,
+        StateNum.S_PUNCH1, StateNum.S_NULL),
+      new weaponinfo_t(
+        // pistol
+        AmmoType.am_clip, StateNum.S_PISTOLUP, StateNum.S_PISTOLDOWN, StateNum.S_PISTOL,
+        StateNum.S_PISTOL1, StateNum.S_PISTOLFLASH),
+      new weaponinfo_t(
+        // shotgun
+        AmmoType.am_shell, StateNum.S_SGUNUP, StateNum.S_SGUNDOWN, StateNum.S_SGUN, StateNum.S_SGUN1,
+        StateNum.S_SGUNFLASH1),
+      new weaponinfo_t(
+        // chaingun
+        AmmoType.am_clip, StateNum.S_CHAINUP, StateNum.S_CHAINDOWN, StateNum.S_CHAIN,
+        StateNum.S_CHAIN1, StateNum.S_CHAINFLASH1),
+      new weaponinfo_t(
+        // missile launcher
+        AmmoType.am_misl, StateNum.S_MISSILEUP, StateNum.S_MISSILEDOWN, StateNum.S_MISSILE,
+        StateNum.S_MISSILE1, StateNum.S_MISSILEFLASH1),
+      new weaponinfo_t(
+        // plasma rifle
+        AmmoType.am_cell, StateNum.S_PLASMAUP, StateNum.S_PLASMADOWN, StateNum.S_PLASMA,
+        StateNum.S_PLASMA1, StateNum.S_PLASMAFLASH1),
+      new weaponinfo_t(
+        // bfg 9000
+        AmmoType.am_cell, StateNum.S_BFGUP, StateNum.S_BFGDOWN, StateNum.S_BFG, StateNum.S_BFG1,
+        StateNum.S_BFGFLASH1),
+      new weaponinfo_t(
+        // chainsaw
+        AmmoType.am_noammo, StateNum.S_SAWUP, StateNum.S_SAWDOWN, StateNum.S_SAW, StateNum.S_SAW1,
+        StateNum.S_NULL),
+        new weaponinfo_t(
+        // super shotgun
+        AmmoType.am_shell, StateNum.S_DSGUNUP, StateNum.S_DSGUNDOWN, StateNum.S_DSGUN,
+        StateNum.S_DSGUN1, StateNum.S_DSGUNFLASH1),
+      new weaponinfo_t(
+        // holy water
+        AmmoType.am_holywater, StateNum.S_PLASMAUP, StateNum.S_PLASMADOWN, StateNum.S_PLASMA,
+        StateNum.S_PLASMA1, StateNum.S_PLASMAFLASH1),
+      new weaponinfo_t(
+        // wooden stick
+        AmmoType.am_noammo, StateNum.S_SAWUP, StateNum.S_SAWDOWN, StateNum.S_SAW, StateNum.S_SAW1,
+        StateNum.S_NULL),};
 }
 
 

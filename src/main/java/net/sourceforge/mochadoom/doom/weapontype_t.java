@@ -16,6 +16,10 @@ public enum weapontype_t {
     wp_chainsaw,
     wp_supershotgun,
 
+    //ING
+    wp_holywater,
+    wp_woodenstick,
+
     NUMWEAPONS,
 
     // No pending weapon change.

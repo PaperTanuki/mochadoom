@@ -2309,7 +2309,7 @@ public class Actions extends UnifiedGameMap {
             case MT_WOLFSS:
             case MT_POSSESSED:
                 // TODO: Aca se cae, no hay referencia del wad a este objeto
-                item = mobjtype_t.ING_SILVER_BULLET;
+                item = mobjtype_t.MT_CYBORG;
                 break;
 
             case MT_SHOTGUY:

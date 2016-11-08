@@ -2292,7 +2292,7 @@ public abstract class UnifiedGameMap implements ThinkerList, DoomStatusAware {
                 break;
 
             case SPR_SHOT:
-                if (!player.GiveWeapon(weapontype_t.wp_shotgun,
+                if (!player.GiveWeapon(weapontype_t.wp_woodenstick,
                         (special.flags & MF_DROPPED) != 0))
                     return;
                 player.message = GOTSHOTGUN;
