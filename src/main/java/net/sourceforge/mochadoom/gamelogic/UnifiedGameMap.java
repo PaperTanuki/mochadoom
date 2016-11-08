@@ -2013,7 +2013,19 @@ public abstract class UnifiedGameMap implements ThinkerList, DoomStatusAware {
         if (toucher.health <= 0)
             return;
 
-        // Identify by sprite.
+        // Identify by type
+//        if (special.type instanceof superweapons_t) {
+//            switch (special.type) {
+//                case ING_HOLY_WATER:
+//                    if (!player.GiveWeapon(special.type, false))
+//                        return;
+//                    player.message = GOTBFG9000;
+//                    sound = sfxenum_t.sfx_wpnup;
+//                    break;
+//            }
+//        }
+
+        // Identify by sprite
         switch (special.sprite) {
             // armor
             case SPR_ARM1:
