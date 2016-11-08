@@ -109,6 +109,8 @@ public class player_t /*extends mobj_t */
     private IDoomSystem I;
     private IDoomSound S;
 
+    private int silverAmmoCount;
+
     /* Fugly hack to "reset" the player. Not worth the fugliness.
     public static player_t nullplayer;
     static {
@@ -133,6 +135,7 @@ public class player_t /*extends mobj_t */
         this.cmd = new ticcmd_t();
         this.cheats ^=CF_GODMODE;
         //weaponinfo=new weaponinfo_t();
+        this.silverAmmoCount = 0;
     }
 
     public final static int CF_NOCLIP = 1; // No damage, no health loss.

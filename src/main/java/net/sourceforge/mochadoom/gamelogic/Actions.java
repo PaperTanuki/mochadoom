@@ -2031,11 +2031,44 @@ public class Actions extends UnifiedGameMap {
         if(source instanceof monster_t){
             if(((monster_t) source).isVampire()){
                 if(target instanceof monster_t){
-                    if(target.type != mobjtype_t.MT_SKULL)  ((monster_t) target).contaminate(monster_t.VAMPIRE);
+                    if(target.type != mobjtype_t.MT_SKULL) {
+                      ((monster_t) target).contaminate(monster_t.VAMPIRE);
+                    }
                 }
 
             }
         }
+
+        // TODO: Implementar double dispatch para no tener tantos if
+        if (target instanceof monster_t) {
+          //ING: Vampiro o Ghoul
+          if (((monster_t) target).isVampire() || ((monster_t) target).isGhoul()) {
+            if (inflictor.type == mobjtype_t.ING_HOLY_WATER ||
+                inflictor.type == mobjtype_t.ING_WOODEN_STICK) {
+              damage *= 3;
+            }
+            else {
+              damage /= 3;
+            }
+          }
+          //ING: Hombre lobo
+          else if (((monster_t) target).isWerewolf()) {
+            if (inflictor.type == mobjtype_t.ING_SILVER_BULLET) {
+              damage *= 3;
+            }
+            else {
+              damage /= 3;
+            }
+          }
+          else if (((monster_t) target).isHybrid()) {
+            if (inflictor.type != mobjtype_t.ING_HOLY_WATER) {
+              damage = 0;
+            }
+          }
+        }
+
+        //ING:
+
         // player specific
         if (player != null) {
             // end of game hell hack
@@ -2275,7 +2308,8 @@ public class Actions extends UnifiedGameMap {
         switch (target.type) {
             case MT_WOLFSS:
             case MT_POSSESSED:
-                item = mobjtype_t.MT_CLIP;
+                // TODO: Aca se cae, no hay referencia del wad a este objeto
+                item = mobjtype_t.ING_SILVER_BULLET;
                 break;
 
             case MT_SHOTGUY:

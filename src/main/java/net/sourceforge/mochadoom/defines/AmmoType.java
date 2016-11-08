@@ -8,6 +8,9 @@ public enum AmmoType {
     am_misl,    // Missile launcher.
     am_silver,  //Silver bullet
     NUMAMMO,
-    am_noammo   // Unlimited for chainsaw / fist.  
+    am_noammo,   // Unlimited for chainsaw / fist.  
+
+
+    ing_holywater // ING
 
 }
