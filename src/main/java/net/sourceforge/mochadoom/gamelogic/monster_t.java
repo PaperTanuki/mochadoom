@@ -27,6 +27,7 @@ public class monster_t extends mobj_t{
 
 
     private int timeAlive;
+    private int speedMult;
 
 
     public monster_t() {
@@ -34,6 +35,7 @@ public class monster_t extends mobj_t{
     }
     public monster_t(Actions A) {
         super(A);
+        speedMult = 1;
         // A mobj_t is ALSO a thinker, as it always contains the struct.
         // Don't fall for C's trickery ;-)
         // this.thinker=new thinker_t();
@@ -76,8 +78,11 @@ public class monster_t extends mobj_t{
         return timeAlive;
     }
 
-    /*public void setSpeed(int value){
-        if(value >=0) speed = value;
-    }*/
+    public void setSpeedMult(int value){
+        if(value >=0) this.speedMult = value;
+    }
+    public int getSpeedMult(){
+        return speedMult;
+    }
 
 }
