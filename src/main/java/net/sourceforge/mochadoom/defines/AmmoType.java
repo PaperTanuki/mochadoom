@@ -6,9 +6,8 @@ public enum AmmoType {
     am_shell,   // Shotgun / double barreled shotgun.
     am_cell,    // Plasma rifle, BFG.
     am_misl,    // Missile launcher.
+    am_silver,  //Silver bullet
     NUMAMMO,
-    am_noammo,   // Unlimited for chainsaw / fist.
-
-    ing_holywater // ING
+    am_noammo   // Unlimited for chainsaw / fist.  
 
 }
