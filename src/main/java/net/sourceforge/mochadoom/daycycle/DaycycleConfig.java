@@ -34,4 +34,10 @@ public final class DaycycleConfig {
 	public static final String night_halfMessage = "It's midnight.";
 	public static final String night_almostOverMessage = "Keep it up. Nighttime is almost over.";
 
+	// Messages for each lunar cycle.
+	public static final String newMoon = "asd";
+	public static final String youngMoon = "asd";
+	public static final String FullMoon = "asd";
+	public static final String OldMoon = "asd";
+	
 }

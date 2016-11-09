@@ -12,6 +12,7 @@ import net.sourceforge.mochadoom.doom.DoomMain;
 public class Night extends ADayPart {
 	
 	static Night instance = null;
+	static Day next = null;
 
 	protected Night(DoomMain<?, ?> DM, Kronos aKronos) {
 		super(DM, aKronos);
@@ -37,7 +38,7 @@ public class Night extends ADayPart {
 
 	@Override
 	public void changePart() {
-		this.kronos.setDayPart(new Day(this.DM, this.kronos));
+		this.kronos.setDayPart(next.getInstance(this.DM, this.kronos));
 	}
 
 	@Override
