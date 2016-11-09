@@ -4,7 +4,7 @@ import net.sourceforge.mochadoom.doom.DoomMain;
 
 public class OldMoon extends AMoonPhase {
 	
-	static OldMoon instance = null;
+	private OldMoon instance = null;
 
 	protected OldMoon(DoomMain<?, ?> DM, Kronos kronos) {
 		super(DM, kronos);

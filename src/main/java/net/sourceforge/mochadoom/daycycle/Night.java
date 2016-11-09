@@ -11,8 +11,8 @@ import net.sourceforge.mochadoom.doom.DoomMain;
  */
 public class Night extends ADayPart {
 	
-	static Night instance = null;
-	static Day next = null;
+	private Night instance = null;
+	private Day next = null;
 
 	protected Night(DoomMain<?, ?> DM, Kronos aKronos) {
 		super(DM, aKronos);
