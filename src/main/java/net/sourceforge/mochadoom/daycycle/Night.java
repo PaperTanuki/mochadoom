@@ -10,8 +10,10 @@ import net.sourceforge.mochadoom.doom.DoomMain;
  *
  */
 public class Night extends ADayPart {
+	
+	static Night instance = null;
 
-	public Night(DoomMain<?, ?> DM, Kronos aKronos) {
+	protected Night(DoomMain<?, ?> DM, Kronos aKronos) {
 		super(DM, aKronos);
 	}
 
@@ -56,5 +58,13 @@ public class Night extends ADayPart {
 	@Override
 	public boolean isNight() {
 		return true;
+	}
+
+	@Override
+	public IDayPart getInstance(DoomMain<?, ?> DM, Kronos aKronos) {
+		if (instance == null) {
+			instance = new Night(DM, aKronos);
+		}
+		return instance;
 	}
 }

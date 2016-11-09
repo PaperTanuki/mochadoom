@@ -75,4 +75,5 @@ public abstract class ADayPart implements IDayPart {
 	public boolean isNight() {
 		return false;
 	}
+	
 }

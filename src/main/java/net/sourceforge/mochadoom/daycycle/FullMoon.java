@@ -3,6 +3,8 @@ package net.sourceforge.mochadoom.daycycle;
 import net.sourceforge.mochadoom.doom.DoomMain;
 
 public class FullMoon extends AMoonPhase {
+	
+	protected FullMoon instance = null;
 
 	public FullMoon(DoomMain<?, ?> DM, Kronos kronos) {
 		super(DM, kronos);
@@ -17,5 +19,14 @@ public class FullMoon extends AMoonPhase {
 	public boolean isFull() {
 		return true;
 	}
+	
+	@Override
+	public IMoonPhase getInstance(DoomMain<?, ?> DM, Kronos aKronos) {
+		if (instance == null) {
+			instance = new FullMoon(DM, aKronos);
+		}
+		return instance;
+	}
+
 
 }

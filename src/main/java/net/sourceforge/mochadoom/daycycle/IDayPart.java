@@ -1,5 +1,7 @@
 package net.sourceforge.mochadoom.daycycle;
 
+import net.sourceforge.mochadoom.doom.DoomMain;
+
 /**
  * Interface for states representing parts of the day. Each part of the day
  * gives monsters different attributes. Current methods are only examples.
@@ -8,7 +10,11 @@ package net.sourceforge.mochadoom.daycycle;
  *
  */
 public interface IDayPart {
-	// TODO Make days global for efficiency. Hint: Singleton pattern.
+	
+	/**
+	 * Method that creates the DayPart using Singleton pattern.
+	 */
+	IDayPart getInstance(DoomMain<?, ?> DM, Kronos aKronos);
 
 	/**
 	 * Method called every time Kronos receives a tick. Increases time in this

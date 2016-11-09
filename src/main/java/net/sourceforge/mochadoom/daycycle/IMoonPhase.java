@@ -1,5 +1,7 @@
 package net.sourceforge.mochadoom.daycycle;
 
+import net.sourceforge.mochadoom.doom.DoomMain;
+
 /**
  * Interface for states representing moon cycles. Each moon gives monsters
  * different attributes.
@@ -8,6 +10,11 @@ package net.sourceforge.mochadoom.daycycle;
  *
  */
 public interface IMoonPhase {
+	
+	/**
+	 * Method that creates the Moon using Singleton pattern.
+	 */
+	IMoonPhase getInstance(DoomMain<?, ?> DM, Kronos aKronos);
 	
 	/**
 	 * State pattern method. Switches current moon phase to the next one.

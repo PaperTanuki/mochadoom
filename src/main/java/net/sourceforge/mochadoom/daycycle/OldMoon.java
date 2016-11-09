@@ -3,8 +3,10 @@ package net.sourceforge.mochadoom.daycycle;
 import net.sourceforge.mochadoom.doom.DoomMain;
 
 public class OldMoon extends AMoonPhase {
+	
+	static OldMoon instance = null;
 
-	public OldMoon(DoomMain<?, ?> DM, Kronos kronos) {
+	protected OldMoon(DoomMain<?, ?> DM, Kronos kronos) {
 		super(DM, kronos);
 	}
 
@@ -17,5 +19,14 @@ public class OldMoon extends AMoonPhase {
 	public boolean isOld() {
 		return true;
 	}
+
+	@Override
+	public IMoonPhase getInstance(DoomMain<?, ?> DM, Kronos aKronos) {
+		if (instance == null) {
+			instance = new OldMoon(DM, aKronos);
+		}
+		return instance;
+	}
+
 
 }

@@ -10,7 +10,9 @@ import net.sourceforge.mochadoom.doom.DoomMain;
  */
 public class Day extends ADayPart {
 
-	public Day(DoomMain<?, ?> DM, Kronos aKronos) {
+	static Day instance = null;
+
+	protected Day(DoomMain<?, ?> DM, Kronos aKronos) {
 		super(DM, aKronos);
 	}
 
@@ -55,6 +57,14 @@ public class Day extends ADayPart {
 	@Override
 	public boolean isDay() {
 		return true;
+	}
+
+	@Override
+	public IDayPart getInstance(DoomMain<?, ?> DM, Kronos aKronos) {
+		if (instance == null) {
+			instance = new Day(DM, aKronos);
+		}
+		return instance;
 	}
 
 }

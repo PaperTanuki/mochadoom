@@ -13,10 +13,12 @@ public class Kronos {
 	// TODO Implement double dispatch to get current state.
 	// TODO Decide how to display different states
 	// TODO Move to defines
-
-	private IDayPart dayPart;
+	
+	private Day startDay = null;
+	private IDayPart dayPart = null;
 	private DoomMain<?, ?> DM;
-	private IMoonPhase moon;
+	private NewMoon startMoon = null;
+	private IMoonPhase moon = null;
 
 	/**
 	 * Constructor. Initializes part of the day and moon phase.
@@ -26,8 +28,8 @@ public class Kronos {
 	 */
 	public Kronos(DoomMain<?, ?> DM) {
 		this.DM = DM;
-		this.dayPart = new Day(DM, this);
-		this.moon = new NewMoon(DM, this);
+		this.dayPart = startDay.getInstance(this.DM, this);
+		this.moon = startMoon.getInstance(this.DM, this);
 	}
 
 	/**
