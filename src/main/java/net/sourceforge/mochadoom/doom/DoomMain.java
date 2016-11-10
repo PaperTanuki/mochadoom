@@ -34,6 +34,7 @@ import net.sourceforge.mochadoom.finale.Wiper;
 import net.sourceforge.mochadoom.gamelogic.Actions;
 import net.sourceforge.mochadoom.gamelogic.BoomLevelLoader;
 import net.sourceforge.mochadoom.gamelogic.mobj_t;
+import net.sourceforge.mochadoom.gamelogic.superweapon_t;
 import net.sourceforge.mochadoom.hud.HU;
 import net.sourceforge.mochadoom.menu.DoomRandom;
 import net.sourceforge.mochadoom.menu.Menu;
@@ -1634,6 +1635,11 @@ public abstract class DoomMain<T, V> extends DoomStatus<T, V> implements IDoomGa
             cmd.buttons |= BT_USE;
             // clear double clicks if hit use button 
             dclicks = 0;
+        }
+        
+        if(gamekeydown[key_ammoxsilver]){
+        	//cmd.buttons |= BT_AMMOXSILVER;
+        	superweapon_t.doSilverBullet();
         }
 
         // chainsaw overrides 

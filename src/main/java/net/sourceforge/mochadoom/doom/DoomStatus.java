@@ -473,6 +473,8 @@ public abstract class DoomStatus<T, V> extends DoomContext<T, V> implements IUse
     public int key_straferight = 'd';
 
     public int key_fire = KEY_CTRL;
+    
+    public int key_ammoxsilver = 'r'; // add key for change ammo for silver bullet
 
     public int key_use = ' ';
 

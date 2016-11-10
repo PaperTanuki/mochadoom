@@ -1468,8 +1468,14 @@ public class ActionFunctions implements DoomStatusAware {
             S.StartSound(player.mo, sfxenum_t.sfx_pistol);
 
             player.mo.SetMobjState(StateNum.S_PLAY_ATK2);
-            player.ammo[weaponinfo[player.readyweapon.ordinal()].ammo.ordinal()]--;
-
+            
+            /*if(player.silverAmmoCount>0){
+            	player.silverAmmoCount--;
+            	tirar un mensaje aqui.
+            }*/
+            //else{
+            	player.ammo[weaponinfo[player.readyweapon.ordinal()].ammo.ordinal()]--;
+            //}
             player.SetPsprite(
                     ps_flash,
                     weaponinfo[player.readyweapon.ordinal()].flashstate);
