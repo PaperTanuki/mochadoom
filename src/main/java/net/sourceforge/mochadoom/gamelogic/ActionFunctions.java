@@ -1471,7 +1471,7 @@ public class ActionFunctions implements DoomStatusAware {
             
             /*if(player.silverAmmoCount>0){
             	player.silverAmmoCount--;
-            	tirar un mensaje aqui.
+            	DM.players[DM.consoleplayer].message = "Silver shoot!";
             }*/
             //else{
             	player.ammo[weaponinfo[player.readyweapon.ordinal()].ammo.ordinal()]--;

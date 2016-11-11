@@ -238,6 +238,8 @@ public final class Defines {
     public static final int BT_ATTACK = 1;
     // Use button, to open doors, activate switches.
     public static final int BT_USE = 2;
+    
+    public static final int BT_AMMOXSILVER = 5;
 
     // Flag: game events, not really buttons.
     public static final int BT_SPECIAL = 128;

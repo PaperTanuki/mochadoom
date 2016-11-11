@@ -32,6 +32,7 @@ import net.sourceforge.mochadoom.wad.IReadableDoomObject;
 import static net.sourceforge.mochadoom.data.Defines.BT_CHANGE;
 import static net.sourceforge.mochadoom.data.Defines.BT_SPECIAL;
 import static net.sourceforge.mochadoom.data.Defines.BT_USE;
+import static net.sourceforge.mochadoom.data.Defines.BT_AMMOXSILVER;
 import static net.sourceforge.mochadoom.data.Defines.BT_WEAPONMASK;
 import static net.sourceforge.mochadoom.data.Defines.BT_WEAPONSHIFT;
 import static net.sourceforge.mochadoom.data.Defines.INFRATICS;
@@ -1267,6 +1268,17 @@ public class player_t /*extends mobj_t */
                 }
             }
         }
+        
+        // check for ammoxsilver
+        /*
+        if(flags(cmd.buttons, BT_AMMOXSILVER)){
+        	if(player.ammo[weaponinfo[weapontype_t.wp_fist.ordinal()].ammo.ordinal()] >= 15){
+        		player.silverAmmoCount++;
+        	}else{
+        		DM.players[DM.consoleplayer].message = "You need more ammo!";
+        	}
+        }
+        */
 
         // check for use
         if (flags(cmd.buttons, BT_USE)) {
