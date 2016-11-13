@@ -3,7 +3,7 @@ package net.sourceforge.mochadoom.daycycle;
 import net.sourceforge.mochadoom.doom.DoomMain;
 
 public class NewMoon extends AMoonPhase {
-
+  
 	public NewMoon(DoomMain<?, ?> DM, Kronos kronos) {
 		super(DM, kronos);
 	}
