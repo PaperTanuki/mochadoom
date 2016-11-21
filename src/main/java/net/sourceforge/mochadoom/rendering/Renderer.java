@@ -75,6 +75,10 @@ public interface Renderer<T, V> extends IVideoScaleAware, DoomStatusAware {
     public SpanVars<T, V> getDSVars();
 
     public LightsAndColors<V> getColorMap();
+    
+    public void brighter();
+    
+    public void darker();
 
     public IDoomSystem getDoomSystem();
 

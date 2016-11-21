@@ -3209,5 +3209,13 @@ public abstract class RendererState<T, V>
         // Check for new console commands.
         DGN.NetUpdate();
     }
+    
+    public void brighter(){
+      this.colormaps.LIGHTSEGSHIFT++;
+    }
+    
+    public void darker(){
+      this.colormaps.LIGHTSEGSHIFT--;
+    }
 
 }

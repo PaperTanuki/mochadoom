@@ -1,7 +1,6 @@
 package net.sourceforge.mochadoom.daycycle;
 
 import net.sourceforge.mochadoom.doom.DoomMain;
-
 /**
  * God of time. Controls changes between parts of the day and time spent inside
  * the level.
@@ -36,7 +35,8 @@ public class Kronos {
 	public void Ticker() {
 		this.DM.leveltime++; // must be done first
 		this.dayPart.Ticker(); // tells dayPart that a tick has passed
-		//LIGHTSEGSHIFT++;
+        //this.DM.R.brighter();
+        //this.DM.R.darker();
 
 		// message for testing: DM.players[DM.consoleplayer].message =
 		// ((int)DM.leveltime/(60*35))+" mins, " + (DM.leveltime/35)%60 + "
