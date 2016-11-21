@@ -3211,11 +3211,15 @@ public abstract class RendererState<T, V>
     }
     
     public void brighter(){
-      this.colormaps.LIGHTSEGSHIFT++;
+      if (this.colormaps.LIGHTSEGSHIFT > 0){
+        this.colormaps.LIGHTSEGSHIFT--;
+      }
     }
     
     public void darker(){
-      this.colormaps.LIGHTSEGSHIFT--;
+      if (this.colormaps.LIGHTSEGSHIFT < 32){
+        this.colormaps.LIGHTSEGSHIFT++;
+      }
     }
 
 }

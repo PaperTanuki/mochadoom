@@ -39,16 +39,19 @@ public class Day extends ADayPart {
 
 	@Override
 	public String startMessage() {
+	    this.DM.R.brighter();
 		return DaycycleConfig.day_startMessage;
 	}
 
 	@Override
 	public String halfMessage() {
+        this.DM.R.brighter();
 		return DaycycleConfig.day_halfMessage;
 	}
 
 	@Override
 	public String almostOverMessage() {
+        this.DM.R.darker();
 		return DaycycleConfig.day_almostOverMessage;
 	}
 

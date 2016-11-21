@@ -35,8 +35,6 @@ public class Kronos {
 	public void Ticker() {
 		this.DM.leveltime++; // must be done first
 		this.dayPart.Ticker(); // tells dayPart that a tick has passed
-        //this.DM.R.brighter();
-        //this.DM.R.darker();
 
 		// message for testing: DM.players[DM.consoleplayer].message =
 		// ((int)DM.leveltime/(60*35))+" mins, " + (DM.leveltime/35)%60 + "
