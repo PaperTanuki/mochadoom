@@ -1,5 +1,11 @@
 package net.sourceforge.mochadoom.gamelogic;
 
+import net.sourceforge.mochadoom.data.spritenum_t;
+import net.sourceforge.mochadoom.data.state_t;
+import net.sourceforge.mochadoom.defines.StateNum;
+
+import static net.sourceforge.mochadoom.data.info.states;
+
 /**
  * Created by Nicolas on 02-11-2016.
  */
@@ -11,12 +17,10 @@ public class monster_t extends mobj_t{
 
     static public int RESISTANCE_TO_NORMAL_WP = 50;
 
-
-    private boolean vampire;
-    private boolean werewolf;
     private boolean ghoul;
 
     private int contaminatedFlags;
+    private int statusFlag = CLEAN;
 
     /**
      * A monster can be contaminated by using the logic OR operation with any new flag.
@@ -29,53 +33,94 @@ public class monster_t extends mobj_t{
 
 
     private int timeAlive;
+    private int speedMult;
 
 
     public monster_t() {
         super();
     }
+    public monster_t(Actions A) {
+        super(A);
+        speedMult = 1;
+        // A mobj_t is ALSO a thinker, as it always contains the struct.
+        // Don't fall for C's trickery ;-)
+        // this.thinker=new thinker_t();
+
+    }
     public boolean isVampire(){
-        return contaminatedFlags == VAMPIRE;
+        return (statusFlag & VAMPIRE) == VAMPIRE;
     }
 
     public boolean isWerewolf(){
-        return contaminatedFlags == WEREWOLF;
+        return (statusFlag & WEREWOLF) == WEREWOLF;
     }
 
     public boolean isHybrid(){
-        return contaminatedFlags == HYBRID;
+        return (statusFlag & HYBRID) == HYBRID;
     }
 
     public boolean isResistant(){
-        return CLEAN != contaminatedFlags;
+        return CLEAN != statusFlag;
     }
 
     public boolean isGhoul(){
         return ghoul;
     }
 
-    public void setVampireStatus(boolean vampireStatus){
-        if(!isGhoul()) vampire = vampireStatus;
-    }
-
-    public void setWerewolfStatus(boolean werewolfStatus){
-        if(!isGhoul()) werewolf = werewolfStatus;
-    }
-
-    public int getContaminatedType(){
+    public int getContaminatedFlags(){
         return contaminatedFlags;
 
+    }
+    public boolean isContaminated(){
+        return contaminatedFlags >0;
     }
     public void contaminate(int newContamination){
         contaminatedFlags |= newContamination;
     }
 
+    public void setStatusFlag(int status){statusFlag=status & 1;}
+
     public int getTimeAlive(){
         return timeAlive;
     }
 
-    /*public void setSpeed(int value){
-        if(value >=0) speed = value;
-    }*/
+    public void setSpeedMult(int value){
+        if(value >=0) this.speedMult = value;
+    }
+    public int getSpeedMult(){
+        return speedMult;
+    }
+
+    //Mirar aqui si se puede cambiar la sprite del monstro
+    @Override
+    public boolean SetMobjState(StateNum state) {
+        state_t st;
+
+        do {
+            if (state == StateNum.S_NULL) {
+                state = null;
+                // MAES/_D_: uncommented this as it should work by now (?).
+                A.RemoveMobj(this);
+                return false;
+            }
+
+            st = states[state.ordinal()];
+            this.state = st;
+            tics = st.tics;
+            sprite = st.sprite;
+            frame = (int) st.frame;
+
+            // Modified handling.
+            // Call action functions when the state is set
+
+            if (st.acp1 != null) {
+                st.acp1.invoke(this);
+            }
+
+            state = st.nextstate;
+        } while (tics == 0);
+
+        return true;
+    }
 
 }
