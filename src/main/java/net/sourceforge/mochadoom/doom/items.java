@@ -68,8 +68,8 @@ public class items {
         AmmoType.am_misl, StateNum.S_MISSILEUP, StateNum.S_MISSILEDOWN, StateNum.S_MISSILE,
         StateNum.S_MISSILE1, StateNum.S_MISSILEFLASH1),
       new weaponinfo_t(
-        // plasma rifle
-        AmmoType.am_cell, StateNum.S_PLASMAUP, StateNum.S_PLASMADOWN, StateNum.S_PLASMA,
+        // plasma rifle shoots holy water
+        AmmoType.am_holywater, StateNum.S_PLASMAUP, StateNum.S_PLASMADOWN, StateNum.S_PLASMA,
         StateNum.S_PLASMA1, StateNum.S_PLASMAFLASH1),
       new weaponinfo_t(
         // bfg 9000

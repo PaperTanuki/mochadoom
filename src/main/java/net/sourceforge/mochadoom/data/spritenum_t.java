@@ -89,6 +89,8 @@ public enum spritenum_t {
     SPR_BROK,
     SPR_CELL,
     SPR_CELP,
+    SPR_HOLY,
+    SPR_HOLP,
     SPR_SHEL,
     SPR_SBOX,
     SPR_BPAK,

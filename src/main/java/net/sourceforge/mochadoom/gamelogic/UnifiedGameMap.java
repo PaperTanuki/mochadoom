@@ -68,6 +68,8 @@ import static net.sourceforge.mochadoom.doom.English.GOTBLUECARD;
 import static net.sourceforge.mochadoom.doom.English.GOTBLUESKUL;
 import static net.sourceforge.mochadoom.doom.English.GOTCELL;
 import static net.sourceforge.mochadoom.doom.English.GOTCELLBOX;
+import static net.sourceforge.mochadoom.doom.English.GOTHOLY;
+import static net.sourceforge.mochadoom.doom.English.GOTHOLYBOX;
 import static net.sourceforge.mochadoom.doom.English.GOTCHAINGUN;
 import static net.sourceforge.mochadoom.doom.English.GOTCHAINSAW;
 import static net.sourceforge.mochadoom.doom.English.GOTCLIP;
@@ -2229,6 +2231,18 @@ public abstract class UnifiedGameMap implements ThinkerList, DoomStatusAware {
                 if (!player.GiveAmmo(AmmoType.am_cell, 5))
                     return;
                 player.message = GOTCELLBOX;
+                break;
+                
+            case SPR_HOLY:
+                if (!player.GiveAmmo(AmmoType.am_holywater, 1))
+                    return;
+                player.message = GOTHOLY;
+                break;
+
+            case SPR_HOLP:
+                if (!player.GiveAmmo(AmmoType.am_holywater, 5))
+                    return;
+                player.message = GOTHOLYBOX;
                 break;
 
             case SPR_SHEL:

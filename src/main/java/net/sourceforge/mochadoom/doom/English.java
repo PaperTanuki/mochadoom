@@ -103,6 +103,8 @@ public class English {
     public final static String GOTROCKBOX = "Picked up a box of rockets.";
     public final static String GOTCELL = "Picked up an energy cell.";
     public final static String GOTCELLBOX = "Picked up an energy cell pack.";
+    public final static String GOTHOLY = "Picked up an holy water cell.";
+    public final static String GOTHOLYBOX = "Picked up an holy water pack.";
     public final static String GOTSHELLS = "Picked up 4 shotgun shells.";
     public final static String GOTSHELLBOX = "Picked up a box of shotgun shells.";
     public final static String GOTBACKPACK = "Picked up a backpack full of ammo!";

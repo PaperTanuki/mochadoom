@@ -9,6 +9,6 @@ public enum AmmoType {
     NUMAMMO,
     am_noammo,   // Unlimited for chainsaw / fist.
     am_silver,  //Silver bullet
-    am_holywater
+    am_holywater //Holy water
 
 }

@@ -984,6 +984,8 @@ public class info {
             new state_t(spritenum_t.SPR_BROK, 0, -1, null, StateNum.S_NULL, 0, 0),    // S_BROK
             new state_t(spritenum_t.SPR_CELL, 0, -1, null, StateNum.S_NULL, 0, 0),    // S_CELL
             new state_t(spritenum_t.SPR_CELP, 0, -1, null, StateNum.S_NULL, 0, 0),    // S_CELP
+            new state_t(spritenum_t.SPR_HOLY, 0, -1, null, StateNum.S_NULL, 0, 0),    // S_HOLY
+            new state_t(spritenum_t.SPR_HOLP, 0, -1, null, StateNum.S_NULL, 0, 0),    // S_HOLP
             new state_t(spritenum_t.SPR_SHEL, 0, -1, null, StateNum.S_NULL, 0, 0),    // S_SHEL
             new state_t(spritenum_t.SPR_SBOX, 0, -1, null, StateNum.S_NULL, 0, 0),    // S_SBOX
             new state_t(spritenum_t.SPR_BPAK, 0, -1, null, StateNum.S_NULL, 0, 0),    // S_BPAK

@@ -505,6 +505,14 @@ public class player_t /*extends mobj_t */
                         pendingweapon = weapontype_t.wp_plasma;
                 }
                 break;
+ 
+            case am_holywater:
+                if (readyweapon == weapontype_t.wp_fist
+                        || readyweapon == weapontype_t.wp_pistol) {
+                    if (weaponowned[weapontype_t.wp_plasma.ordinal()])
+                        pendingweapon = weapontype_t.wp_plasma;
+                }
+                break;
 
             case am_misl:
                 if (readyweapon == weapontype_t.wp_fist) {
@@ -1115,7 +1123,7 @@ public class player_t /*extends mobj_t */
         // Preferences are set here.
         do {
             if (weaponowned[weapontype_t.wp_plasma.ordinal()]
-                    && (this.ammo[AmmoType.am_cell.ordinal()] != 0)
+                    && (this.ammo[AmmoType.am_holywater.ordinal()] != 0)
                     && !DS.isShareware()) {
                 pendingweapon = weapontype_t.wp_plasma;
             } else if (weaponowned[weapontype_t.wp_supershotgun.ordinal()]
