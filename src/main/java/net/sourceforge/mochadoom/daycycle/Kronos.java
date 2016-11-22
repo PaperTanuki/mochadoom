@@ -10,9 +10,6 @@ import net.sourceforge.mochadoom.doom.DoomMain;
  *
  */
 public class Kronos {
-	// TODO Implement double dispatch to get current state.
-	// TODO Decide how to display different states
-	// TODO Move to defines
 
 	private IDayPart dayPart;
 	private DoomMain<?, ?> DM;
@@ -27,7 +24,7 @@ public class Kronos {
 	public Kronos(DoomMain<?, ?> DM) {
 		this.DM = DM;
 		this.dayPart = new Day(DM, this);
-		this.moon = new NewMoon(DM, this);
+		this.moon = new OldMoon(DM, this);
 	}
 
 	/**
@@ -42,6 +39,13 @@ public class Kronos {
 		// secs.";
 
 		// btw, gameskill is accessible by DM.gameskill
+	}
+
+	/**
+	 * Tells the moon to change its phase. Called by night constructor.
+	 */
+	public void changeMoon() {
+		this.moon.changeState();
 	}
 
 	/**
@@ -85,4 +89,31 @@ public class Kronos {
 	public IMoonPhase currentMoonPhase() {
 		return this.moon;
 	}
+	
+	// State access methods.
+	
+	public boolean isDay() {
+		return this.dayPart.isDay();
+	}
+
+	public boolean isNight() {
+		return this.dayPart.isNight();
+	}
+	
+	public boolean isNew() {
+		return this.moon.isNew();
+	}
+
+	public boolean isYoung() {
+		return this.moon.isYoung();
+	}
+
+	public boolean isFull() {
+		return this.moon.isFull();
+	}
+
+	public boolean isOld() {
+		return this.moon.isOld();
+	}
+
 }

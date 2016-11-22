@@ -8,7 +8,7 @@ package net.sourceforge.mochadoom.daycycle;
  *
  */
 public interface IMoonPhase {
-	
+
 	/**
 	 * State pattern method. Switches current moon phase to the next one.
 	 */
@@ -20,7 +20,8 @@ public interface IMoonPhase {
 	boolean isNew();
 
 	/**
-	 * Returns true if current moon phase is Young Moon. Returns false otherwise.
+	 * Returns true if current moon phase is Young Moon. Returns false
+	 * otherwise.
 	 */
 	boolean isYoung();
 
@@ -33,4 +34,6 @@ public interface IMoonPhase {
 	 * Returns true if current moon phase is Old Moon. Returns false otherwise.
 	 */
 	boolean isOld();
+
+	String message();
 }

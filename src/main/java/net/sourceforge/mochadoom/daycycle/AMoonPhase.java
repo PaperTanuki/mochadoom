@@ -14,8 +14,11 @@ public abstract class AMoonPhase implements IMoonPhase {
 
 	/**
 	 * Constructor.
-	 * @param DM - DoomMain for leveltime consulting
-	 * @param aKronos - kronos for state switching
+	 * 
+	 * @param DM
+	 *            - DoomMain for leveltime consulting
+	 * @param aKronos
+	 *            - kronos for state switching
 	 */
 	public AMoonPhase(DoomMain<?, ?> DM, Kronos aKronos) {
 		this.DM = DM;
