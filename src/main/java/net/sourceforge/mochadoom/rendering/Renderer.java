@@ -79,7 +79,7 @@ public interface Renderer<T, V> extends IVideoScaleAware, DoomStatusAware {
     public void brighter();
     
     public void darker();
-
+    
     public IDoomSystem getDoomSystem();
 
     public IWadLoader getWadLoader();
