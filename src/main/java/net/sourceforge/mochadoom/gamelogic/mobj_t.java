@@ -320,6 +320,7 @@ public class mobj_t extends thinker_t implements ISoundOrigin, Interceptable,
             st = states[state.ordinal()];
             this.state = st;
             tics = st.tics;
+            //ING: Verificar aqui si se puede cambiar el color
             sprite = st.sprite;
             frame = (int) st.frame;
 
