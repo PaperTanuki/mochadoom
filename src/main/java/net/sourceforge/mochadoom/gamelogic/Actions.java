@@ -1251,8 +1251,8 @@ public class Actions extends UnifiedGameMap {
             I.Error("Weird actor.movedir!");
         //ING : Speed mult
         if(actor instanceof monster_t){
-            tryx = actor.x + actor.info.speed*((monster_t) actor).getSpeedMult() * xspeed[actor.movedir];
-            tryy = actor.y + actor.info.speed*((monster_t) actor).getSpeedMult()* yspeed[actor.movedir];
+            tryx = (int) (actor.x + actor.info.speed*((monster_t) actor).getSpeedMultWithTime(DM.kronos) * xspeed[actor.movedir]);
+            tryy = (int) (actor.y + actor.info.speed*((monster_t) actor).getSpeedMultWithTime(DM.kronos)* yspeed[actor.movedir]);
         }
         else{
             tryx = actor.x + actor.info.speed * xspeed[actor.movedir];
@@ -2256,7 +2256,7 @@ public class Actions extends UnifiedGameMap {
             if(RND.P_Random() < 95&& ((monster_t) target).isContaminated() && ! ((monster_t) target).isVampire()) {
 
                 monster_t monster = (monster_t) SpawnMobj(target.x, target.y, target.z, mobjtype_t.MT_SERGEANT);
-                monster.setSpeedMult(2);
+                monster.setSpeedMult(1);
                 monster.setStatusFlag(monster_t.VAMPIRE);
 
 
@@ -5037,6 +5037,7 @@ public class Actions extends UnifiedGameMap {
     public Actions(DoomStatus DC) {
         super(DC);
         this.A = this;
+
         SlideTraverse = new PTR_SlideTraverse();
         AimTraverse = new PTR_AimTraverse();
         ShootTraverse = new PTR_ShootTraverse();
