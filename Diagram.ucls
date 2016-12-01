@@ -1,6 +1,3755 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.1.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
-  associations="true" dependencies="false" nesting-relationships="true">  
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_Light2" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="17628" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_Light1" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="17843" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="net.sourceforge.mochadoom.gamelogic.Actions.PIT_ChangeSector" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/Actions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="21176" y="4533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_FireBFG" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="175" x="18058" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_CPosAttack" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="5120" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="6" language="java" name="net.sourceforge.mochadoom.gamelogic.ceiling_e" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ceiling_e.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="175" x="20746" y="4852"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <enumeration id="7" language="java" name="net.sourceforge.mochadoom.gamelogic.result_e" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/result_e.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="18859" y="3583"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="8" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_VileStart" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="5335" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_SkullAttack" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="5550" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_BFGSpray" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="5765" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="net.sourceforge.mochadoom.gamelogic.MapUtils" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/MapUtils.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="17813" y="2224"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="net.sourceforge.mochadoom.gamelogic.LevelLoader" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/LevelLoader.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="315" width="179" x="21694" y="2720"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="net.sourceforge.mochadoom.gamelogic.ceiling_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ceiling_t.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="279" width="175" x="20746" y="4533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.T_LightFlash" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="2996" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_Fall" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="5980" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="net.sourceforge.mochadoom.gamelogic.button_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/button_t.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="171" width="175" x="24680" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_SkelMissile" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="6195" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_BrainScream" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="6410" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="net.sourceforge.mochadoom.gamelogic.fireflicker_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/fireflicker_t.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="18042" y="2251"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_FatRaise" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="6625" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="21" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionType1" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionType1.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="81" width="175" x="16769" y="1591"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="22" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_XScream" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="6840" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_CyberAttack" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="7055" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="net.sourceforge.mochadoom.gamelogic.Actions.PIT_StompThing" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/Actions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="21391" y="4533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="25" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionType2" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionType2.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="81" width="175" x="22402" y="1591"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="26" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_SpidRefire" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="7270" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_FireMissile" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="18273" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="net.sourceforge.mochadoom.gamelogic.Actions.PTR_AimTraverse" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/Actions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="22419" y="4533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="net.sourceforge.mochadoom.gamelogic.divline_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/divline_t.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="225" width="189" x="23958" y="4852"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.P_MobjThinker" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="7485" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_PosAttack" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="7700" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_FaceTarget" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="7915" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_CloseShotgun2" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="18488" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="net.sourceforge.mochadoom.gamelogic.animdef_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/animdef_t.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="225" width="195" x="16377" y="827"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_FatAttack3" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="8130" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_FatAttack2" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="8345" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_FatAttack1" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="8560" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="38" language="java" name="net.sourceforge.mochadoom.gamelogic.UnifiedGameMap.PIT_AddLineIntercepts" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/UnifiedGameMap.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="23720" y="4533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_FirePistol" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="18703" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="40" language="java" name="net.sourceforge.mochadoom.gamelogic.ChaseDirections" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ChaseDirections.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="18257" y="2332"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="41" language="java" name="net.sourceforge.mochadoom.gamelogic.floormove_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/floormove_t.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1904" y="1888"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="42" language="java" name="net.sourceforge.mochadoom.gamelogic.switchlist_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/switchlist_t.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="175" x="24465" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="43" language="java" name="net.sourceforge.mochadoom.gamelogic.lightflash_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/lightflash_t.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="18472" y="2296"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="44" language="java" name="net.sourceforge.mochadoom.gamelogic.strobe_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/strobe_t.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="18687" y="2278"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="45" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_VileTarget" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="8775" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="46" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_BrainDie" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="8990" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="47" language="java" name="net.sourceforge.mochadoom.gamelogic.Interceptable" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/Interceptable.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="63" width="175" x="22229" y="6415"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="48" language="java" name="net.sourceforge.mochadoom.gamelogic.BoomLevelLoader" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/BoomLevelLoader.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="1197" width="296" x="21358" y="2720"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="49" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_FirePlasma" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="18918" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="50" language="java" name="net.sourceforge.mochadoom.gamelogic.UnifiedGameMap.PIT_MobjFunction" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/UnifiedGameMap.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="175" x="21247" y="4852"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="51" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionTypeSS" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionTypeSS.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="81" width="175" x="4954" y="1591"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="52" language="java" name="net.sourceforge.mochadoom.gamelogic.Actions.PTR_SlideTraverse" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/Actions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="201" x="22634" y="4533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="53" language="java" name="net.sourceforge.mochadoom.gamelogic.bwhere_e" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/bwhere_e.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="175" x="24695" y="1591"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="54" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_GunFlash" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="19133" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="55" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_BFGsound" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="19348" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="56" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.T_StrobeFlash" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="3211" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="57" language="java" name="net.sourceforge.mochadoom.gamelogic.UnifiedGameMap.Enemies" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/UnifiedGameMap.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="222" x="23673" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="58" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_VileAttack" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="9205" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="59" language="java" name="net.sourceforge.mochadoom.gamelogic.mobj_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/mobj_t.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="1503" width="184" x="22337" y="4852"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="60" language="java" name="net.sourceforge.mochadoom.gamelogic.glow_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/glow_t.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="18902" y="2260"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="61" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_Fire" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="9420" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="62" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_BabyMetal" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="9635" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="63" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_BrainAwake" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="9850" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="64" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_Punch" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="19563" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="65" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.T_MoveFloor" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="3426" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="66" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_BrainSpit" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="10065" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="67" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_SpawnSound" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="10280" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="68" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_FireCrackle" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="10495" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="69" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_SpawnFly" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="10710" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="70" language="java" name="net.sourceforge.mochadoom.gamelogic.monster_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/monster_t.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="531" width="201" x="22444" y="6415"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="71" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_Chase" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="10925" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="72" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_BrainExplode" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="11140" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="73" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="387" width="213" x="17042" y="827"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="74" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_BossDeath" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="11355" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="75" language="java" name="net.sourceforge.mochadoom.gamelogic.ILevelLoader" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ILevelLoader.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="351" width="201" x="21913" y="2720"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="76" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_Explode" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="11570" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="77" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_Hoof" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="11785" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="78" language="java" name="net.sourceforge.mochadoom.gamelogic.plattype_e" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/plattype_e.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="171" width="212" x="24228" y="1591"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <interface id="79" language="java" name="net.sourceforge.mochadoom.gamelogic.Resettable" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/Resettable.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="81" width="175" x="24910" y="1591"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <enumeration id="80" language="java" name="net.sourceforge.mochadoom.gamelogic.floor_e" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/floor_e.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="315" width="183" x="367" y="827"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="81" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.T_SlidingDoor" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="3641" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="82" language="java" name="net.sourceforge.mochadoom.gamelogic.Actions.PIT_CheckLine" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/Actions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="23421" y="4533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="83" language="java" name="net.sourceforge.mochadoom.gamelogic.Actions.PTR_ShootTraverse" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/Actions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="207" x="22875" y="4533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="84" language="java" name="net.sourceforge.mochadoom.gamelogic.pspdef_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/pspdef_t.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="19117" y="2269"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="85" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_StartFire" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="12000" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="86" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_FireShotgun2" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="19778" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="87" language="java" name="net.sourceforge.mochadoom.gamelogic.Actions.PTR_UseTraverse" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/Actions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="23122" y="4533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="88" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_VileChase" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="12215" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="89" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_KeenDie" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="12430" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="90" language="java" name="net.sourceforge.mochadoom.gamelogic.sdt_e" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/sdt_e.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="19762" y="3254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="91" language="java" name="net.sourceforge.mochadoom.gamelogic.Actions.PIT_RadiusAttack" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/Actions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="21606" y="4533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="92" language="java" name="net.sourceforge.mochadoom.gamelogic.SlideDoor" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/SlideDoor.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="297" width="190" x="23005" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="93" language="java" name="net.sourceforge.mochadoom.gamelogic.UnifiedGameMap.Specials" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/UnifiedGameMap.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="279" width="175" x="24735" y="827"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="94" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_HeadAttack" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="12645" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="95" language="java" name="net.sourceforge.mochadoom.gamelogic.plat_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/plat_t.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="175" x="24250" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="96" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_Saw" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="19993" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="97" language="java" name="net.sourceforge.mochadoom.gamelogic.vldoor_e" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/vldoor_e.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="19547" y="3299"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="98" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.T_PlatRaise" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="3856" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="99" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_PainDie" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="12860" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="100" language="java" name="net.sourceforge.mochadoom.gamelogic.ThinkerList" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ThinkerList.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="175" x="16612" y="827"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="101" language="java" name="net.sourceforge.mochadoom.gamelogic.UnifiedGameMap.Sight" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/UnifiedGameMap.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="209" x="23958" y="827"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="102" language="java" name="net.sourceforge.mochadoom.gamelogic.Actions.PIT_CheckThing" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/Actions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="21821" y="4533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="103" language="java" name="net.sourceforge.mochadoom.gamelogic.DoorDefines" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/DoorDefines.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="19332" y="2260"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="104" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.T_MoveCeiling" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="4071" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="105" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_SkelFist" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="13075" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="106" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_Scream" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="13290" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="107" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_BspiAttack" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="13505" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="108" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_Raise" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="20208" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="109" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_CPosRefire" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="13720" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="110" language="java" name="net.sourceforge.mochadoom.gamelogic.vldoor_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/vldoor_t.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="19547" y="2269"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="111" language="java" name="net.sourceforge.mochadoom.gamelogic.UnifiedGameMap.Switches" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/UnifiedGameMap.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="230" x="24465" y="827"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="112" language="java" name="net.sourceforge.mochadoom.gamelogic.UnifiedGameMap.Lights" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/UnifiedGameMap.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="175" x="16827" y="827"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="113" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_Pain" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="13935" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="114" language="java" name="net.sourceforge.mochadoom.gamelogic.UnifiedGameMap.PIT_LineFunction" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/UnifiedGameMap.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="175" x="23743" y="4852"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="115" language="java" name="net.sourceforge.mochadoom.gamelogic.UnifiedGameMap.Plats" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/UnifiedGameMap.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="171" width="197" x="24228" y="827"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="116" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_WeaponReady" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="20423" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="117" language="java" name="net.sourceforge.mochadoom.gamelogic.BoomLevelLoader.glseg_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/BoomLevelLoader.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="171" width="175" x="20531" y="4533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="118" language="java" name="net.sourceforge.mochadoom.gamelogic.sd_e" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/sd_e.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="19977" y="3254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="119" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_TroopAttack" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="14150" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="120" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_PlayerScream" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="14365" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="121" language="java" name="net.sourceforge.mochadoom.gamelogic.AbstractLevelLoader" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/AbstractLevelLoader.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="1089" width="262" x="22638" y="1591"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="122" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_Tracer" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="14580" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="123" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_BrainPain" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="14795" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="124" language="java" name="net.sourceforge.mochadoom.gamelogic.slidename_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/slidename_t.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="336" x="23045" y="1591"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="125" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_LoadShotgun2" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="20638" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="126" language="java" name="net.sourceforge.mochadoom.gamelogic.UnifiedGameMap" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/UnifiedGameMap.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="981" width="272" x="23593" y="-194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="127" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_ReFire" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="20853" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="128" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.T_Glow" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="4286" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="129" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_PainAttack" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="15010" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="130" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_SkelWhoosh" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="15225" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="131" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_CheckReload" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="21068" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="132" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_BruisAttack" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="15440" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="133" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_SargAttack" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="15655" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="134" language="java" name="net.sourceforge.mochadoom.gamelogic.slidedoor_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/slidedoor_t.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="19977" y="2260"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="135" language="java" name="net.sourceforge.mochadoom.gamelogic.plat_e" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/plat_e.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="175" x="24480" y="1591"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="136" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_Metal" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="15870" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="137" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_OpenShotgun2" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="21283" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="138" language="java" name="net.sourceforge.mochadoom.gamelogic.Actions.PIT_VileCheck" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/Actions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="175" x="22036" y="4533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="139" language="java" name="net.sourceforge.mochadoom.gamelogic.intercept_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/intercept_t.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="175" x="23633" y="827"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="140" language="java" name="net.sourceforge.mochadoom.gamelogic.UnifiedGameMap.PTR_InterceptFunc" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/UnifiedGameMap.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="175" x="23339" y="4852"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="141" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.T_VerticalDoor" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="4501" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="142" language="java" name="net.sourceforge.mochadoom.gamelogic.slideframe_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/slideframe_t.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="175" x="23421" y="1591"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="143" language="java" name="net.sourceforge.mochadoom.gamelogic.AbstractLevelLoader.linelist_t" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/AbstractLevelLoader.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="22154" y="2720"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="144" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.T_FireFlicker" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="4716" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="145" language="java" name="net.sourceforge.mochadoom.gamelogic.stair_e" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/stair_e.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="19762" y="2224"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="146" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_FireCGun" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="21498" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="147" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_Lower" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="21713" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="148" language="java" name="net.sourceforge.mochadoom.gamelogic.UnifiedGameMap.PIT_AddThingIntercepts" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/UnifiedGameMap.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="20961" y="4533"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="149" language="java" name="net.sourceforge.mochadoom.gamelogic.Actions" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/Actions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="1773" width="301" x="22379" y="2720"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="150" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_Look" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="16085" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="151" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_FireShotgun" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="21928" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="152" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_Light0" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="22143" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="153" language="java" name="net.sourceforge.mochadoom.gamelogic.ActionFunctions.A_SPosAttack" 
+    project="mochadoom" file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/ActionFunctions.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="175" x="16300" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="154" language="java" name="net.sourceforge.mochadoom.gamelogic.anim_t" project="mochadoom" 
+    file="/mochadoom/src/main/java/net/sourceforge/mochadoom/gamelogic/anim_t.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="175" x="24895" y="1254"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="155">    
+    <bendpoint x="17177" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="156" name="Metal"/>      
+      <multiplicity id="157" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="158">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="39"/>  
+  </nesting>  
+  <nesting id="159">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="32"/>  
+  </nesting>  
+  <realization id="160">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="161">    
+    <bendpoint x="22579" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="162" name="GunFlash"/>      
+      <multiplicity id="163" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="164">    
+    <end type="SOURCE" refId="48"/>    
+    <end type="TARGET" refId="121"/>  
+  </generalization>  
+  <realization id="165">    
+    <end type="SOURCE" refId="71"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="166">    
+    <bendpoint x="16568" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="167" name="CPosAttack"/>      
+      <multiplicity id="168" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="169">    
+    <bendpoint x="22537" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="170" name="Saw"/>      
+      <multiplicity id="171" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="172">    
+    <end type="SOURCE" refId="126" navigable="false">      
+      <attribute id="173" name="animdefs"/>      
+      <multiplicity id="174" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="175">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="120"/>  
+  </nesting>  
+  <association id="176">    
+    <end type="SOURCE" refId="143" navigable="false">      
+      <attribute id="177" name="next"/>      
+      <multiplicity id="178" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="143" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="179">    
+    <bendpoint x="16946" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="180" name="KeenDie"/>      
+      <multiplicity id="181" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="182">    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="183" name="type"/>      
+      <multiplicity id="184" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="80" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="185">    
+    <bendpoint x="17156" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="186" name="BrainAwake"/>      
+      <multiplicity id="187" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="188">    
+    <bendpoint x="22930" y="1254"/>    
+    <bendpoint x="22993" y="1591"/>    
+    <bendpoint x="23668" y="2720"/>    
+    <bendpoint x="23668" y="4533"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="189" name="braintargets"/>      
+      <multiplicity id="190" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="191">    
+    <bendpoint x="22642" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="192" name="Light2"/>      
+      <multiplicity id="193" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="194">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="2"/>  
+  </nesting>  
+  <association id="195">    
+    <bendpoint x="17450" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="196" name="SargAttack"/>      
+      <multiplicity id="197" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="198">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="9"/>  
+  </nesting>  
+  <realization id="199">    
+    <end type="SOURCE" refId="150"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="200">    
+    <bendpoint x="16925" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="201" name="CPosRefire"/>      
+      <multiplicity id="202" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="203">    
+    <end type="SOURCE" refId="126" navigable="false">      
+      <attribute id="204" name="PEV"/>      
+      <multiplicity id="205" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="115" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="206">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="131"/>  
+  </nesting>  
+  <nesting id="207">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="58"/>  
+  </nesting>  
+  <nesting id="208">    
+    <end type="SOURCE" refId="149"/>    
+    <end type="TARGET" refId="3"/>  
+  </nesting>  
+  <association id="209">    
+    <bendpoint x="17261" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="210" name="Tracer"/>      
+      <multiplicity id="211" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="212">    
+    <bendpoint x="17492" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="213" name="BrainSpit"/>      
+      <multiplicity id="214" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="215">    
+    <bendpoint x="22621" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="216" name="FireShotgun"/>      
+      <multiplicity id="217" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="218">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="36"/>  
+  </nesting>  
+  <nesting id="219">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="107"/>  
+  </nesting>  
+  <association id="220">    
+    <bendpoint x="17366" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="221" name="BrainPain"/>      
+      <multiplicity id="222" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="223">    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="224" name="RadiusAttack"/>      
+      <multiplicity id="225" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="91" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="226">    
+    <bendpoint x="22705" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="227" name="Punch"/>      
+      <multiplicity id="228" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="229">    
+    <end type="SOURCE" refId="126"/>    
+    <end type="TARGET" refId="112"/>  
+  </nesting>  
+  <nesting id="230">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="8"/>  
+  </nesting>  
+  <association id="231">    
+    <end type="SOURCE" refId="134" navigable="false">      
+      <attribute id="232" name="type"/>      
+      <multiplicity id="233" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="90" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="234">    
+    <bendpoint x="16904" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="235" name="MobjThinker"/>      
+      <multiplicity id="236" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="237">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="119"/>  
+  </nesting>  
+  <association id="238">    
+    <end type="SOURCE" refId="126" navigable="false">      
+      <attribute id="239" name="intercepts"/>      
+      <multiplicity id="240" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="139" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="241">    
+    <bendpoint x="2965" y="827"/>    
+    <bendpoint x="2965" y="1254"/>    
+    <bendpoint x="2965" y="1591"/>    
+    <bendpoint x="2965" y="2720"/>    
+    <end type="SOURCE" refId="126"/>    
+    <end type="TARGET" refId="148"/>  
+  </nesting>  
+  <realization id="242">    
+    <end type="SOURCE" refId="82"/>    
+    <end type="TARGET" refId="114"/>  
+  </realization>  
+  <association id="243">    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="244" name="CheckLine"/>      
+      <multiplicity id="245" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="82" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="246">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="61"/>  
+  </nesting>  
+  <association id="247">    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="248" name="VileCheck"/>      
+      <multiplicity id="249" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="138" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="250">    
+    <bendpoint x="17009" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="251" name="Scream"/>      
+      <multiplicity id="252" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="253">    
+    <end type="SOURCE" refId="148"/>    
+    <end type="TARGET" refId="50"/>  
+  </realization>  
+  <association id="254">    
+    <bendpoint x="17030" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="255" name="VileStart"/>      
+      <multiplicity id="256" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="257">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <realization id="258">    
+    <end type="SOURCE" refId="45"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="259">    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="260" name="EN"/>      
+      <multiplicity id="261" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="57" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="262">    
+    <end type="SOURCE" refId="146"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <association id="263">    
+    <bendpoint x="16799" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="264" name="FireCrackle"/>      
+      <multiplicity id="265" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="266">    
+    <bendpoint x="17198" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="267" name="HeadAttack"/>      
+      <multiplicity id="268" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="269">    
+    <end type="SOURCE" refId="126"/>    
+    <end type="TARGET" refId="93"/>  
+  </nesting>  
+  <realization id="270">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <realization id="271">    
+    <end type="SOURCE" refId="151"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <association id="272">    
+    <bendpoint x="23647" y="2720"/>    
+    <bendpoint x="23647" y="4533"/>    
+    <end type="SOURCE" refId="121" navigable="false">      
+      <attribute id="273" name="blocklinks"/>      
+      <multiplicity id="274" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="275">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <realization id="276">    
+    <end type="SOURCE" refId="109"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <nesting id="277">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="46"/>  
+  </nesting>  
+  <realization id="278">    
+    <end type="SOURCE" refId="49"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <association id="279">    
+    <bendpoint x="22747" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="280" name="BFGsound"/>      
+      <multiplicity id="281" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="282">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <association id="283">    
+    <bendpoint x="16631" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="284" name="StartFire"/>      
+      <multiplicity id="285" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="286">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="129"/>  
+  </nesting>  
+  <realization id="287">    
+    <end type="SOURCE" refId="130"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <nesting id="288">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="68"/>  
+  </nesting>  
+  <nesting id="289">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="152"/>  
+  </nesting>  
+  <realization id="290">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="50"/>  
+  </realization>  
+  <realization id="291">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="140"/>  
+  </realization>  
+  <nesting id="292">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="150"/>  
+  </nesting>  
+  <realization id="293">    
+    <end type="SOURCE" refId="66"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="294">    
+    <bendpoint x="16736" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="295" name="BrainScream"/>      
+      <multiplicity id="296" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="297">    
+    <end type="SOURCE" refId="61"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <realization id="298">    
+    <end type="SOURCE" refId="122"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <realization id="299">    
+    <end type="SOURCE" refId="98"/>    
+    <end type="TARGET" refId="51"/>  
+  </realization>  
+  <nesting id="300">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="37"/>  
+  </nesting>  
+  <nesting id="301">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="127"/>  
+  </nesting>  
+  <nesting id="302">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="116"/>  
+  </nesting>  
+  <association id="303">    
+    <bendpoint x="17555" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="304" name="SpawnSound"/>      
+      <multiplicity id="305" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="306">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="137"/>  
+  </nesting>  
+  <association id="307">    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="308" name="slideFrames"/>      
+      <multiplicity id="309" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="142" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="310">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="69"/>  
+  </nesting>  
+  <association id="311">    
+    <bendpoint x="16883" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="312" name="SpawnFly"/>      
+      <multiplicity id="313" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="314">    
+    <end type="SOURCE" refId="126"/>    
+    <end type="TARGET" refId="101"/>  
+  </nesting>  
+  <association id="315">    
+    <bendpoint x="16652" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="316" name="Look"/>      
+      <multiplicity id="317" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="318">    
+    <bendpoint x="22663" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="319" name="FirePlasma"/>      
+      <multiplicity id="320" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="321">    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="322" name="slideFrameNames"/>      
+      <multiplicity id="323" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="124" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="324">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="88"/>  
+  </nesting>  
+  <realization id="325">    
+    <end type="SOURCE" refId="127"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <association id="326">    
+    <bendpoint x="22262" y="4533"/>    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="327" name="bombsource"/>      
+      <multiplicity id="328" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="329">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="125"/>  
+  </nesting>  
+  <association id="330">    
+    <bendpoint x="22325" y="4533"/>    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="331" name="usething"/>      
+      <multiplicity id="332" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="333">    
+    <bendpoint x="17282" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="334" name="FatAttack1"/>      
+      <multiplicity id="335" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="336">    
+    <bendpoint x="17408" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="337" name="Chase"/>      
+      <multiplicity id="338" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="339">    
+    <bendpoint x="17093" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="340" name="Fire"/>      
+      <multiplicity id="341" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="342">    
+    <end type="SOURCE" refId="149"/>    
+    <end type="TARGET" refId="83"/>  
+  </nesting>  
+  <realization id="343">    
+    <end type="SOURCE" refId="128"/>    
+    <end type="TARGET" refId="51"/>  
+  </realization>  
+  <nesting id="344">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="74"/>  
+  </nesting>  
+  <association id="345">    
+    <bendpoint x="22304" y="4533"/>    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="346" name="tmthing"/>      
+      <multiplicity id="347" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="348">    
+    <bendpoint x="23642" y="1254"/>    
+    <bendpoint x="23665" y="1591"/>    
+    <bendpoint x="23689" y="2720"/>    
+    <bendpoint x="23689" y="4533"/>    
+    <end type="SOURCE" refId="139" navigable="false">      
+      <attribute id="349" name="thing"/>      
+      <multiplicity id="350" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="351">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="123"/>  
+  </nesting>  
+  <realization id="352">    
+    <end type="SOURCE" refId="58"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="353">    
+    <bendpoint x="16820" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="354" name="SpidRefire"/>      
+      <multiplicity id="355" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="356">    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="140"/>  
+  </realization>  
+  <association id="357">    
+    <end type="SOURCE" refId="115" navigable="false">      
+      <attribute id="358" name="activeplats"/>      
+      <multiplicity id="359" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="95" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="360">    
+    <bendpoint x="17534" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="361" name="XScream"/>      
+      <multiplicity id="362" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="363">    
+    <end type="SOURCE" refId="144"/>    
+    <end type="TARGET" refId="51"/>  
+  </realization>  
+  <association id="364">    
+    <bendpoint x="22474" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="365" name="FireCGun"/>      
+      <multiplicity id="366" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="367">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="113"/>  
+  </nesting>  
+  <nesting id="368">    
+    <end type="SOURCE" refId="149"/>    
+    <end type="TARGET" refId="24"/>  
+  </nesting>  
+  <association id="369">    
+    <bendpoint x="22888" y="1254"/>    
+    <bendpoint x="22930" y="1591"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="370" name="A"/>      
+      <multiplicity id="371" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="149" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="372">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="64"/>  
+  </nesting>  
+  <nesting id="373">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="66"/>  
+  </nesting>  
+  <nesting id="374">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="86"/>  
+  </nesting>  
+  <association id="375">    
+    <bendpoint x="16757" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="376" name="FatAttack3"/>      
+      <multiplicity id="377" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="378">    
+    <bendpoint x="4984" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="379" name="MoveCeiling"/>      
+      <multiplicity id="380" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="381">    
+    <bendpoint x="23904" y="1591"/>    
+    <bendpoint x="23925" y="2720"/>    
+    <bendpoint x="23925" y="4533"/>    
+    <end type="SOURCE" refId="57" navigable="false">      
+      <attribute id="382" name="soundtarget"/>      
+      <multiplicity id="383" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="384">    
+    <bendpoint x="22388" y="4533"/>    
+    <end type="SOURCE" refId="59" navigable="false">      
+      <attribute id="385" name="A"/>      
+      <multiplicity id="386" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="149" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="387">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="106"/>  
+  </nesting>  
+  <nesting id="388">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="147"/>  
+  </nesting>  
+  <realization id="389">    
+    <end type="SOURCE" refId="46"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <nesting id="390">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="94"/>  
+  </nesting>  
+  <association id="391">    
+    <bendpoint x="16967" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="392" name="PosAttack"/>      
+      <multiplicity id="393" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="394">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="23"/>  
+  </nesting>  
+  <nesting id="395">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="54"/>  
+  </nesting>  
+  <realization id="396">    
+    <end type="SOURCE" refId="123"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="397">    
+    <bendpoint x="22600" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="398" name="Lower"/>      
+      <multiplicity id="399" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="400">    
+    <end type="SOURCE" refId="138" navigable="false">      
+      <attribute id="401" name="vileobj"/>      
+      <multiplicity id="402" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="403">    
+    <end type="SOURCE" refId="136"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="404">    
+    <bendpoint x="22768" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="405" name="CloseShotgun2"/>      
+      <multiplicity id="406" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="407">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="114"/>  
+  </realization>  
+  <realization id="408">    
+    <end type="SOURCE" refId="153"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="409">    
+    <bendpoint x="24197" y="827"/>    
+    <bendpoint x="24197" y="1254"/>    
+    <bendpoint x="24197" y="1591"/>    
+    <bendpoint x="24197" y="2720"/>    
+    <bendpoint x="24197" y="4533"/>    
+    <end type="SOURCE" refId="126" navigable="false">      
+      <attribute id="410" name="trace"/>      
+      <multiplicity id="411" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="412">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="108"/>  
+  </nesting>  
+  <nesting id="413">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="65"/>  
+  </nesting>  
+  <nesting id="414">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="128"/>  
+  </nesting>  
+  <association id="415">    
+    <end type="SOURCE" refId="110" navigable="false">      
+      <attribute id="416" name="type"/>      
+      <multiplicity id="417" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="97" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="418">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="141"/>  
+  </nesting>  
+  <realization id="419">    
+    <end type="SOURCE" refId="125"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <generalization id="420">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="121"/>  
+  </generalization>  
+  <association id="421">    
+    <end type="SOURCE" refId="111" navigable="false">      
+      <attribute id="422" name="alphSwitchList"/>      
+      <multiplicity id="423" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="42" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="424">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="33"/>  
+  </nesting>  
+  <nesting id="425">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="1"/>  
+  </nesting>  
+  <realization id="426">    
+    <end type="SOURCE" refId="126"/>    
+    <end type="TARGET" refId="100"/>  
+  </realization>  
+  <association id="427">    
+    <end type="SOURCE" refId="138" navigable="false">      
+      <attribute id="428" name="corpsehit"/>      
+      <multiplicity id="429" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="430">    
+    <end type="SOURCE" refId="149"/>    
+    <end type="TARGET" refId="102"/>  
+  </nesting>  
+  <realization id="431">    
+    <end type="SOURCE" refId="108"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <association id="432">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="433" name="where"/>      
+      <multiplicity id="434" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="53" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="435">    
+    <bendpoint x="22810" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="436" name="LL"/>      
+      <multiplicity id="437" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="121" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="438">    
+    <end type="SOURCE" refId="63"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <realization id="439">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="440">    
+    <bendpoint x="17345" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="441" name="PainDie"/>      
+      <multiplicity id="442" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="443">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="144"/>  
+  </nesting>  
+  <realization id="444">    
+    <end type="SOURCE" refId="77"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <nesting id="445">    
+    <end type="SOURCE" refId="149"/>    
+    <end type="TARGET" refId="82"/>  
+  </nesting>  
+  <association id="446">    
+    <bendpoint x="17303" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="447" name="Fall"/>      
+      <multiplicity id="448" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="449">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="31"/>  
+  </nesting>  
+  <association id="450">    
+    <bendpoint x="17072" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="451" name="BFGSpray"/>      
+      <multiplicity id="452" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="453">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <realization id="454">    
+    <end type="SOURCE" refId="147"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <nesting id="455">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="109"/>  
+  </nesting>  
+  <association id="456">    
+    <bendpoint x="16988" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="457" name="SkullAttack"/>      
+      <multiplicity id="458" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="459">    
+    <end type="SOURCE" refId="126" navigable="false">      
+      <attribute id="460" name="SW"/>      
+      <multiplicity id="461" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="111" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="462">    
+    <bendpoint x="22495" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="463" name="FireBFG"/>      
+      <multiplicity id="464" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="465">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <realization id="466">    
+    <end type="SOURCE" refId="91"/>    
+    <end type="TARGET" refId="50"/>  
+  </realization>  
+  <association id="467">    
+    <end type="SOURCE" refId="93" navigable="false">      
+      <attribute id="468" name="anims"/>      
+      <multiplicity id="469" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="154" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="470">    
+    <bendpoint x="22972" y="1591"/>    
+    <bendpoint x="22972" y="1254"/>    
+    <bendpoint x="22972" y="827"/>    
+    <end type="SOURCE" refId="149"/>    
+    <end type="TARGET" refId="126"/>  
+  </generalization>  
+  <association id="471">    
+    <bendpoint x="16862" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="472" name="SkelFist"/>      
+      <multiplicity id="473" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="474">    
+    <bendpoint x="22283" y="4533"/>    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="475" name="shootthing"/>      
+      <multiplicity id="476" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="477">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="132"/>  
+  </nesting>  
+  <realization id="478">    
+    <end type="SOURCE" refId="113"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <realization id="479">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <realization id="480">    
+    <end type="SOURCE" refId="88"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <nesting id="481">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="71"/>  
+  </nesting>  
+  <association id="482">    
+    <bendpoint x="17240" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="483" name="Explode"/>      
+      <multiplicity id="484" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="485">    
+    <end type="SOURCE" refId="149"/>    
+    <end type="TARGET" refId="91"/>  
+  </nesting>  
+  <realization id="486">    
+    <end type="SOURCE" refId="105"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="487">    
+    <bendpoint x="22346" y="4533"/>    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="488" name="slidemo"/>      
+      <multiplicity id="489" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="490">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="51"/>  
+  </realization>  
+  <realization id="491">    
+    <end type="SOURCE" refId="55"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <realization id="492">    
+    <end type="SOURCE" refId="99"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <nesting id="493">    
+    <end type="SOURCE" refId="126"/>    
+    <end type="TARGET" refId="115"/>  
+  </nesting>  
+  <association id="494">    
+    <end type="SOURCE" refId="126" navigable="false">      
+      <attribute id="495" name="See"/>      
+      <multiplicity id="496" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="101" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="497">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="5"/>  
+  </nesting>  
+  <nesting id="498">    
+    <end type="SOURCE" refId="149"/>    
+    <end type="TARGET" refId="138"/>  
+  </nesting>  
+  <nesting id="499">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="14"/>  
+  </nesting>  
+  <realization id="500">    
+    <end type="SOURCE" refId="65"/>    
+    <end type="TARGET" refId="51"/>  
+  </realization>  
+  <nesting id="501">    
+    <bendpoint x="23859" y="827"/>    
+    <end type="SOURCE" refId="126"/>    
+    <end type="TARGET" refId="57"/>  
+  </nesting>  
+  <realization id="502">    
+    <end type="SOURCE" refId="119"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="503">    
+    <bendpoint x="16841" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="504" name="SPosAttack"/>      
+      <multiplicity id="505" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="506">    
+    <bendpoint x="23967" y="1254"/>    
+    <bendpoint x="23967" y="1591"/>    
+    <bendpoint x="23967" y="2720"/>    
+    <bendpoint x="23967" y="4533"/>    
+    <end type="SOURCE" refId="101" navigable="false">      
+      <attribute id="507" name="strace"/>      
+      <multiplicity id="508" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="509">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="105"/>  
+  </nesting>  
+  <association id="510">    
+    <bendpoint x="17597" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="511" name="BossDeath"/>      
+      <multiplicity id="512" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="513">    
+    <end type="SOURCE" refId="129"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <nesting id="514">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="99"/>  
+  </nesting>  
+  <realization id="515">    
+    <end type="SOURCE" refId="132"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="516">    
+    <bendpoint x="17471" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="517" name="PainAttack"/>      
+      <multiplicity id="518" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="519">    
+    <end type="SOURCE" refId="59" navigable="false">      
+      <attribute id="520" name="target"/>      
+      <multiplicity id="521" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="522">    
+    <bendpoint x="16547" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="523" name="Hoof"/>      
+      <multiplicity id="524" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="525">    
+    <bendpoint x="16715" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="526" name="BruisAttack"/>      
+      <multiplicity id="527" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="528">    
+    <bendpoint x="16505" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="529" name="FatRaise"/>      
+      <multiplicity id="530" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="531">    
+    <bendpoint x="16589" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="532" name="VileChase"/>      
+      <multiplicity id="533" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="534">    
+    <bendpoint x="22831" y="827"/>    
+    <bendpoint x="22831" y="1254"/>    
+    <bendpoint x="22607" y="1591"/>    
+    <bendpoint x="21327" y="2720"/>    
+    <bendpoint x="20500" y="4533"/>    
+    <end type="SOURCE" refId="126"/>    
+    <end type="TARGET" refId="50"/>  
+  </nesting>  
+  <nesting id="535">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="104"/>  
+  </nesting>  
+  <association id="536">    
+    <bendpoint x="23390" y="4533"/>    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="537" name="ShootTraverse"/>      
+      <multiplicity id="538" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="140" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="539">    
+    <end type="SOURCE" refId="131"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <realization id="540">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <association id="541">    
+    <bendpoint x="17429" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="542" name="VileTarget"/>      
+      <multiplicity id="543" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="544">    
+    <bendpoint x="17114" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="545" name="BspiAttack"/>      
+      <multiplicity id="546" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="547">    
+    <bendpoint x="22241" y="4533"/>    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="548" name="bombspot"/>      
+      <multiplicity id="549" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="550">    
+    <end type="SOURCE" refId="72"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <nesting id="551">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="20"/>  
+  </nesting>  
+  <realization id="552">    
+    <end type="SOURCE" refId="133"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <realization id="553">    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="554">    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="555" name="activeceilings"/>      
+      <multiplicity id="556" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="557">    
+    <end type="SOURCE" refId="111" navigable="false">      
+      <attribute id="558" name="buttonlist"/>      
+      <multiplicity id="559" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="560">    
+    <bendpoint x="23927" y="827"/>    
+    <bendpoint x="23946" y="1254"/>    
+    <bendpoint x="23946" y="1591"/>    
+    <bendpoint x="23946" y="2720"/>    
+    <bendpoint x="23946" y="4533"/>    
+    <end type="SOURCE" refId="126"/>    
+    <end type="TARGET" refId="114"/>  
+  </nesting>  
+  <association id="561">    
+    <bendpoint x="5068" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="562" name="FireFlicker"/>      
+      <multiplicity id="563" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="564">    
+    <end type="SOURCE" refId="141"/>    
+    <end type="TARGET" refId="51"/>  
+  </realization>  
+  <association id="565">    
+    <bendpoint x="16610" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="566" name="PlayerScream"/>      
+      <multiplicity id="567" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="568">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="27"/>  
+  </nesting>  
+  <realization id="569">    
+    <end type="SOURCE" refId="107"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <realization id="570">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <nesting id="571">    
+    <end type="SOURCE" refId="126"/>    
+    <end type="TARGET" refId="111"/>  
+  </nesting>  
+  <realization id="572">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="573">    
+    <bendpoint x="16673" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="574" name="FaceTarget"/>      
+      <multiplicity id="575" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="576">    
+    <end type="SOURCE" refId="74"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="577">    
+    <end type="SOURCE" refId="126" navigable="false">      
+      <attribute id="578" name="LEV"/>      
+      <multiplicity id="579" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="112" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="580">    
+    <end type="SOURCE" refId="70"/>    
+    <end type="TARGET" refId="59"/>  
+  </generalization>  
+  <realization id="581">    
+    <end type="SOURCE" refId="64"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <nesting id="582">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="17"/>  
+  </nesting>  
+  <realization id="583">    
+    <end type="SOURCE" refId="54"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <realization id="584">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="50"/>  
+  </realization>  
+  <nesting id="585">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="76"/>  
+  </nesting>  
+  <association id="586">    
+    <bendpoint x="23327" y="4533"/>    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="587" name="AimTraverse"/>      
+      <multiplicity id="588" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="140" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="589">    
+    <bendpoint x="22411" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="590" name="Raise"/>      
+      <multiplicity id="591" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="592">    
+    <end type="SOURCE" refId="96"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <association id="593">    
+    <end type="SOURCE" refId="126" navigable="false">      
+      <attribute id="594" name="SPECS"/>      
+      <multiplicity id="595" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="93" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="596">    
+    <end type="SOURCE" refId="121"/>    
+    <end type="TARGET" refId="143"/>  
+  </nesting>  
+  <nesting id="597">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="89"/>  
+  </nesting>  
+  <nesting id="598">    
+    <bendpoint x="23602" y="827"/>    
+    <bendpoint x="23614" y="1254"/>    
+    <bendpoint x="23626" y="1591"/>    
+    <bendpoint x="23626" y="2720"/>    
+    <bendpoint x="23626" y="4533"/>    
+    <end type="SOURCE" refId="126"/>    
+    <end type="TARGET" refId="140"/>  
+  </nesting>  
+  <realization id="599">    
+    <end type="SOURCE" refId="116"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <nesting id="600">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="81"/>  
+  </nesting>  
+  <realization id="601">    
+    <end type="SOURCE" refId="81"/>    
+    <end type="TARGET" refId="51"/>  
+  </realization>  
+  <nesting id="602">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="96"/>  
+  </nesting>  
+  <association id="603">    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="604" name="LL"/>      
+      <multiplicity id="605" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="121" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="606">    
+    <end type="SOURCE" refId="56"/>    
+    <end type="TARGET" refId="51"/>  
+  </realization>  
+  <association id="607">    
+    <bendpoint x="17324" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="608" name="VileAttack"/>      
+      <multiplicity id="609" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="610">    
+    <bendpoint x="22348" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="611" name="OpenShotgun2"/>      
+      <multiplicity id="612" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="613">    
+    <bendpoint x="23014" y="1591"/>    
+    <end type="SOURCE" refId="92" navigable="false">      
+      <attribute id="614" name="P"/>      
+      <multiplicity id="615" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="149" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="616">    
+    <bendpoint x="17387" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="617" name="BrainExplode"/>      
+      <multiplicity id="618" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="619">    
+    <bendpoint x="17513" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="620" name="Pain"/>      
+      <multiplicity id="621" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="622">    
+    <bendpoint x="22369" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="623" name="FirePistol"/>      
+      <multiplicity id="624" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="625">    
+    <bendpoint x="22516" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="626" name="ReFire"/>      
+      <multiplicity id="627" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="628">    
+    <bendpoint x="16526" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="629" name="BabyMetal"/>      
+      <multiplicity id="630" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="631">    
+    <end type="SOURCE" refId="152"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <realization id="632">    
+    <end type="SOURCE" refId="87"/>    
+    <end type="TARGET" refId="140"/>  
+  </realization>  
+  <association id="633">    
+    <bendpoint x="17051" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="634" name="SkelMissile"/>      
+      <multiplicity id="635" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="636">    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="637" name="StompThing"/>      
+      <multiplicity id="638" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="639">    
+    <bendpoint x="5047" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="640" name="VerticalDoor"/>      
+      <multiplicity id="641" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="642">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="67"/>  
+  </nesting>  
+  <association id="643">    
+    <end type="SOURCE" refId="126" navigable="false">      
+      <attribute id="644" name="FUNS"/>      
+      <multiplicity id="645" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="73" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="646">    
+    <end type="SOURCE" refId="68"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <realization id="647">    
+    <end type="SOURCE" refId="83"/>    
+    <end type="TARGET" refId="140"/>  
+  </realization>  
+  <nesting id="648">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="130"/>  
+  </nesting>  
+  <nesting id="649">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="133"/>  
+  </nesting>  
+  <association id="650">    
+    <bendpoint x="22789" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="651" name="LoadShotgun2"/>      
+      <multiplicity id="652" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="653">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="122"/>  
+  </nesting>  
+  <association id="654">    
+    <end type="SOURCE" refId="134" navigable="false">      
+      <attribute id="655" name="status"/>      
+      <multiplicity id="656" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="118" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="657">    
+    <end type="SOURCE" refId="120"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="658">    
+    <bendpoint x="23308" y="827"/>    
+    <end type="SOURCE" refId="126" navigable="false">      
+      <attribute id="659" name="SL"/>      
+      <multiplicity id="660" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="661">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="49"/>  
+  </nesting>  
+  <realization id="662">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <realization id="663">    
+    <end type="SOURCE" refId="104"/>    
+    <end type="TARGET" refId="51"/>  
+  </realization>  
+  <association id="664">    
+    <bendpoint x="23369" y="4533"/>    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="665" name="UseTraverse"/>      
+      <multiplicity id="666" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="140" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="667">    
+    <bendpoint x="22432" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="668" name="CheckReload"/>      
+      <multiplicity id="669" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="670">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="671" name="type"/>      
+      <multiplicity id="672" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="673">    
+    <end type="SOURCE" refId="149"/>    
+    <end type="TARGET" refId="28"/>  
+  </nesting>  
+  <nesting id="674">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="146"/>  
+  </nesting>  
+  <nesting id="675">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="30"/>  
+  </nesting>  
+  <nesting id="676">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="4"/>  
+  </nesting>  
+  <realization id="677">    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <realization id="678">    
+    <end type="SOURCE" refId="94"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="679">    
+    <bendpoint x="5026" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="680" name="MoveFloor"/>      
+      <multiplicity id="681" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="682">    
+    <end type="SOURCE" refId="121" navigable="false">      
+      <attribute id="683" name="P"/>      
+      <multiplicity id="684" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="149" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="685">    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="686" name="AddThingIntercepts"/>      
+      <multiplicity id="687" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="148" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="688">    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="689" name="ChangeSector"/>      
+      <multiplicity id="690" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="691">    
+    <end type="SOURCE" refId="69"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="692">    
+    <bendpoint x="17135" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="693" name="SkelWhoosh"/>      
+      <multiplicity id="694" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="695">    
+    <end type="SOURCE" refId="102"/>    
+    <end type="TARGET" refId="50"/>  
+  </realization>  
+  <realization id="696">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="697">    
+    <end type="SOURCE" refId="95" navigable="false">      
+      <attribute id="698" name="oldstatus"/>      
+      <multiplicity id="699" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="135" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="700">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="153"/>  
+  </nesting>  
+  <nesting id="701">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="63"/>  
+  </nesting>  
+  <nesting id="702">    
+    <end type="SOURCE" refId="48"/>    
+    <end type="TARGET" refId="117"/>  
+  </nesting>  
+  <nesting id="703">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="45"/>  
+  </nesting>  
+  <association id="704">    
+    <bendpoint x="4963" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="705" name="StrobeFlash"/>      
+      <multiplicity id="706" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="707">    
+    <bendpoint x="5089" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="708" name="PlatRaise"/>      
+      <multiplicity id="709" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="710">    
+    <bendpoint x="23838" y="827"/>    
+    <end type="SOURCE" refId="126" navigable="false">      
+      <attribute id="711" name="EN"/>      
+      <multiplicity id="712" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="57" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="713">    
+    <end type="SOURCE" refId="149"/>    
+    <end type="TARGET" refId="52"/>  
+  </nesting>  
+  <association id="714">    
+    <bendpoint x="22684" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="715" name="Light1"/>      
+      <multiplicity id="716" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="717">    
+    <end type="SOURCE" refId="121"/>    
+    <end type="TARGET" refId="75"/>  
+  </realization>  
+  <association id="718">    
+    <bendpoint x="4921" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="719" name="Glow"/>      
+      <multiplicity id="720" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="721">    
+    <bendpoint x="17576" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="722" name="CyberAttack"/>      
+      <multiplicity id="723" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="724">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="10"/>  
+  </nesting>  
+  <realization id="725">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <realization id="726">    
+    <end type="SOURCE" refId="86"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <association id="727">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="728" name="dl"/>      
+      <multiplicity id="729" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="730">    
+    <end type="SOURCE" refId="95" navigable="false">      
+      <attribute id="731" name="status"/>      
+      <multiplicity id="732" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="135" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="733">    
+    <end type="SOURCE" refId="137"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <association id="734">    
+    <bendpoint x="22367" y="4533"/>    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="735" name="linetarget"/>      
+      <multiplicity id="736" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="737">    
+    <bendpoint x="22453" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="738" name="WeaponReady"/>      
+      <multiplicity id="739" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="740">    
+    <end type="SOURCE" refId="138"/>    
+    <end type="TARGET" refId="50"/>  
+  </realization>  
+  <association id="741">    
+    <bendpoint x="22951" y="827"/>    
+    <bendpoint x="22951" y="1254"/>    
+    <bendpoint x="22951" y="1591"/>    
+    <end type="SOURCE" refId="126" navigable="false">      
+      <attribute id="742" name="A"/>      
+      <multiplicity id="743" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="149" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="744">    
+    <end type="SOURCE" refId="106"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <nesting id="745">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="18"/>  
+  </nesting>  
+  <realization id="746">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="25"/>  
+  </realization>  
+  <nesting id="747">    
+    <bendpoint x="23906" y="827"/>    
+    <bendpoint x="23925" y="1254"/>    
+    <bendpoint x="23925" y="1591"/>    
+    <bendpoint x="23904" y="2720"/>    
+    <end type="SOURCE" refId="126"/>    
+    <end type="TARGET" refId="38"/>  
+  </nesting>  
+  <nesting id="748">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="136"/>  
+  </nesting>  
+  <realization id="749">    
+    <end type="SOURCE" refId="89"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <nesting id="750">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="151"/>  
+  </nesting>  
+  <nesting id="751">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="98"/>  
+  </nesting>  
+  <nesting id="752">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="56"/>  
+  </nesting>  
+  <association id="753">    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="754" name="CheckThing"/>      
+      <multiplicity id="755" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="102" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="756">    
+    <bendpoint x="22909" y="827"/>    
+    <bendpoint x="22909" y="1254"/>    
+    <end type="SOURCE" refId="126" navigable="false">      
+      <attribute id="757" name="LL"/>      
+      <multiplicity id="758" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="121" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="759">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="85"/>  
+  </nesting>  
+  <realization id="760">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="761">    
+    <bendpoint x="22558" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="762" name="Light0"/>      
+      <multiplicity id="763" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="764">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="765">    
+    <bendpoint x="22726" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="766" name="FireMissile"/>      
+      <multiplicity id="767" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="768">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <nesting id="769">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="22"/>  
+  </nesting>  
+  <nesting id="770">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="15"/>  
+  </nesting>  
+  <nesting id="771">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="26"/>  
+  </nesting>  
+  <association id="772">    
+    <bendpoint x="4942" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="773" name="SlidingDoor"/>      
+      <multiplicity id="774" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="775">    
+    <end type="SOURCE" refId="149"/>    
+    <end type="TARGET" refId="87"/>  
+  </nesting>  
+  <realization id="776">    
+    <end type="SOURCE" refId="76"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <realization id="777">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="778">    
+    <bendpoint x="16778" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="779" name="BrainDie"/>      
+      <multiplicity id="780" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="781">    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="782">    
+    <bendpoint x="22390" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="783" name="FireShotgun2"/>      
+      <multiplicity id="784" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="785">    
+    <end type="SOURCE" refId="59"/>    
+    <end type="TARGET" refId="47"/>  
+  </realization>  
+  <association id="786">    
+    <bendpoint x="23348" y="4533"/>    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="787" name="SlideTraverse"/>      
+      <multiplicity id="788" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="140" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="789">    
+    <end type="SOURCE" refId="59" navigable="false">      
+      <attribute id="790" name="tracer"/>      
+      <multiplicity id="791" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="792">    
+    <end type="SOURCE" refId="149" navigable="false">      
+      <attribute id="793" name="AddLineIntercepts"/>      
+      <multiplicity id="794" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="38" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="795">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="62"/>  
+  </nesting>  
+  <association id="796">    
+    <end type="SOURCE" refId="95" navigable="false">      
+      <attribute id="797" name="type"/>      
+      <multiplicity id="798" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="78" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="799">    
+    <bendpoint x="5005" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="800" name="LightFlash"/>      
+      <multiplicity id="801" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="51" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="802">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="72"/>  
+  </nesting>  
+  <association id="803">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="804" name="values"/>      
+      <multiplicity id="805" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="806">    
+    <bendpoint x="17219" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="807" name="FatAttack2"/>      
+      <multiplicity id="808" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="809">    
+    <bendpoint x="16694" y="1254"/>    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="810" name="TroopAttack"/>      
+      <multiplicity id="811" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="812">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="55"/>  
+  </nesting>  
+  <nesting id="813">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="77"/>  
+  </nesting>  
+  <association id="814">    
+    <end type="SOURCE" refId="73" navigable="false">      
+      <attribute id="815" name="SL"/>      
+      <multiplicity id="816" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="92" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="817">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="79"/>  
+  </realization>  
+  <nesting id="818">    
+    <end type="SOURCE" refId="73"/>    
+    <end type="TARGET" refId="35"/>  
+  </nesting>  
+  <realization id="819">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <realization id="820">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <realization id="821">    
+    <end type="SOURCE" refId="85"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
