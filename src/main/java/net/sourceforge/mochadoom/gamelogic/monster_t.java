@@ -2,6 +2,8 @@ package net.sourceforge.mochadoom.gamelogic;
 
 import net.sourceforge.mochadoom.data.spritenum_t;
 import net.sourceforge.mochadoom.data.state_t;
+import net.sourceforge.mochadoom.daycycle.IDayPart;
+import net.sourceforge.mochadoom.daycycle.Kronos;
 import net.sourceforge.mochadoom.defines.StateNum;
 
 import static net.sourceforge.mochadoom.data.info.states;
@@ -47,48 +49,121 @@ public class monster_t extends mobj_t{
         // this.thinker=new thinker_t();
 
     }
+
+    /**
+     * Devuelve verdadero si el mounstro es Vampiro
+     * @return
+     */
     public boolean isVampire(){
         return (statusFlag & VAMPIRE) == VAMPIRE;
     }
 
+    /**
+     * Devuelve verdadero si es hombre lobo
+     * @return
+     */
     public boolean isWerewolf(){
         return (statusFlag & WEREWOLF) == WEREWOLF;
     }
 
+    /**
+     * Devuelve veraddero si es hybrido
+     * @return
+     */
     public boolean isHybrid(){
         return (statusFlag & HYBRID) == HYBRID;
     }
 
+    /**
+     * Devuelve verdadero si es resistente
+     * @return
+     */
     public boolean isResistant(){
         return CLEAN != statusFlag;
     }
 
+    /**
+     * Devuelve verdadero si es Ghoul
+     * @return boolean
+     */
     public boolean isGhoul(){
         return ghoul;
     }
 
+    /**
+     * Getter para los flags de contaminacion
+     * @return flags de contaminacion
+     */
     public int getContaminatedFlags(){
         return contaminatedFlags;
 
     }
+
+    /**
+     * Devuelve verdadero si el mounstro esta contaminado
+     * @return boolean
+     */
     public boolean isContaminated(){
         return contaminatedFlags >0;
     }
+
+    /**
+     * Contamina el mounstro con un tipo de contaminacion
+     * @param newContamination
+     */
     public void contaminate(int newContamination){
         contaminatedFlags |= newContamination;
     }
 
+    /**
+     * Setea el estado del mounstro
+     * @param status
+     */
     public void setStatusFlag(int status){statusFlag=status & 1;}
 
+    /**
+     * Devuelve el tiempo vivo del mounstro
+     * @return tiempo vivo
+     */
     public int getTimeAlive(){
         return timeAlive;
     }
 
+    /**
+     * Seter para el multiplicador del mounstro, mayor a 0
+     * @param value
+     */
     public void setSpeedMult(int value){
         if(value >=0) this.speedMult = value;
     }
+
+    /**
+     * Devuelve el multiplicador de velocidad del monster
+     * @return multiplicador
+     */
     public int getSpeedMult(){
         return speedMult;
+    }
+
+    /**
+     * Calcula el multiplicador de la velocidad, dependiendo de la hora del dia
+     * @param kronos
+     * @return multiplicador
+     */
+    public float getSpeedMultWithTime(Kronos kronos){
+        float finalSpeed = getSpeedMult();
+        IDayPart dayPart = kronos.currentDayPart();
+
+        if(dayPart.isNight() && (isVampire() || isWerewolf() || isWerewolf())){
+            int nightTime =kronos.getPartTime();
+            float mult = nightTime/600 + 1;
+            finalSpeed = finalSpeed*mult;
+
+        }
+        else{
+            //System.out.println(kronos.getPartTime());
+        }
+        return finalSpeed;
     }
 
     //Mirar aqui si se puede cambiar la sprite del monstro

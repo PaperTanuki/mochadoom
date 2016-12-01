@@ -6,6 +6,7 @@ import net.sourceforge.mochadoom.data.mobjinfo_t;
 import net.sourceforge.mochadoom.data.mobjtype_t;
 import net.sourceforge.mochadoom.data.sounds.sfxenum_t;
 import net.sourceforge.mochadoom.data.state_t;
+import net.sourceforge.mochadoom.daycycle.Kronos;
 import net.sourceforge.mochadoom.defines.Card;
 import net.sourceforge.mochadoom.defines.Skill;
 import net.sourceforge.mochadoom.defines.SlopeType;
@@ -1250,8 +1251,8 @@ public class Actions extends UnifiedGameMap {
             I.Error("Weird actor.movedir!");
         //ING : Speed mult
         if(actor instanceof monster_t){
-            tryx = actor.x + actor.info.speed*((monster_t) actor).getSpeedMult() * xspeed[actor.movedir];
-            tryy = actor.y + actor.info.speed*((monster_t) actor).getSpeedMult()* yspeed[actor.movedir];
+            tryx = (int) (actor.x + actor.info.speed*((monster_t) actor).getSpeedMultWithTime(DM.kronos) * xspeed[actor.movedir]);
+            tryy = (int) (actor.y + actor.info.speed*((monster_t) actor).getSpeedMultWithTime(DM.kronos)* yspeed[actor.movedir]);
         }
         else{
             tryx = actor.x + actor.info.speed * xspeed[actor.movedir];
@@ -1964,7 +1965,6 @@ public class Actions extends UnifiedGameMap {
     // Source can be NULL for slime, barrel explosions
     // and other environmental stuff.
     //
-    //TODO ING: Aqui cambiar el daño de las armas especiales
     public void
     DamageMobj
     (mobj_t target,
@@ -2250,15 +2250,13 @@ public class Actions extends UnifiedGameMap {
         // Drop stuff.
         // This determines the kind of object spawned
         // during the death frame of a thing.
-
-
         //TODO ING: Aqui spawn de las cosas al morir->
         if(target instanceof monster_t){
 
             if(RND.P_Random() < 95&& ((monster_t) target).isContaminated() && ! ((monster_t) target).isVampire()) {
 
                 monster_t monster = (monster_t) SpawnMobj(target.x, target.y, target.z, mobjtype_t.MT_SERGEANT);
-                monster.setSpeedMult(2);
+                monster.setSpeedMult(1);
                 monster.setStatusFlag(monster_t.VAMPIRE);
 
 
@@ -2288,10 +2286,9 @@ public class Actions extends UnifiedGameMap {
 
             default:
                 return;
-
         }
 
-        mo = SpawnMobj(target.x, target.y, target.z, item);
+        mo = SpawnMobj(target.x, target.y, ONFLOORZ, item);
         mo.flags |= MF_DROPPED;    // special versions of items
     }
 
@@ -4369,6 +4366,7 @@ public class Actions extends UnifiedGameMap {
     //
     boolean crushchange;
     boolean nofit;
+	private Kronos kronos;
 
 
     //
@@ -4776,9 +4774,15 @@ public class Actions extends UnifiedGameMap {
         RunThinkers();
         SPECS.UpdateSpecials(); // In specials. Merge?
         RespawnSpecials();
-
-        // for par times
-        DM.leveltime++;
+        
+        /* Functionality refactored to kronos:
+         * 
+         * // for par times
+         * DM.leveltime++;
+         * 
+        */
+        
+        DM.kronos.Ticker(); // DM.leveltime increases in kronos
     }
 
     /**
@@ -5033,6 +5037,7 @@ public class Actions extends UnifiedGameMap {
     public Actions(DoomStatus DC) {
         super(DC);
         this.A = this;
+
         SlideTraverse = new PTR_SlideTraverse();
         AimTraverse = new PTR_AimTraverse();
         ShootTraverse = new PTR_ShootTraverse();
