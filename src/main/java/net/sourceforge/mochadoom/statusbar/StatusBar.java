@@ -626,6 +626,11 @@ public class StatusBar extends AbstractStatusBar {
     // Respond to keyboard input events,
     // intercept cheats.
 
+    /*
+     * INGENIERIA DE SOFTWARE
+     * Este metodo es el que activa los cheats y su funcionalidad. Aqui hay que agregar los nuevos cheats para convertirse
+     * en vampiro y hombre lobo.
+     */
     public boolean Responder(event_t ev) {
         int i;
 
