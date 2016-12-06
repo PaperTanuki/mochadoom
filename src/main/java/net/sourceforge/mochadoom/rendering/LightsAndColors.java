@@ -63,7 +63,7 @@ public class LightsAndColors<V> {
 
 
     public static final int LIGHTLEVELS;
-    public static final int LIGHTSEGSHIFT;
+    public static int LIGHTSEGSHIFT;
 
 
     /**
