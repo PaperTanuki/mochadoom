@@ -11,7 +11,7 @@ import static net.sourceforge.mochadoom.data.info.states;
 /**
  * Created by Nicolas on 02-11-2016.
  */
-public class monster_t extends mobj_t{
+public class monster_t extends mobj_t implements IMonster{
 
 
 
@@ -52,108 +52,106 @@ public class monster_t extends mobj_t{
 
     }
 
-    /**
-     * Devuelve verdadero si el mounstro es Vampiro
-     * @return
+    /* (non-Javadoc)
+     * @see net.sourceforge.mochadoom.gamelogic.IMonster#isVampire()
      */
+    @Override
     public boolean isVampire(){
         return (statusFlag & VAMPIRE) == VAMPIRE;
     }
 
-    /**
-     * Devuelve verdadero si es hombre lobo
-     * @return
+    /* (non-Javadoc)
+     * @see net.sourceforge.mochadoom.gamelogic.IMonster#isWerewolf()
      */
+    @Override
     public boolean isWerewolf(){
         return (statusFlag & WEREWOLF) == WEREWOLF;
     }
 
-    /**
-     * Devuelve veraddero si es hybrido
-     * @return
+    /* (non-Javadoc)
+     * @see net.sourceforge.mochadoom.gamelogic.IMonster#isHybrid()
      */
+    @Override
     public boolean isHybrid(){
         return (statusFlag & HYBRID) == HYBRID;
     }
 
-    /**
-     * Devuelve verdadero si es resistente
-     * @return
+    /* (non-Javadoc)
+     * @see net.sourceforge.mochadoom.gamelogic.IMonster#isResistant()
      */
+    @Override
     public boolean isResistant(){
         return CLEAN != statusFlag;
     }
 
-    /**
-     * Devuelve verdadero si es Ghoul
-     * @return boolean
+    /* (non-Javadoc)
+     * @see net.sourceforge.mochadoom.gamelogic.IMonster#isGhoul()
      */
+    @Override
     public boolean isGhoul(){
         return ghoul;
     }
 
-    /**
-     * Getter para los flags de contaminacion
-     * @return flags de contaminacion
+    /* (non-Javadoc)
+     * @see net.sourceforge.mochadoom.gamelogic.IMonster#getContaminatedFlags()
      */
+    @Override
     public int getContaminatedFlags(){
         return contaminatedFlags;
 
     }
 
-    /**
-     * Devuelve verdadero si el mounstro esta contaminado
-     * @return boolean
+    /* (non-Javadoc)
+     * @see net.sourceforge.mochadoom.gamelogic.IMonster#isContaminated()
      */
+    @Override
     public boolean isContaminated(){
         return contaminatedFlags >0;
     }
 
-    /**
-     * Contamina el mounstro con un tipo de contaminacion
-     * @param newContamination
+    /* (non-Javadoc)
+     * @see net.sourceforge.mochadoom.gamelogic.IMonster#contaminate(int)
      */
+    @Override
     public void contaminate(int newContamination){
         contaminatedFlags |= newContamination;
     }
 
 
-    /**
-     * Setea el estado del mounstro
-     * @param status
+    /* (non-Javadoc)
+     * @see net.sourceforge.mochadoom.gamelogic.IMonster#setStatusFlag(int)
      */
     public void setStatusFlag(int status){statusFlag=status & 1;}
 
 
-    /**
-     * Devuelve el tiempo vivo del mounstro
-     * @return tiempo vivo
+    /* (non-Javadoc)
+     * @see net.sourceforge.mochadoom.gamelogic.IMonster#getTimeAlive()
      */
+    @Override
     public int getTimeAlive(){
         return timeAlive;
     }
 
-    /**
-     * Seter para el multiplicador del mounstro, mayor a 0
-     * @param value
+    /* (non-Javadoc)
+     * @see net.sourceforge.mochadoom.gamelogic.IMonster#setSpeedMult(int)
      */
+    @Override
     public void setSpeedMult(int value){
         if(value >=0) this.speedMult = value;
     }
 
-    /**
-     * Devuelve el multiplicador de velocidad del monster
-     * @return multiplicador
+    /* (non-Javadoc)
+     * @see net.sourceforge.mochadoom.gamelogic.IMonster#getSpeedMult()
      */
+    @Override
     public int getSpeedMult(){
         return speedMult;
     }
 
-    /**
-     * Calcula el multiplicador de la velocidad, dependiendo de la hora del dia
-     * @param kronos
-     * @return multiplicador
+    /* (non-Javadoc)
+     * @see net.sourceforge.mochadoom.gamelogic.IMonster#getSpeedMultWithTime(net.sourceforge.mochadoom.daycycle.Kronos)
      */
+    @Override
     public float getSpeedMultWithTime(Kronos kronos){
         float finalSpeed = getSpeedMult();
         IDayPart dayPart = kronos.currentDayPart();
@@ -170,7 +168,10 @@ public class monster_t extends mobj_t{
         return finalSpeed;
     }
 
-    //Mirar aqui si se puede cambiar la sprite del monstro
+    //Mirar aqui si se puede cambiar la sprite del monster
+    /* (non-Javadoc)
+     * @see net.sourceforge.mochadoom.gamelogic.mobj_t#SetMobjState(net.sourceforge.mochadoom.defines.StateNum)
+     */
     @Override
     public boolean SetMobjState(StateNum state) {
         state_t st;
@@ -201,8 +202,36 @@ public class monster_t extends mobj_t{
 
         return true;
     }
+    /* (non-Javadoc)
+     * @see net.sourceforge.mochadoom.gamelogic.IMonster#getCriticalHealth()
+     */
     public int getCriticalHealth() {
       return CRITICAL_HEALTH;
+    }
+    @Override
+    public float getSilverDamageMultiplier() {
+      // TODO Auto-generated method stub
+      return 0;
+    }
+    @Override
+    public float getRegularDamageMultiplier() {
+      // TODO Auto-generated method stub
+      return 0;
+    }
+    @Override
+    public float getNonRegularDamageMultiplier() {
+      // TODO Auto-generated method stub
+      return 0;
+    }
+    @Override
+    public boolean canContaminate() {
+      // TODO Auto-generated method stub
+      return false;
+    }
+    @Override
+    public boolean canFly() {
+      // TODO Auto-generated method stub
+      return false;
     }
 
 }
