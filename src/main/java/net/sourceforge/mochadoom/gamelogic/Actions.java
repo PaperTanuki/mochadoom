@@ -1231,6 +1231,12 @@ public class Actions extends UnifiedGameMap {
         LineAttack(mo, angle, MISSILERANGE, bulletslope, damage);
     }
 
+    /**
+     * Tries to move a mobj_t in its current direction.
+     * For actors of the monster_t type, applies their speed multiplier.
+     * @param actor, the mobj_t to be moved.
+     * @return true if the movement was succesful, false otherwise.
+     */
     boolean Move(mobj_t actor) {
         // fixed_t
         int tryx;
@@ -1248,12 +1254,13 @@ public class Actions extends UnifiedGameMap {
 
         if (actor.movedir >= 8)
             I.Error("Weird actor.movedir!");
+        
         //ING : Speed mult
-        if(actor instanceof monster_t){
+        if (actor instanceof monster_t) {
             tryx = actor.x + actor.info.speed*((monster_t) actor).getSpeedMult() * xspeed[actor.movedir];
             tryy = actor.y + actor.info.speed*((monster_t) actor).getSpeedMult()* yspeed[actor.movedir];
         }
-        else{
+        else {
             tryx = actor.x + actor.info.speed * xspeed[actor.movedir];
             tryy = actor.y + actor.info.speed * yspeed[actor.movedir];
         }
@@ -2020,10 +2027,14 @@ public class Actions extends UnifiedGameMap {
             target.momx += FixedMul(thrust, finecosine(ang));
             target.momy += FixedMul(thrust, finesine(ang));
         }
-        //ING: Si el que hizo el daño es jugador. Borrar, solo test
-        if((source != null) &&  (source.player!= null)){
-           if(target instanceof monster_t){
-               if(source.player.readyweapon == weapontype_t.wp_fist) ((monster_t) target).contaminate(monster_t.VAMPIRE);
+        
+        
+        //ING: Al pegar con fist o chainsaw, contaminar.
+        if((source != null) &&  (source.player!= null)) {
+           if(target instanceof monster_t) {
+               if (source.player.readyweapon == weapontype_t.wp_fist
+                   || source.player.readyweapon == weapontype_t.wp_chainsaw) 
+                 ((monster_t) target).contaminate(monster_t.VAMPIRE);
            }
 
         }
@@ -2031,7 +2042,8 @@ public class Actions extends UnifiedGameMap {
         if(source instanceof monster_t){
             if(((monster_t) source).isVampire()){
                 if(target instanceof monster_t){
-                    if(target.type != mobjtype_t.MT_SKULL)  ((monster_t) target).contaminate(monster_t.VAMPIRE);
+                    if(target.type != mobjtype_t.MT_SKULL)  
+                      ((monster_t) target).contaminate(monster_t.VAMPIRE);
                 }
 
             }
@@ -2084,28 +2096,26 @@ public class Actions extends UnifiedGameMap {
         }
 
         // do the damage    
-        target.health -= damage;
-        if(target.health <= 0){
-            if(target instanceof monster_t){
-                if(((monster_t) target).isVampire() && target.type != mobjtype_t.MT_SKULL){
-                    SpawnMobj(target.x, target.y, target.z, mobjtype_t.MT_TFOG);
-                    SpawnSkull(target, target.angle + ANG90);
-                    SpawnSkull(target, target.angle + ANG180);
-                    monster_t mo= (monster_t) SpawnSkull(target, target.angle + ANG270);
-                    mo.setStatusFlag(monster_t.VAMPIRE);
-                    RemoveMobj(target);
-                    return;
-
-                }
-                else{
-                    KillMobj(source, target);
-                    return;
-                }
-            }
-            else{
-                KillMobj(source, target);
-                return;
-            }
+        target.health -= damage;     
+        if (target.health <= 0) {
+          KillMobj(source, target);
+          return;
+        }
+        
+     // when the health drops below 10, but the vampire is alive, spawn skulls
+        if(target instanceof monster_t) {
+          if(((monster_t) target).isVampire() && target.type != mobjtype_t.MT_SKULL){
+            if(target.health <= ((monster_t) target).getCriticalHealth()) {
+              SpawnMobj(target.x, target.y, target.z, mobjtype_t.MT_TFOG);
+              SpawnSkull(target, target.angle + ANG90);
+              SpawnSkull(target, target.angle + ANG180);
+              monster_t mo= (monster_t) SpawnSkull(target, target.angle + ANG270);
+              mo.setStatusFlag(monster_t.VAMPIRE);
+              RemoveMobj(target);
+              return;
+         
+            
+            }}
 
 
         }

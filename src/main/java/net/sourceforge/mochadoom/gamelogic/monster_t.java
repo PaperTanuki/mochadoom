@@ -16,6 +16,8 @@ public class monster_t extends mobj_t{
     // Ingenieria de software
 
     static public int RESISTANCE_TO_NORMAL_WP = 50;
+    // Health at which vampires turn into bats.
+    static public int CRITICAL_HEALTH = 20;
 
     private boolean ghoul;
 
@@ -78,7 +80,9 @@ public class monster_t extends mobj_t{
         contaminatedFlags |= newContamination;
     }
 
-    public void setStatusFlag(int status){statusFlag=status & 1;}
+    public void setStatusFlag(int status) {
+      statusFlag = status & 1;
+     }
 
     public int getTimeAlive(){
         return timeAlive;
@@ -121,6 +125,9 @@ public class monster_t extends mobj_t{
         } while (tics == 0);
 
         return true;
+    }
+    public int getCriticalHealth() {
+      return CRITICAL_HEALTH;
     }
 
 }
