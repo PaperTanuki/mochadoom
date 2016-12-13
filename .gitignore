@@ -3,17 +3,10 @@
 mochadoom.iml
 doomsav0.dsg
 target/
+src/main/config/mochadoom-1.6.1-SNAPSHOT.jar
 src/main/config/
 .classpath
 .project
-<<<<<<< HEAD
-<<<<<<< HEAD
 .settings/
-=======
-.settings/
->>>>>>> 9201a0622935f55c38bfd8c7ca9ee32411a5c14f
-=======
-.settings/
->>>>>>> 1ef4512b665f11e37eced8a269654ec77fa50a95
 /bin/
 

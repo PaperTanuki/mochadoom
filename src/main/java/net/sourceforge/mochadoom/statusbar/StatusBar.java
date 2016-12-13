@@ -476,6 +476,14 @@ public class StatusBar extends AbstractStatusBar {
     // Massive bunches of cheat shit
     // to keep it from being easy to figure them out.
     // Yeah, right...
+    
+    /*INGENIERIA DE SOFTWARE
+     * De aqui en adelante se encuentran diversas variables que referencian al uso de cheats en el juego.
+     * Notar que son arreglos de strings que guardan números hexadecimales, los que probablemente referencian
+     * a las teclas que hay que ingresar para activar el cheat.
+     * IMPORTANTE: Solo se crean los posibles cheats, aqui no hay funcionalidad. Revisar la clase cheatseq_t dentro del paquete menu
+     * para revisar la funcionalidad.
+     */
     private char cheat_mus_seq[] =
             {0xb2, 0x26, 0xb6, 0xae, 0xea, 1, 0, 0, 0xff};
 
@@ -618,6 +626,11 @@ public class StatusBar extends AbstractStatusBar {
     // Respond to keyboard input events,
     // intercept cheats.
 
+    /*
+     * INGENIERIA DE SOFTWARE
+     * Este metodo es el que activa los cheats y su funcionalidad. Aqui hay que agregar los nuevos cheats para convertirse
+     * en vampiro y hombre lobo.
+     */
     public boolean Responder(event_t ev) {
         int i;
 
