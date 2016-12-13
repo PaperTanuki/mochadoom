@@ -13,8 +13,6 @@ import static net.sourceforge.mochadoom.data.info.states;
  */
 public class monster_t extends mobj_t implements IMonster{
 
-
-
     // Ingenieria de software
 
     static public int RESISTANCE_TO_NORMAL_WP = 50;
@@ -43,6 +41,7 @@ public class monster_t extends mobj_t implements IMonster{
     public monster_t() {
         super();
     }
+    
     public monster_t(Actions A) {
         super(A);
         speedMult = 1;
@@ -56,6 +55,7 @@ public class monster_t extends mobj_t implements IMonster{
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#isVampire()
      */
     @Override
+
     public boolean isVampire(){
         return false;
     }
@@ -64,22 +64,26 @@ public class monster_t extends mobj_t implements IMonster{
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#isWerewolf()
      */
     @Override
-    public boolean isWerewolf(){
-        return false;
-    }
+
+    public boolean isWerewolf() {
+            return false;
+        }
 
     /* (non-Javadoc)
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#isHybrid()
      */
     @Override
+
     public boolean isHybrid(){
         return false;
+
     }
 
     /* (non-Javadoc)
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#isResistant()
      */
     @Override
+
     public boolean isResistant(){
         return false;
     }
@@ -88,6 +92,7 @@ public class monster_t extends mobj_t implements IMonster{
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#isGhoul()
      */
     @Override
+
     public boolean isGhoul(){
         return false;
     }
@@ -96,7 +101,7 @@ public class monster_t extends mobj_t implements IMonster{
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#getContaminatedFlags()
      */
     @Override
-    public int getContaminatedFlags(){
+    public int getContaminatedFlags() {
         return contaminatedFlags;
 
     }
@@ -105,15 +110,15 @@ public class monster_t extends mobj_t implements IMonster{
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#isContaminated()
      */
     @Override
-    public boolean isContaminated(){
-        return contaminatedFlags >0;
+    public boolean isContaminated() {
+        return contaminatedFlags > 0;
     }
 
     /* (non-Javadoc)
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#contaminate(int)
      */
     @Override
-    public void contaminate(int newContamination){
+    public void contaminate(int newContamination) {
         contaminatedFlags |= newContamination;
     }
 
@@ -121,14 +126,14 @@ public class monster_t extends mobj_t implements IMonster{
     /* (non-Javadoc)
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#setStatusFlag(int)
      */
-    public void setStatusFlag(int status){statusFlag=status & 1;}
+    public void setStatusFlag(int status){statusFlag = status & 1;}
 
 
     /* (non-Javadoc)
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#getTimeAlive()
      */
     @Override
-    public int getTimeAlive(){
+    public int getTimeAlive() {
         return timeAlive;
     }
 
@@ -136,15 +141,15 @@ public class monster_t extends mobj_t implements IMonster{
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#setSpeedMult(int)
      */
     @Override
-    public void setSpeedMult(int value){
-        if(value >=0) this.speedMult = value;
+    public void setSpeedMult(int value) {
+        if(value >= 0) this.speedMult = value;
     }
 
     /* (non-Javadoc)
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#getSpeedMult()
      */
     @Override
-    public int getSpeedMult(){
+    public int getSpeedMult() {
         return speedMult;
     }
 
@@ -153,18 +158,7 @@ public class monster_t extends mobj_t implements IMonster{
      */
     @Override
     public float getSpeedMultWithTime(Kronos kronos){
-        /*float finalSpeed = getSpeedMult();
-        IDayPart dayPart = kronos.currentDayPart();
 
-        if(dayPart.isNight() && (isVampire() || isWerewolf() || isWerewolf())){
-            int nightTime =kronos.getPartTime();
-            float mult = nightTime/600 + 1;
-            finalSpeed = finalSpeed*mult;
-
-        }
-        else{
-            //System.out.println(kronos.getPartTime());
-        }*/
         return getSpeedMult();
     }
 
@@ -208,29 +202,32 @@ public class monster_t extends mobj_t implements IMonster{
     public int getCriticalHealth() {
       return CRITICAL_HEALTH;
     }
+    
     @Override
     public float getSilverDamageMultiplier() {
-      // TODO Auto-generated method stub
+
       return 1;
     }
+    
     @Override
     public float getRegularDamageMultiplier() {
-      // TODO Auto-generated method stub
+
       return 1;
     }
+    
     @Override
     public float getNonRegularDamageMultiplier() {
-      // TODO Auto-generated method stub
+
       return 1;
     }
+    
     @Override
     public boolean canContaminate() {
-      // TODO Auto-generated method stub
       return false;
     }
+    
     @Override
     public boolean canFly() {
-      // TODO Auto-generated method stub
       return false;
     }
 
