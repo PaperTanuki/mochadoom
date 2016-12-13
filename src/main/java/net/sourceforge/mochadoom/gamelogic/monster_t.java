@@ -157,8 +157,7 @@ public class monster_t extends mobj_t implements IMonster{
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#getSpeedMultWithTime(net.sourceforge.mochadoom.daycycle.Kronos)
      */
     @Override
-    public float getSpeedMultWithTime(Kronos kronos){
-
+    public float getSpeedMultWithTime(Kronos kronos) {        
         return getSpeedMult();
     }
 
