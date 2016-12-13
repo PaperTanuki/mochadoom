@@ -55,40 +55,46 @@ public class monster_t extends mobj_t implements IMonster{
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#isVampire()
      */
     @Override
-    public boolean isVampire() {
-        return (statusFlag & VAMPIRE) == VAMPIRE;
+
+    public boolean isVampire(){
+        return false;
     }
 
     /* (non-Javadoc)
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#isWerewolf()
      */
     @Override
+
     public boolean isWerewolf() {
-        return (statusFlag & WEREWOLF) == WEREWOLF;
-    }
+            return false;
+        }
 
     /* (non-Javadoc)
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#isHybrid()
      */
     @Override
-    public boolean isHybrid() {
-        return (statusFlag & HYBRID) == HYBRID;
+
+    public boolean isHybrid(){
+        return false;
+
     }
 
     /* (non-Javadoc)
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#isResistant()
      */
     @Override
-    public boolean isResistant() {
-        return CLEAN != statusFlag;
+
+    public boolean isResistant(){
+        return false;
     }
 
     /* (non-Javadoc)
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#isGhoul()
      */
     @Override
-    public boolean isGhoul() {
-        return ghoul;
+
+    public boolean isGhoul(){
+        return false;
     }
 
     /* (non-Javadoc)
@@ -151,19 +157,9 @@ public class monster_t extends mobj_t implements IMonster{
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#getSpeedMultWithTime(net.sourceforge.mochadoom.daycycle.Kronos)
      */
     @Override
-    public float getSpeedMultWithTime(Kronos kronos) {
-        float finalSpeed = getSpeedMult();
-        IDayPart dayPart = kronos.currentDayPart();
+    public float getSpeedMultWithTime(Kronos kronos){
 
-        if(dayPart.isNight() && (isVampire() || isWerewolf() || isWerewolf())) {
-            int nightTime =kronos.getPartTime();
-            float mult = nightTime/600 + 1;
-            finalSpeed = finalSpeed*mult;
-
-        } else {
-            //System.out.println(kronos.getPartTime());
-        }
-        return finalSpeed;
+        return getSpeedMult();
     }
 
     //Mirar aqui si se puede cambiar la sprite del monster
@@ -209,16 +205,19 @@ public class monster_t extends mobj_t implements IMonster{
     
     @Override
     public float getSilverDamageMultiplier() {
+
       return 1;
     }
     
     @Override
     public float getRegularDamageMultiplier() {
+
       return 1;
     }
     
     @Override
     public float getNonRegularDamageMultiplier() {
+
       return 1;
     }
     
