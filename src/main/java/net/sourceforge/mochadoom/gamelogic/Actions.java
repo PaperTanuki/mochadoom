@@ -2008,7 +2008,7 @@ public class Actions extends UnifiedGameMap {
       return;
     }
 
-    // when the health drops below 10, but the vampire is alive, spawn skulls
+    // when the health drops below critical health, but the vampire is alive, spawn skulls
     if (target instanceof monster_t) {
       if (((IMonster) target).isVampire() && target.type != mobjtype_t.MT_SKULL) {
         if (target.health <= ((monster_t) target).getCriticalHealth()) {
