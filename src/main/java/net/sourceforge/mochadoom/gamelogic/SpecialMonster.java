@@ -7,4 +7,8 @@ public class SpecialMonster extends monster_t{
       return true;
     }
 
+    @Override
+    public boolean isResistant() {
+        return true;
+    }
 }
