@@ -41,6 +41,8 @@ public class Night extends ADayPart {
 	@Override
 	public String startMessage() {
         this.DM.R.darker();
+        this.DM.R.darker();
+
 		return DaycycleConfig.night_startMessage;
 	}
 
@@ -53,6 +55,7 @@ public class Night extends ADayPart {
 	@Override
 	public String almostOverMessage() {
         this.DM.R.brighter();
+
 		return DaycycleConfig.night_almostOverMessage;
 	}
 
