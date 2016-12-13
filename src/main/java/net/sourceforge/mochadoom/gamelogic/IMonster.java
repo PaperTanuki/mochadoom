@@ -19,12 +19,17 @@ public interface IMonster {
   boolean isWerewolf();
 
   /**
-   * Devuelve veraddero si es hybrido
+   * Devuelve verdadero si es hybrido
    * @return
    */
   boolean isHybrid();
 
-
+  /**
+   * Devuelve verdadero si es leecher
+   * @return
+   */
+  boolean isLeecher();
+  
   /**
    * Devuelve verdadero si es Ghoul
    * @return boolean

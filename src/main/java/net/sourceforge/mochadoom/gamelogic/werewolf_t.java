@@ -5,11 +5,6 @@ package net.sourceforge.mochadoom.gamelogic;
  */
 public class werewolf_t extends monster_t {
 
-
-
-
-
-
     @Override
     public boolean isWerewolf(){
         return true;
@@ -17,16 +12,15 @@ public class werewolf_t extends monster_t {
     @Override
     public float getSilverDamageMultiplier(){
         return 2.0f;
-
     }
 
     @Override
     public float getRegularDamageMultiplier() {
-        return super.getRegularDamageMultiplier();
+        return 0.75f;
     }
 
     @Override
     public int getSpeedMult() {
-        return super.getSpeedMult()*getTimeAlive()/1000;
+        return super.getSpeedMult()*(getTimeAlive()/1000);
     }
 }

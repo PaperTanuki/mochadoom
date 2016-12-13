@@ -55,7 +55,6 @@ public class monster_t extends mobj_t implements IMonster{
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#isVampire()
      */
     @Override
-
     public boolean isVampire(){
         return false;
     }
@@ -64,7 +63,6 @@ public class monster_t extends mobj_t implements IMonster{
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#isWerewolf()
      */
     @Override
-
     public boolean isWerewolf() {
             return false;
         }
@@ -73,7 +71,6 @@ public class monster_t extends mobj_t implements IMonster{
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#isHybrid()
      */
     @Override
-
     public boolean isHybrid(){
         return false;
 
@@ -83,7 +80,6 @@ public class monster_t extends mobj_t implements IMonster{
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#isResistant()
      */
     @Override
-
     public boolean isResistant(){
         return false;
     }
@@ -92,7 +88,6 @@ public class monster_t extends mobj_t implements IMonster{
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#isGhoul()
      */
     @Override
-
     public boolean isGhoul(){
         return false;
     }
@@ -205,19 +200,16 @@ public class monster_t extends mobj_t implements IMonster{
     
     @Override
     public float getSilverDamageMultiplier() {
-
       return 1;
     }
     
     @Override
     public float getRegularDamageMultiplier() {
-
       return 1;
     }
     
     @Override
     public float getNonRegularDamageMultiplier() {
-
       return 1;
     }
     
@@ -230,5 +222,11 @@ public class monster_t extends mobj_t implements IMonster{
     public boolean canFly() {
       return false;
     }
+
+	@Override
+	public boolean isLeecher() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 
 }
