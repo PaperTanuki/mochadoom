@@ -1905,9 +1905,9 @@ public class Actions extends UnifiedGameMap {
       boolean silverWeapon = false; // Aquí va el método que hay de llamar.
       boolean specialWeapon = false; 
       if (silverWeapon) {
-        damage *= ((monster_t) target).getSilverDamageMultiplier();
+        damage = (int) (damage * ((monster_t) target).getSilverDamageMultiplier());
       } else if (specialWeapon) {
-        damage *= ((monster_t) target).getNonRegularDamageMultiplier();
+        damage = (int) (damage * ((monster_t) target).getNonRegularDamageMultiplier());
       }
     }
 
