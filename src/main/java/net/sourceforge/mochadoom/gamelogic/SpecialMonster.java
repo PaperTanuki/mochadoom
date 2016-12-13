@@ -6,5 +6,10 @@ public class SpecialMonster extends monster_t{
     public boolean canContaminate() {
       return true;
     }
+    
+    @Override
+    public boolean isResistant() {
+      return true;
+    }
 
 }
