@@ -230,4 +230,8 @@ public class monster_t extends mobj_t implements IMonster{
       return false;
     }
 
+    public boolean isLeecher() {
+      return false;
+    }
+
 }

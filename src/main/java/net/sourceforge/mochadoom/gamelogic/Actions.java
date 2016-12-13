@@ -1902,12 +1902,19 @@ public class Actions extends UnifiedGameMap {
     
     // This if modifies the damage according to the conditions, if the target is a monster.
     if (target instanceof monster_t) {
-      boolean silverWeapon = false; // Aquí va el método que hay de llamar.
+      boolean silverWeapon = false; // TODO Aquí va el método que hay de llamar.
       boolean specialWeapon = false; 
       if (silverWeapon) {
         damage = (int) (damage * ((monster_t) target).getSilverDamageMultiplier());
       } else if (specialWeapon) {
         damage = (int) (damage * ((monster_t) target).getNonRegularDamageMultiplier());
+      }
+    }
+    
+    // If the inflictor is a vampire or ghoul, it restores health
+    if (inflictor instanceof monster_t) {
+      if (((monster_t) inflictor).isLeecher()) {
+        inflictor.health += damage/10;
       }
     }
 
