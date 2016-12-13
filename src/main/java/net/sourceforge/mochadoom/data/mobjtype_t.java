@@ -139,6 +139,15 @@ public enum mobjtype_t {
     MT_MISC84,
     MT_MISC85,
     MT_MISC86,
-    NUMMOBJTYPES
+    NUMMOBJTYPES,
+ // Ingenieria
+    ING_HOLY_WATER,
+    ING_WOODEN_STICK,
+    ING_WATER_FLASK,
+    ING_SILVER_BULLET,
+
+    ING_VAMPIRE,
+    ING_GHOUL,
+    ING_WEREWOLF
 };
 
