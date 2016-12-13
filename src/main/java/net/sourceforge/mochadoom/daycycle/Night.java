@@ -42,20 +42,21 @@ public class Night extends ADayPart {
 	@Override
 	public String startMessage() {
         this.DM.R.darker();
-        this.DM.R.darker();
 
-		return DaycycleConfig.night_startMessage;
-	}
+        return DaycycleConfig.night_startMessage + this.kronos.currentMoonPhase().message();
+
+    }
 
 	@Override
 	public String halfMessage() {
-        this.DM.R.darker();
-		return DaycycleConfig.night_halfMessage;
+		this.DM.R.darker();
+		return this.kronos.currentMoonPhase().message();
 	}
 
 	@Override
 	public String almostOverMessage() {
-        this.DM.R.brighter();
+		//this.DM.R.brighter();
+
 
 		return DaycycleConfig.night_almostOverMessage;
 	}
