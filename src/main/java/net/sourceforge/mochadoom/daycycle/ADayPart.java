@@ -52,7 +52,6 @@ public abstract class ADayPart implements IDayPart {
 
 	@Override
 	public void display(String message) {
-		// TODO Decide if necessary. Also could be different.
 		this.DM.players[this.DM.consoleplayer].message = message;
 	}
 
