@@ -18,4 +18,9 @@ public class FullMoon extends AMoonPhase {
 		return true;
 	}
 
+	@Override
+	public String message() {
+		return DaycycleConfig.fullMoon_startMessage;
+	}
+
 }

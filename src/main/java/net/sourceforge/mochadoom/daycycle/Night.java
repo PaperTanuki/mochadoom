@@ -13,6 +13,7 @@ public class Night extends ADayPart {
 
 	public Night(DoomMain<?, ?> DM, Kronos aKronos) {
 		super(DM, aKronos);
+		this.kronos.changeMoon();
 	}
 
 	@Override
