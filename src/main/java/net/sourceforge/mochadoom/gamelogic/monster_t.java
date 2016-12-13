@@ -57,7 +57,7 @@ public class monster_t extends mobj_t implements IMonster{
      */
     @Override
     public boolean isVampire(){
-        return (statusFlag & VAMPIRE) == VAMPIRE;
+        return false;
     }
 
     /* (non-Javadoc)
@@ -65,7 +65,7 @@ public class monster_t extends mobj_t implements IMonster{
      */
     @Override
     public boolean isWerewolf(){
-        return (statusFlag & WEREWOLF) == WEREWOLF;
+        return false;
     }
 
     /* (non-Javadoc)
@@ -73,7 +73,7 @@ public class monster_t extends mobj_t implements IMonster{
      */
     @Override
     public boolean isHybrid(){
-        return (statusFlag & HYBRID) == HYBRID;
+        return false;
     }
 
     /* (non-Javadoc)
@@ -81,7 +81,7 @@ public class monster_t extends mobj_t implements IMonster{
      */
     @Override
     public boolean isResistant(){
-        return CLEAN != statusFlag;
+        return false;
     }
 
     /* (non-Javadoc)
@@ -89,7 +89,7 @@ public class monster_t extends mobj_t implements IMonster{
      */
     @Override
     public boolean isGhoul(){
-        return ghoul;
+        return false;
     }
 
     /* (non-Javadoc)
@@ -153,7 +153,7 @@ public class monster_t extends mobj_t implements IMonster{
      */
     @Override
     public float getSpeedMultWithTime(Kronos kronos){
-        float finalSpeed = getSpeedMult();
+        /*float finalSpeed = getSpeedMult();
         IDayPart dayPart = kronos.currentDayPart();
 
         if(dayPart.isNight() && (isVampire() || isWerewolf() || isWerewolf())){
@@ -164,8 +164,8 @@ public class monster_t extends mobj_t implements IMonster{
         }
         else{
             //System.out.println(kronos.getPartTime());
-        }
-        return finalSpeed;
+        }*/
+        return getSpeedMult();
     }
 
     //Mirar aqui si se puede cambiar la sprite del monster
@@ -211,17 +211,17 @@ public class monster_t extends mobj_t implements IMonster{
     @Override
     public float getSilverDamageMultiplier() {
       // TODO Auto-generated method stub
-      return 0;
+      return 1;
     }
     @Override
     public float getRegularDamageMultiplier() {
       // TODO Auto-generated method stub
-      return 0;
+      return 1;
     }
     @Override
     public float getNonRegularDamageMultiplier() {
       // TODO Auto-generated method stub
-      return 0;
+      return 1;
     }
     @Override
     public boolean canContaminate() {
