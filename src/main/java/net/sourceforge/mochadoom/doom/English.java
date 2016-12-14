@@ -349,6 +349,9 @@ public class English {
 
     public final static String STSTR_CHOPPERS = "... doesn't suck - GM";
     public final static String STSTR_CLEV = "Changing Level...";
+    
+    public final static String STSTR_VAMP = "Transforming to Vampire";
+    public final static String STSTR_WOLF = "Transforming to Werewolf";
 
     //
 //  F_Finale.C
