@@ -3,6 +3,7 @@ package net.sourceforge.mochadoom.gamelogic;
 /**
  * Created by Nicolas on 13-12-2016.
  */
+
 public class werewolf_t extends SpecialMonster {
 
 
