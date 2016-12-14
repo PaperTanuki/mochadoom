@@ -11,6 +11,8 @@ public class werewolf_t extends SpecialMonster {
         return true;
     }
 
+    
+
     @Override
     public float getSilverDamageMultiplier() {
         return 2.0f;
@@ -25,4 +27,6 @@ public class werewolf_t extends SpecialMonster {
     public int getSpeedMult() {
         return super.getSpeedMult() * (getTimeAlive() / 1000);
     }
+
+
 }

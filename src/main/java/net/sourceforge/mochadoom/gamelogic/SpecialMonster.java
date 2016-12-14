@@ -11,4 +11,5 @@ public class SpecialMonster extends monster_t{
     public boolean isResistant() {
         return true;
     }
+
 }
