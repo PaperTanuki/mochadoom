@@ -7,17 +7,6 @@ src/main/config/mochadoom-1.6.1-SNAPSHOT.jar
 src/main/config/
 .classpath
 .project
-<<<<<<< HEAD
-<<<<<<< HEAD
 .settings/
-<<<<<<< HEAD
 /bin/
-=======
-=======
-.settings/
->>>>>>> 9201a0622935f55c38bfd8c7ca9ee32411a5c14f
-=======
-.settings/
->>>>>>> 1ef4512b665f11e37eced8a269654ec77fa50a95
-/bin/
->>>>>>> b2dc1a0cd33780ca8b9ebeba1a29955952b872c3
+

@@ -18,4 +18,9 @@ public class YoungMoon extends AMoonPhase {
 		return true;
 	}
 
+	@Override
+	public String message() {
+		return DaycycleConfig.youngMoon_startMessage;
+	}
+
 }

@@ -1216,7 +1216,7 @@ public class Actions extends UnifiedGameMap {
     if (actor.movedir >= 8)
       I.Error("Weird actor.movedir!");
 
-    // ING : Speed mult
+    // Increments speed with time during the night.
     if (actor instanceof monster_t) {
       tryx = (int) (actor.x + actor.info.speed * ((IMonster) actor).getSpeedMultWithTime(DM.kronos)
           * xspeed[actor.movedir]);
@@ -1899,6 +1899,24 @@ public class Actions extends UnifiedGameMap {
     player_t player;
     int thrust; // fixed_t
     int temp;
+    
+    // This if modifies the damage according to the conditions, if the target is a monster.
+    if (target instanceof monster_t) {
+      boolean silverWeapon = false; // TODO Aquí va el método que hay de llamar.
+      boolean specialWeapon = false; 
+      if (silverWeapon) {
+        damage = (int) (damage * ((monster_t) target).getSilverDamageMultiplier());
+      } else if (specialWeapon) {
+        damage = (int) (damage * ((monster_t) target).getNonRegularDamageMultiplier());
+      }
+    }
+    
+    // If the inflictor is a vampire or ghoul, it restores health
+    if (inflictor instanceof monster_t) {
+      if (((monster_t) inflictor).isLeecher()) {
+        inflictor.health += damage/10;
+      }
+    }
 
     if (!eval(target.flags & MF_SHOOTABLE))
       return; // shouldn't happen...
@@ -2008,7 +2026,7 @@ public class Actions extends UnifiedGameMap {
       return;
     }
 
-    // when the health drops below 10, but the vampire is alive, spawn skulls
+    // when the health drops below critical health, but the vampire is alive, spawn skulls
     if (target instanceof monster_t) {
       if (((IMonster) target).isVampire() && target.type != mobjtype_t.MT_SKULL) {
         if (target.health <= ((monster_t) target).getCriticalHealth()) {
