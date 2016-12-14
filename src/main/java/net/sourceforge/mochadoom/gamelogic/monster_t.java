@@ -14,13 +14,10 @@ import static net.sourceforge.mochadoom.data.info.states;
 public class monster_t extends mobj_t implements IMonster{
 
     // Ingenieria de software
-
     static public int RESISTANCE_TO_NORMAL_WP = 50;
     // Health at which vampires turn into bats.
     static public int CRITICAL_HEALTH = 20;
-
     private boolean ghoul;
-
     private int contaminatedFlags;
     private int statusFlag = CLEAN;
 
@@ -33,10 +30,8 @@ public class monster_t extends mobj_t implements IMonster{
     public static final int WEREWOLF = 0b10;
     public static final int HYBRID = 0b11;
 
-
     private int timeAlive;
     private int speedMult;
-
 
     public monster_t() {
         super();
@@ -51,115 +46,71 @@ public class monster_t extends mobj_t implements IMonster{
 
     }
 
-    /* (non-Javadoc)
-     * @see net.sourceforge.mochadoom.gamelogic.IMonster#isVampire()
-     */
     @Override
     public boolean isVampire(){
         return false;
     }
 
-    /* (non-Javadoc)
-     * @see net.sourceforge.mochadoom.gamelogic.IMonster#isWerewolf()
-     */
     @Override
     public boolean isWerewolf() {
             return false;
         }
 
-    /* (non-Javadoc)
-     * @see net.sourceforge.mochadoom.gamelogic.IMonster#isHybrid()
-     */
     @Override
     public boolean isHybrid(){
         return false;
 
     }
 
-    /* (non-Javadoc)
-     * @see net.sourceforge.mochadoom.gamelogic.IMonster#isResistant()
-     */
     @Override
     public boolean isResistant(){
         return false;
     }
 
-    /* (non-Javadoc)
-     * @see net.sourceforge.mochadoom.gamelogic.IMonster#isGhoul()
-     */
     @Override
     public boolean isGhoul(){
         return false;
     }
 
-    /* (non-Javadoc)
-     * @see net.sourceforge.mochadoom.gamelogic.IMonster#getContaminatedFlags()
-     */
     @Override
     public int getContaminatedFlags() {
         return contaminatedFlags;
 
     }
 
-    /* (non-Javadoc)
-     * @see net.sourceforge.mochadoom.gamelogic.IMonster#isContaminated()
-     */
     @Override
     public boolean isContaminated() {
         return contaminatedFlags > 0;
     }
 
-    /* (non-Javadoc)
-     * @see net.sourceforge.mochadoom.gamelogic.IMonster#contaminate(int)
-     */
     @Override
     public void contaminate(int newContamination) {
         contaminatedFlags |= newContamination;
     }
 
-
-    /* (non-Javadoc)
-     * @see net.sourceforge.mochadoom.gamelogic.IMonster#setStatusFlag(int)
-     */
     public void setStatusFlag(int status){statusFlag = status & 1;}
 
-
-    /* (non-Javadoc)
-     * @see net.sourceforge.mochadoom.gamelogic.IMonster#getTimeAlive()
-     */
     @Override
     public int getTimeAlive() {
         return timeAlive;
     }
 
-    /* (non-Javadoc)
-     * @see net.sourceforge.mochadoom.gamelogic.IMonster#setSpeedMult(int)
-     */
     @Override
     public void setSpeedMult(int value) {
         if(value >= 0) this.speedMult = value;
     }
 
-    /* (non-Javadoc)
-     * @see net.sourceforge.mochadoom.gamelogic.IMonster#getSpeedMult()
-     */
     @Override
     public int getSpeedMult() {
         return speedMult;
     }
 
-    /* (non-Javadoc)
-     * @see net.sourceforge.mochadoom.gamelogic.IMonster#getSpeedMultWithTime(net.sourceforge.mochadoom.daycycle.Kronos)
-     */
     @Override
     public float getSpeedMultWithTime(Kronos kronos) {        
         return getSpeedMult();
     }
 
     //Mirar aqui si se puede cambiar la sprite del monster
-    /* (non-Javadoc)
-     * @see net.sourceforge.mochadoom.gamelogic.mobj_t#SetMobjState(net.sourceforge.mochadoom.defines.StateNum)
-     */
     @Override
     public boolean SetMobjState(StateNum state) {
         state_t st;
@@ -190,9 +141,7 @@ public class monster_t extends mobj_t implements IMonster{
 
         return true;
     }
-    /* (non-Javadoc)
-     * @see net.sourceforge.mochadoom.gamelogic.IMonster#getCriticalHealth()
-     */
+
     public int getCriticalHealth() {
       return CRITICAL_HEALTH;
     }
@@ -222,16 +171,9 @@ public class monster_t extends mobj_t implements IMonster{
       return false;
     }
 
-<<<<<<< HEAD
 	@Override
 	public boolean isLeecher() {
-		// TODO Auto-generated method stub
 		return false;
 	}
-=======
-    public boolean isLeecher() {
-      return false;
-    }
->>>>>>> 008aad50b00a9156207eb8d36b0e06e04b14ed0d
 
 }
