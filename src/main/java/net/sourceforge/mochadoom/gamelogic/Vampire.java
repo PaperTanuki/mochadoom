@@ -1,6 +1,14 @@
 package net.sourceforge.mochadoom.gamelogic;
 
 public class Vampire extends Leecher {
+	
+	public Vampire() {
+        super();
+    }
+    
+    public Vampire(Actions A) {
+        super(A);
+    }
   
     @Override
     public boolean isVampire() {

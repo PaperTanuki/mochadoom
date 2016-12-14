@@ -2,6 +2,14 @@ package net.sourceforge.mochadoom.gamelogic;
 
 public class Ghoul extends Leecher {
   
+	public Ghoul() {
+        super();
+    }
+    
+    public Ghoul(Actions A) {
+        super(A);
+    }
+    
     @Override
     public boolean isGhoul() {
       return true;
