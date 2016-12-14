@@ -11,7 +11,14 @@ public class werewolf_t extends SpecialMonster {
         return true;
     }
 
-    
+    public werewolf_t(Actions A) {
+        super(A);
+
+        // A mobj_t is ALSO a thinker, as it always contains the struct.
+        // Don't fall for C's trickery ;-)
+        // this.thinker=new thinker_t();
+
+    }
 
     @Override
     public float getSilverDamageMultiplier() {

@@ -1442,20 +1442,34 @@ public class Actions extends UnifiedGameMap {
     RemoveMobj(mobj);
   }
 
-  /**
-   * P_SpawnMobj
-   *
-   * @param x fixed
-   * @param y fixed
-   * @param z fixed
-   * @param type
-   * @return
-   */
 
   public mobj_t SpawnMobj(int x, int y, int z, mobjtype_t type) {
+    mobjinfo_t info;
+    info = mobjinfo[type.ordinal()];
+    int monsterType= 0;
+    if (!((info.flags & MF_COUNTKILL) == MF_COUNTKILL)) {
+      return SpawnMobj(x,y,z,type,-1);
+    } else {
+      return SpawnMobj(x,y,z,type,0);
+    }
+
+
+  }
+
+
+  public mobj_t SpawnMobj(int x, int y, int z, mobjtype_t type,int typeOfMonsters) {
     mobj_t mobj;
     state_t st;
     mobjinfo_t info;
+
+    if(typeOfMonsters >=0){
+      mobj = MonsterFactory.createMonster(typeOfMonsters,this);
+
+    }
+    else{
+      mobj = new mobj_t(this);
+    }
+
 
     // MAES: I tried this approach but it's not really worth it.
     // Testing with NUTS.WAD yielded pretty much identical results,
@@ -1466,11 +1480,7 @@ public class Actions extends UnifiedGameMap {
     /**
      * If the mob is killable, it spawns as an instance de monster.
      */
-    if ((info.flags & MF_COUNTKILL) == MF_COUNTKILL) {
-      mobj = new monster_t(this);
-    } else {
-      mobj = new mobj_t(this);
-    }
+
 
 
 
@@ -1511,7 +1521,6 @@ public class Actions extends UnifiedGameMap {
 
     mobj.function = think_t.P_MobjThinker;
     AddThinker(mobj);
-
     return mobj;
   }
 
@@ -2034,7 +2043,6 @@ public class Actions extends UnifiedGameMap {
           SpawnSkull(target, target.angle + ANG90);
           SpawnSkull(target, target.angle + ANG180);
           monster_t mo = (monster_t) SpawnSkull(target, target.angle + ANG270);
-          mo.setStatusFlag(monster_t.VAMPIRE);
           RemoveMobj(target);
           return;
         }
@@ -2100,7 +2108,7 @@ public class Actions extends UnifiedGameMap {
     y = actor.y + FixedMul(prestep, finesine[an]);
     z = actor.z + 8 * FRACUNIT;
 
-    newmobj = SpawnMobj(x, y, z, mobjtype_t.MT_SKULL);
+    newmobj = SpawnMobj(x, y, z, mobjtype_t.MT_SKULL,MonsterFactory.VAMPIRE);
     return newmobj;
 
   }
@@ -2175,16 +2183,12 @@ public class Actions extends UnifiedGameMap {
     // TODO ING: Aqui spawn de las cosas al morir->
     if (target instanceof monster_t) {
 
-      if (RND.P_Random() < 95 && ((IMonster) target).isContaminated()
-          && !((IMonster) target).isVampire()) {
-
+      if (RND.P_Random() < 95 && ((IMonster) target).isContaminated()) {
         monster_t monster =
-            (monster_t) SpawnMobj(target.x, target.y, target.z, mobjtype_t.MT_SERGEANT);
-        monster.setSpeedMult(1);
-        monster.setStatusFlag(monster_t.VAMPIRE);
+            (monster_t) SpawnMobj(target.x, target.y, target.z, target.type,((IMonster) target).getContaminatedFlags());
 
 
-        monster.flags |= MF_NOGRAVITY | MF_FLOAT;
+
 
         RemoveMobj(target);
       }

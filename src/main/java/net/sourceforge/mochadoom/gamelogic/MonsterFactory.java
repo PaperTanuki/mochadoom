@@ -11,23 +11,40 @@ public class MonsterFactory {
     public static final int WEREWOLF = 3;
     public static final int HYBRID= 4;
 
+    static boolean debug = false;
 
-    public static IMonster createMonster(int monsterType,Actions actions){
+
+    public static mobj_t createMonster(int monsterType,Actions actions){
+        mobj_t monster;
+
         switch (monsterType){
+
             case NORMAL:
-                return new monster_t(actions);
+                if(debug)System.out.println("Es normal!");
+                monster=new monster_t(actions);
+                break;
             case VAMPIRE:
-                return  new monster_t(actions);
+                if(debug)System.out.println("Es Vampiro!");
+                monster=new Vampire(actions);
+                break;
             case GHOUL:
-                return new monster_t(actions);
+                if(debug)System.out.println("Es Ghoul!");
+                monster= new Ghoul(actions);
+                break;
             case WEREWOLF:
-                return new monster_t(actions);
+                if(debug)System.out.println("Es WereWolf!");
+                monster= new werewolf_t(actions);
+                break;
             case HYBRID:
-                return new monster_t(actions);
+                if(debug)System.out.println("Es hybrido!");
+                monster= new monster_t(actions);
+                break;
             default:
-                return new monster_t(actions);
+                monster= new monster_t(actions);
+                break;
 
         }
+        return monster;
 
 
     }

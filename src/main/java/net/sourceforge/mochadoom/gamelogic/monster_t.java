@@ -25,10 +25,12 @@ public class monster_t extends mobj_t implements IMonster{
      * A monster can be contaminated by using the logic OR operation with any new flag.
      * A monster can be cleaned by using the logic AND with the CLEAN status.
      */
-    public static final int CLEAN = 0b00;
-    public static final int VAMPIRE = 0b01;
-    public static final int WEREWOLF = 0b10;
-    public static final int HYBRID = 0b11;
+    public static final int CLEAN = 0;
+    public static final int VAMPIRE = 1;
+    public static final int GHOUL = 2;
+    public static final int WEREWOLF = 3;
+    public static final int HYBRID= 4;
+
 
     private int timeAlive;
     private int speedMult;
@@ -88,7 +90,6 @@ public class monster_t extends mobj_t implements IMonster{
         contaminatedFlags |= newContamination;
     }
 
-    public void setStatusFlag(int status){statusFlag = status & 1;}
 
     @Override
     public int getTimeAlive() {
