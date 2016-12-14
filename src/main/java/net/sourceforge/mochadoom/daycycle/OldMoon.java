@@ -18,4 +18,9 @@ public class OldMoon extends AMoonPhase {
 		return true;
 	}
 
+	@Override
+	public String message() {
+		return DaycycleConfig.oldMoon_startMessage;
+	}
+
 }

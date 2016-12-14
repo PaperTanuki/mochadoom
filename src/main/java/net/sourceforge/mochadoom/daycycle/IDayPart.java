@@ -8,7 +8,6 @@ package net.sourceforge.mochadoom.daycycle;
  *
  */
 public interface IDayPart {
-	// TODO Make days global for efficiency. Hint: Singleton pattern.
 
 	/**
 	 * Method called every time Kronos receives a tick. Increases time in this
@@ -30,7 +29,7 @@ public interface IDayPart {
 	 * Returns time spent on current state.
 	 */
 	int getTimeInPart();
-	
+
 	/**
 	 * Returns message to show when period starts.
 	 */
