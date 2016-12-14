@@ -152,8 +152,7 @@ public class monster_t extends mobj_t implements IMonster{
      * @see net.sourceforge.mochadoom.gamelogic.IMonster#getSpeedMultWithTime(net.sourceforge.mochadoom.daycycle.Kronos)
      */
     @Override
-    public float getSpeedMultWithTime(Kronos kronos){
-
+    public float getSpeedMultWithTime(Kronos kronos) {        
         return getSpeedMult();
     }
 
@@ -223,10 +222,16 @@ public class monster_t extends mobj_t implements IMonster{
       return false;
     }
 
+<<<<<<< HEAD
 	@Override
 	public boolean isLeecher() {
 		// TODO Auto-generated method stub
 		return false;
 	}
+=======
+    public boolean isLeecher() {
+      return false;
+    }
+>>>>>>> 008aad50b00a9156207eb8d36b0e06e04b14ed0d
 
 }

@@ -1,6 +1,11 @@
 package net.sourceforge.mochadoom.gamelogic;
 
-public class Ghoul extends Leecher{
+public class Ghoul extends Leecher {
+  
+    @Override
+    public boolean isGhoul() {
+      return true;
+    }
 	
 	@Override
     public float getRegularDamageMultiplier() {
