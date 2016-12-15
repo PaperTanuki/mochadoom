@@ -101,6 +101,7 @@ public final class VisSprites<V>
             colormaps.spritelights = colormaps.scalelight[0];
         else if (lightnum >= LIGHTLEVELS)
             colormaps.spritelights = colormaps.scalelight[LIGHTLEVELS - 1];
+
         else
             colormaps.spritelights = colormaps.scalelight[lightnum];
 

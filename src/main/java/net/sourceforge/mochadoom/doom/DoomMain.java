@@ -22,6 +22,7 @@ import net.sourceforge.mochadoom.data.mapthing_t;
 import net.sourceforge.mochadoom.data.mobjtype_t;
 import net.sourceforge.mochadoom.data.sounds.musicenum_t;
 import net.sourceforge.mochadoom.data.sounds.sfxenum_t;
+import net.sourceforge.mochadoom.daycycle.Kronos;
 import net.sourceforge.mochadoom.defines.*;
 import net.sourceforge.mochadoom.defines.GameMode;
 import net.sourceforge.mochadoom.demo.IDemoTicCmd;
@@ -2719,6 +2720,9 @@ public abstract class DoomMain<T, V> extends DoomStatus<T, V> implements IDoomGa
         gameepisode = episode;
         gamemap = map;
         gameskill = skill;
+        
+        // Kronos controls day/night cycles 
+        kronos = new Kronos(this);
 
         viewactive = true;
 
@@ -3934,7 +3938,6 @@ public abstract class DoomMain<T, V> extends DoomStatus<T, V> implements IDoomGa
         status_holders.add((DoomStatusAware) (this.DD = new DiskDrawer(this, DiskDrawer.STDISK)));
 
         updateStatusHolders(this);
-
 
     }
 

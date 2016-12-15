@@ -1,0 +1,6 @@
+#!/bin/bash
+#Simple Script for running the built jar
+
+sudo rm src/main/config/mochadoom-1.6.1-SNAPSHOT.jar
+sudo cp target/mochadoom-1.6.1-SNAPSHOT.jar src/main/config
+sudo java -jar mochadoom-1.6.1-SNAPSHOT.jar

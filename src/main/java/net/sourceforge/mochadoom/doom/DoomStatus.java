@@ -2,6 +2,7 @@ package net.sourceforge.mochadoom.doom;
 
 import net.sourceforge.mochadoom.automap.IAutoMap;
 import net.sourceforge.mochadoom.data.mapthing_t;
+import net.sourceforge.mochadoom.daycycle.Kronos;
 import net.sourceforge.mochadoom.defines.*;
 import net.sourceforge.mochadoom.defines.GameMode;
 import net.sourceforge.mochadoom.demo.IDoomDemo;
@@ -271,6 +272,8 @@ public abstract class DoomStatus<T, V> extends DoomContext<T, V> implements IUse
     public int levelstarttic; // gametic at level start
 
     public int leveltime; // tics in game play for par
+    
+    public Kronos kronos;
 
     // --------------------------------------
     // DEMO playback/recording related stuff.
