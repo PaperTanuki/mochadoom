@@ -98,7 +98,7 @@ public class monster_t extends mobj_t implements IMonster{
 
     @Override
     public void contaminate(int newContamination) {
-        contaminatedFlags |= newContamination;
+        contaminatedFlags = newContamination;
     }
 
 

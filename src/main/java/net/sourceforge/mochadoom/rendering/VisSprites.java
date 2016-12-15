@@ -256,8 +256,8 @@ public final class VisSprites<V>
         if(thing instanceof SpecialMonster){
             if(((SpecialMonster) thing).isVampire()){
                 int timeAlive=((SpecialMonster) thing).getTimeAlive();
-                timeAlive = (int)(2 + (50.0/(1+(timeAlive/100))));
-                if(timeAlive>30) timeAlive = 30;
+                timeAlive = (int)(10.0/(1+(timeAlive/100)));
+                if(timeAlive>30) timeAlive = 10;
                 if(timeAlive<0) timeAlive = 0;
                 System.out.println("time alive:" +timeAlive);
                 vis.colormap = colormaps.colormaps[timeAlive];
@@ -268,7 +268,7 @@ public final class VisSprites<V>
                 if(timeAlive>30) timeAlive = 30;
                 if(timeAlive<0) timeAlive = 0;
 
-                System.out.println("time alive:" +timeAlive);
+                //System.out.println("time alive:" +timeAlive);
                 vis.colormap =  colormaps.colormaps[timeAlive];
             }
 

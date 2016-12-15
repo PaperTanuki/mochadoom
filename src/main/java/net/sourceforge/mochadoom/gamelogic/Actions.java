@@ -22,6 +22,8 @@ import net.sourceforge.mochadoom.rendering.side_t;
 import net.sourceforge.mochadoom.rendering.subsector_t;
 import net.sourceforge.mochadoom.utils.C2JUtils;
 
+import java.util.Random;
+
 import static net.sourceforge.mochadoom.data.Defines.BASETHRESHOLD;
 import static net.sourceforge.mochadoom.data.Defines.FLOATSPEED;
 import static net.sourceforge.mochadoom.data.Defines.ITEMQUESIZE;
@@ -1972,17 +1974,21 @@ public class Actions extends UnifiedGameMap {
     if ((source != null) && (source.player != null)) {
       if (target instanceof monster_t) {
         if (source.player.readyweapon == weapontype_t.wp_fist
-            || source.player.readyweapon == weapontype_t.wp_chainsaw)
-          ((IMonster) target).contaminate(monster_t.WEREWOLF);
+            || source.player.readyweapon == weapontype_t.wp_chainsaw) {
+          int rand = new Random().nextInt(2) + 1;
+          if (rand == 2) rand = 3;
+          ((IMonster) target).contaminate(rand);
+        }
       }
 
     }
-    // ING: Si el monstruo es vampiro, contaminar al otro monstruo
+    // ING: Si el monstruo es monstruo, contaminar al otro monstruo
     if (source instanceof monster_t) {
-      if (((IMonster) source).isVampire()) {
+      if (((IMonster) source).isVampire() || ((IMonster) source).isWerewolf()) {
         if (target instanceof monster_t) {
-          if (target.type != mobjtype_t.MT_SKULL)
-            ((IMonster) target).contaminate(monster_t.VAMPIRE);
+          if (target.type != mobjtype_t.MT_SKULL && !(target instanceof SpecialMonster))
+          {int i = (((IMonster) source).isVampire()) ? 1:3;
+            ((IMonster) target).contaminate(i);}
         }
 
       }
@@ -2044,9 +2050,9 @@ public class Actions extends UnifiedGameMap {
       if (((IMonster) target).isVampire() && target.type != mobjtype_t.MT_SKULL) {
         if (target.health <= ((monster_t) target).getCriticalHealth()) {
           SpawnMobj(target.x, target.y, target.z, mobjtype_t.MT_TFOG);
-          SpawnSkull(target, target.angle + ANG90);
-          SpawnSkull(target, target.angle + ANG180);
-          monster_t mo = (monster_t) SpawnSkull(target, target.angle + ANG270);
+          SpawnSkull(target, target.angle + ANG90,false);
+          SpawnSkull(target, target.angle + ANG180,false);
+          monster_t mo = (monster_t) SpawnSkull(target, target.angle + ANG270,true);
           RemoveMobj(target);
           return;
         }
@@ -2076,7 +2082,7 @@ public class Actions extends UnifiedGameMap {
   }
 
   // ING: Crea lost souls para spawnear cuando un vampiro "escapa"
-  private mobj_t SpawnSkull(mobj_t actor, long angle) {
+  private mobj_t SpawnSkull(mobj_t actor, long angle,boolean isVampire) {
     int x, y, z; // fixed
 
     mobj_t newmobj;
@@ -2112,7 +2118,8 @@ public class Actions extends UnifiedGameMap {
     y = actor.y + FixedMul(prestep, finesine[an]);
     z = actor.z + 8 * FRACUNIT;
 
-    newmobj = SpawnMobj(x, y, z, mobjtype_t.MT_SKULL,MonsterFactory.VAMPIRE);
+    if(isVampire)newmobj = SpawnMobj(x, y, z, mobjtype_t.MT_SKULL,MonsterFactory.VAMPIRE);
+    else newmobj =   SpawnMobj(x, y, z, mobjtype_t.MT_SKULL,0);
     return newmobj;
 
   }
