@@ -1,11 +1,18 @@
 package net.sourceforge.mochadoom.gamelogic;
 
+import net.sourceforge.mochadoom.data.mobjtype_t;
 import net.sourceforge.mochadoom.data.spritenum_t;
 import net.sourceforge.mochadoom.data.state_t;
 import net.sourceforge.mochadoom.daycycle.IDayPart;
 import net.sourceforge.mochadoom.daycycle.Kronos;
+import net.sourceforge.mochadoom.defines.Skill;
 import net.sourceforge.mochadoom.defines.StateNum;
+import net.sourceforge.mochadoom.doom.think_t;
 
+import static net.sourceforge.mochadoom.data.Defines.ONCEILINGZ;
+import static net.sourceforge.mochadoom.data.Defines.ONFLOORZ;
+import static net.sourceforge.mochadoom.data.Limits.MAXPLAYERS;
+import static net.sourceforge.mochadoom.data.info.mobjinfo;
 import static net.sourceforge.mochadoom.data.info.states;
 
 /**
@@ -32,7 +39,8 @@ public class monster_t extends mobj_t implements IMonster{
     public static final int HYBRID= 4;
 
 
-    private int timeAlive;
+    private int timeInit;
+    private Kronos kronos;
     private int speedMult;
 
     public monster_t() {
@@ -40,7 +48,10 @@ public class monster_t extends mobj_t implements IMonster{
     }
     
     public monster_t(Actions A) {
+
         super(A);
+        kronos= A.DM.kronos;
+        timeInit = kronos.getLevelTime();
         speedMult = 1;
         // A mobj_t is ALSO a thinker, as it always contains the struct.
         // Don't fall for C's trickery ;-)
@@ -93,7 +104,7 @@ public class monster_t extends mobj_t implements IMonster{
 
     @Override
     public int getTimeAlive() {
-        return timeAlive;
+        return (kronos.getLevelTime() - timeInit);
     }
 
     @Override
@@ -177,4 +188,36 @@ public class monster_t extends mobj_t implements IMonster{
 		return false;
 	}
 
+    @Override
+    public void checkSkin(Kronos kronos) {
+        return;
+    }
+
+    public void changeSkin(){
+        info = mobjinfo[type.ordinal()];
+        this.radius = info.radius;
+        this.height = info.height;
+        this.flags = info.flags;
+        this.health = info.spawnhealth;
+
+        if (A.DM.gameskill != Skill.sk_nightmare)
+            this.reactiontime = info.reactiontime;
+
+        this.lastlook = A.RND.P_Random() % MAXPLAYERS;
+        // do not set the state with P_SetMobjState,
+        // because action routines can not be called yet
+        state_t st;
+        st = states[info.spawnstate.ordinal()];
+
+        this.state = st;
+        this.tics = st.tics;
+        this.sprite = st.sprite;
+        this.frame = st.frame;
+        if (z == ONFLOORZ)
+            this.z = this.floorz;
+        else if (z == ONCEILINGZ)
+            this.z = this.ceilingz - this.info.height;
+        else
+            this.z = z;
+    }
 }

@@ -1,5 +1,7 @@
 package net.sourceforge.mochadoom.rendering;
 
+import net.sourceforge.mochadoom.gamelogic.SpecialMonster;
+import net.sourceforge.mochadoom.gamelogic.monster_t;
 import net.sourceforge.mochadoom.system.IDoomSystem;
 import java.util.Arrays;
 import net.sourceforge.mochadoom.gamelogic.mobj_t;
@@ -250,6 +252,26 @@ public final class VisSprites<V>
 
             vis.colormap = colormaps.spritelights[index];
             // vis.pcolormap=index;
+        }
+        if(thing instanceof SpecialMonster){
+            if(((SpecialMonster) thing).isVampire()){
+                int timeAlive=((SpecialMonster) thing).getTimeAlive();
+                timeAlive = (int)(2 + (50.0/(1+(timeAlive/100))));
+                if(timeAlive>30) timeAlive = 30;
+                if(timeAlive<0) timeAlive = 0;
+                System.out.println("time alive:" +timeAlive);
+                vis.colormap = colormaps.colormaps[timeAlive];
+            }
+            else if(((SpecialMonster) thing).isWerewolf()){
+                int timeAlive=((SpecialMonster) thing).getTimeAlive();
+                timeAlive = timeAlive*43/2000;
+                if(timeAlive>30) timeAlive = 30;
+                if(timeAlive<0) timeAlive = 0;
+
+                System.out.println("time alive:" +timeAlive);
+                vis.colormap =  colormaps.colormaps[timeAlive];
+            }
+
         }
     }
 

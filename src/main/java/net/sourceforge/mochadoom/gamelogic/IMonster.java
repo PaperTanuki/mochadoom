@@ -66,6 +66,8 @@ public interface IMonster {
    */
   void setSpeedMult(int value);
 
+  void checkSkin(Kronos kronos);
+
   /**
    * Devuelve el multiplicador de velocidad del monster
    * @return multiplicador

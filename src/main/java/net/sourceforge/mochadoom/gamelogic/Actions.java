@@ -1210,6 +1210,7 @@ public class Actions extends UnifiedGameMap {
     boolean try_ok;
     boolean good;
 
+
     if (actor.movedir == DI_NODIR)
       return false;
 
@@ -1218,6 +1219,7 @@ public class Actions extends UnifiedGameMap {
 
     // Increments speed with time during the night.
     if (actor instanceof monster_t) {
+      ((monster_t)actor).checkSkin(DM.kronos);
       tryx = (int) (actor.x + actor.info.speed * ((IMonster) actor).getSpeedMultWithTime(DM.kronos)
           * xspeed[actor.movedir]);
       tryy = (int) (actor.y + actor.info.speed * ((IMonster) actor).getSpeedMultWithTime(DM.kronos)
@@ -1476,14 +1478,13 @@ public class Actions extends UnifiedGameMap {
     // and that was without using locking. Just let the GC do its
     // job.
     // mobj = mobjpool.checkOut();
-    info = mobjinfo[type.ordinal()];
     /**
      * If the mob is killable, it spawns as an instance de monster.
      */
 
 
 
-
+    info = mobjinfo[type.ordinal()];
     mobj.type = type;
     mobj.info = info;
     mobj.x = x;
@@ -1918,6 +1919,9 @@ public class Actions extends UnifiedGameMap {
       } else if (specialWeapon) {
         damage = (int) (damage * ((monster_t) target).getNonRegularDamageMultiplier());
       }
+      else{
+        damage = (int) (damage * ((monster_t) target).getRegularDamageMultiplier());
+      }
     }
     
     // If the inflictor is a vampire or ghoul, it restores health
@@ -1969,7 +1973,7 @@ public class Actions extends UnifiedGameMap {
       if (target instanceof monster_t) {
         if (source.player.readyweapon == weapontype_t.wp_fist
             || source.player.readyweapon == weapontype_t.wp_chainsaw)
-          ((IMonster) target).contaminate(monster_t.VAMPIRE);
+          ((IMonster) target).contaminate(monster_t.WEREWOLF);
       }
 
     }
@@ -2183,14 +2187,15 @@ public class Actions extends UnifiedGameMap {
     // TODO ING: Aqui spawn de las cosas al morir->
     if (target instanceof monster_t) {
 
-      if (RND.P_Random() < 95 && ((IMonster) target).isContaminated()) {
+      if (/*RND.P_Random() < 95 &&*/ ((IMonster) target).isContaminated()) {
+        RemoveMobj(target);
         monster_t monster =
             (monster_t) SpawnMobj(target.x, target.y, target.z, target.type,((IMonster) target).getContaminatedFlags());
 
 
 
 
-        RemoveMobj(target);
+
       }
 
 

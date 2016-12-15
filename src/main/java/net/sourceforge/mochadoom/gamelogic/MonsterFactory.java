@@ -11,7 +11,7 @@ public class MonsterFactory {
     public static final int WEREWOLF = 3;
     public static final int HYBRID= 4;
 
-    static boolean debug = false;
+    static boolean debug = true;
 
 
     public static mobj_t createMonster(int monsterType,Actions actions){

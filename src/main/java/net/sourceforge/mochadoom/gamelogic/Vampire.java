@@ -27,7 +27,7 @@ public class Vampire extends Leecher {
 
     @Override
     public float getRegularDamageMultiplier() {
-      return 0.2f;
+      return 0.1f;
     }
     
     @Override
