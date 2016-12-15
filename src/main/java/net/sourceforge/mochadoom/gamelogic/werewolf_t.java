@@ -1,6 +1,8 @@
 package net.sourceforge.mochadoom.gamelogic;
 
 import net.sourceforge.mochadoom.data.mobjtype_t;
+import net.sourceforge.mochadoom.daycycle.FullMoon;
+import net.sourceforge.mochadoom.daycycle.IMoonPhase;
 import net.sourceforge.mochadoom.daycycle.Kronos;
 
 import static net.sourceforge.mochadoom.data.info.mobjinfo;
@@ -34,12 +36,20 @@ public class werewolf_t extends SpecialMonster {
 
     @Override
     public float getRegularDamageMultiplier() {
-        return 0.1f;
+        IMoonPhase moon = kronos.currentMoonPhase();
+        if(moon.isFull()) return 0.1f;
+        else if(moon.isYoung()) return 0.2f;
+        else if(moon.isOld()) return 0.3f;
+        else return 0.4f;
     }
 
     @Override
     public int getSpeedMult() {
-        return super.getSpeedMult();
+        IMoonPhase moon = kronos.currentMoonPhase();
+        if(moon.isFull()) return 3;
+        else if(moon.isYoung()) return 2;
+        else if(moon.isOld()) return 2;
+        else return 1;
     }
 
     @Override

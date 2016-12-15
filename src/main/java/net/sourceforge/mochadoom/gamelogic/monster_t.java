@@ -40,7 +40,7 @@ public class monster_t extends mobj_t implements IMonster{
 
 
     private int timeInit;
-    private Kronos kronos;
+    protected Kronos kronos;
     private int speedMult;
 
     public monster_t() {
