@@ -119,6 +119,7 @@ public class player_t /*extends mobj_t */
     public player_t() {
         powers = new int[NUMPOWERS];
         frags = new int[MAXPLAYERS];
+        int NUMAMMO = 8;
         ammo = new int[NUMAMMO];
         //maxammo = new int[NUMAMMO];
         maxammo = new int[NUMAMMO];
@@ -1178,6 +1179,14 @@ public class player_t /*extends mobj_t */
         pendingweapon = readyweapon;
         BringUpWeapon();
     }
+    
+    //bullets that are currently being used for crafting. 
+    private int sacrificalBullets = 0;
+    
+    //this delayer is terribad design; it increases the ticcs between each bullet consumed
+    //effectively increasing crafting time. increase DEFAULTDELAY for that.
+    private int DELAY = 0;
+    private int delayer = 0;
 
     /**
      * P_PlayerThink
@@ -1199,6 +1208,23 @@ public class player_t /*extends mobj_t */
             cmd.forwardmove = (0xc800 / 512);
             cmd.sidemove = 0;
             player.mo.flags &= ~MF_JUSTATTACKED;
+        }
+        
+      //craft silver bullets
+        if (cmd.craftbullet == 1 ) {
+          //if delay is active, don't craft (think about it like a cooldown)
+          if (delayer < DELAY) delayer ++;
+          //with DELAY = 0; you can cash in 1 bullet per tick, and get a silver bullet back after 10 ticks
+          else if (player.ammo[AmmoType.am_clip.ordinal()] > 0){
+            player.ammo[AmmoType.am_clip.ordinal()] -= 1;
+            sacrificalBullets++;
+            if (sacrificalBullets >= 10) {
+              sacrificalBullets = 0;
+              //am_silverbullet ammo type no implemented yet, so for now all 'c' does is lose bullets
+              player.ammo[AmmoType.am_silverBullet.ordinal()] += 1;
+            }
+            delayer = 0;
+          }          
         }
 
 

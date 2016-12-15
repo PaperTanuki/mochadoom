@@ -1552,6 +1552,11 @@ public abstract class DoomMain<T, V> extends DoomStatus<T, V> implements IDoomGa
             tspeed = 2;             // slow turn 
         else
             tspeed = speed;
+        
+        // Set timer for crafting
+        if (gamekeydown[key_craft]) {          
+          cmd.craftbullet = 1;
+        }
 
         if (gamekeydown[key_lookdown] || gamekeydown[key_lookup]) {
             lookheld += ticdup;

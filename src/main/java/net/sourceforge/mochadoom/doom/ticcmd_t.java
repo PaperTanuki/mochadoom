@@ -8,6 +8,10 @@ import net.sourceforge.mochadoom.wad.CacheableDoomObject;
 import net.sourceforge.mochadoom.wad.IReadableDoomObject;
 
 public class ticcmd_t implements IDatagramSerializable, IReadableDoomObject, CacheableDoomObject {
+	
+	//game ticks until crafting is completed. -1 means no crafting has been called.
+	  
+    public int craftbullet;
 
     // The length datagrams are supposed to have, for full compatibility.
 
@@ -87,6 +91,7 @@ public class ticcmd_t implements IDatagramSerializable, IReadableDoomObject, Cac
         dest.chatchar = chatchar;
         dest.buttons = buttons;
         dest.lookfly = lookfly;
+        dest.craftbullet = craftbullet;
     }
 
     private static StringBuilder sb = new StringBuilder();

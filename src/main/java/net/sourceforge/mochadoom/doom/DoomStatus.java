@@ -482,6 +482,8 @@ public abstract class DoomStatus<T, V> extends DoomContext<T, V> implements IUse
     public int key_strafe = KEY_ALT;
 
     public int key_speed = KEY_SHIFT;
+    
+    public int key_craft = 99; // 'c';
 
     // Heretic stuff
     public int key_lookup = KEY_PGUP;

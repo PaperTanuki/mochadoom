@@ -1466,10 +1466,14 @@ public class ActionFunctions implements DoomStatusAware {
     class A_FirePistol implements ActionType2 {
         public void invoke(player_t player, pspdef_t psp) {
             S.StartSound(player.mo, sfxenum_t.sfx_pistol);
-
-            player.mo.SetMobjState(StateNum.S_PLAY_ATK2);
-            player.ammo[weaponinfo[player.readyweapon.ordinal()].ammo.ordinal()]--;
-
+            if(player.ammo[6]>0){
+            	player.mo.SetMobjState(StateNum.S_PLAY_ATK2);
+            	player.ammo[6]--;
+            	player.message = "Fire SilverBullet!";
+            }else{
+            	player.mo.SetMobjState(StateNum.S_PLAY_ATK2);
+            	player.ammo[weaponinfo[player.readyweapon.ordinal()].ammo.ordinal()]--;
+            }
             player.SetPsprite(
                     ps_flash,
                     weaponinfo[player.readyweapon.ordinal()].flashstate);

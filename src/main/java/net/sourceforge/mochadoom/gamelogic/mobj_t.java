@@ -184,6 +184,10 @@ public class mobj_t extends thinker_t implements ISoundOrigin, Interceptable,
      */
     public int reactiontime;
 
+    boolean silver = false;
+    public boolean isSilver() {
+    	return silver;
+    }
     /**
      * If >0, the target will be chased no matter what (even if shot)
      */

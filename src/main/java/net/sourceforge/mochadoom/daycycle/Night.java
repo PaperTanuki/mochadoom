@@ -57,7 +57,6 @@ public class Night extends ADayPart {
 	public String almostOverMessage() {
 		//this.DM.R.brighter();
 
-
 		return DaycycleConfig.night_almostOverMessage;
 	}
 
