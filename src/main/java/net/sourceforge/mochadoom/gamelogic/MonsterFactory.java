@@ -37,7 +37,7 @@ public class MonsterFactory {
                 break;
             case HYBRID:
                 if(debug)System.out.println("Es hybrido!");
-                monster= new monster_t(actions);
+                monster= new Hybrid(actions);
                 break;
             default:
                 monster= new monster_t(actions);

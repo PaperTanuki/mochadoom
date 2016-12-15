@@ -259,7 +259,7 @@ public final class VisSprites<V>
                 timeAlive = (int)(10.0/(1+(timeAlive/100)));
                 if(timeAlive>30) timeAlive = 10;
                 if(timeAlive<0) timeAlive = 0;
-                System.out.println("time alive:" +timeAlive);
+                //System.out.println("time alive:" +timeAlive);
                 vis.colormap = colormaps.colormaps[timeAlive];
             }
             else if(((SpecialMonster) thing).isWerewolf()){
@@ -270,6 +270,10 @@ public final class VisSprites<V>
 
                 //System.out.println("time alive:" +timeAlive);
                 vis.colormap =  colormaps.colormaps[timeAlive];
+            }
+            else{
+                vis.colormap =  null;
+
             }
 
         }

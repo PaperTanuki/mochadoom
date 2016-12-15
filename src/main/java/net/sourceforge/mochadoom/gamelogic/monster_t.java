@@ -98,7 +98,13 @@ public class monster_t extends mobj_t implements IMonster{
 
     @Override
     public void contaminate(int newContamination) {
-        contaminatedFlags = newContamination;
+
+        if(contaminatedFlags==VAMPIRE && newContamination==WEREWOLF)
+            contaminatedFlags = HYBRID;
+        if(contaminatedFlags==WEREWOLF && newContamination==VAMPIRE)contaminatedFlags=HYBRID;
+        else if(contaminatedFlags==3) return;
+        else contaminatedFlags=newContamination;
+
     }
 
 

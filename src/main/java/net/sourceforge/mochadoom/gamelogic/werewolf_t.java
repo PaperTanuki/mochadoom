@@ -42,6 +42,7 @@ public class werewolf_t extends SpecialMonster {
         return super.getSpeedMult();
     }
 
+    @Override
     public void checkSkin(Kronos kronos){
         if(kronos.isNight() && !changed) {
             originalType = this.type;
