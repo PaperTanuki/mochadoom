@@ -64,6 +64,7 @@ import static net.sourceforge.mochadoom.doom.English.STSTR_NCON;
 import static net.sourceforge.mochadoom.doom.English.STSTR_NOMUS;
 import static net.sourceforge.mochadoom.doom.English.STSTR_WOLF;
 import static net.sourceforge.mochadoom.doom.English.STSTR_VAMP;
+import static net.sourceforge.mochadoom.doom.English.STSTR_ROBBES;
 import static net.sourceforge.mochadoom.doom.items.weaponinfo;
 import static net.sourceforge.mochadoom.doom.player_t.CF_GODMODE;
 import static net.sourceforge.mochadoom.doom.player_t.CF_NOCLIP;
@@ -520,8 +521,13 @@ public class StatusBar extends AbstractStatusBar {
 
   private char cheat_werewolf_seq[] = {0xb2, 0x26, 0x36, 0xf6, 0x62, 0xf6, 0xff // idlobo
   };
+  
+  private char cheat_robbes_seq[] = {0xb2, 0x26, 0x6a, 0xf6, 0x62, 0x62, 0xa6, 0xea, 0xff // idrobbes
+  };
 
   // Now what?
+  cheatseq_t cheat_robbes = new cheatseq_t(cheat_robbes_seq, 0);
+  
   cheatseq_t cheat_vamp = new cheatseq_t(cheat_vampire_seq, 0);
 
   cheatseq_t cheat_wolf = new cheatseq_t(cheat_werewolf_seq, 0);
@@ -674,6 +680,10 @@ public class StatusBar extends AbstractStatusBar {
         // Cheat for werewolfs
         else if (cheat_wolf.CheckCheat((char) ev.data1)) {
           plyr.message = STSTR_WOLF;
+        }
+        // Cheat for robbes
+        else if (cheat_robbes.CheckCheat((char) ev.data1)) {
+          plyr.message = STSTR_ROBBES;
         }
 
         // 'kfa' cheat for key full ammo
